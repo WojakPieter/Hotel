@@ -1,3 +1,5 @@
+#include <iostream>
+
 class Date
 {
 public:
@@ -69,8 +71,8 @@ public:
     bool operator<(const Date& second_date)
     {
         if(year < second_date.year) return true;
-        else if(year == second.year && month < second_date.month) return true;
-        else if(year == second.year && month == second_date.month && day < second_date.day) return true;
+        else if(year == second_date.year && month < second_date.month) return true;
+        else if(year == second_date.year && month == second_date.month && day < second_date.day) return true;
         else return false;
     }
 
@@ -81,7 +83,7 @@ public:
 
     bool operator<=(const Date& second_date)
     {
-        return ((*this) < second_date || (*this) == second_date)
+        return ((*this) < second_date || (*this) == second_date);
     }
 
     bool operator>(const Date& second_date)
@@ -96,12 +98,13 @@ public:
 
     Date operator+=(int days)
     {
-        if(day > month_length)
+        if(day > this->get_month_length(month))
         {
             if(month == 12) {year++; month = 1;}
             else month++;
         }
-        day = (day + days) % month_length;
+        day = (day + days) % this->get_month_length(month);
+        return *this;
     }
 
     Date operator+(int days) const
@@ -118,10 +121,26 @@ public:
             if(month == 1) {year--; month = 12; days = (day - days) % 31;}
             else {--month; day = (day - days) % get_month_length(month);}
         }
+        return *this;
     }
 
     Date operator-(int days)
     {
         return (*this) + (-1) * days;
     }
+
+    friend std::ostream& operator<<(std::ostream& os, Date& d)
+    {
+        if(d.day<10) os<<'0'<<d.day;
+        else os<<d.day;
+        os<<'.';
+        if(d.month<10) os<<'0'<<d.month;
+        else os<<d.month;
+        os<<'.';
+        if(d.year<10) os<<'0'<<d.year;
+        else os<<d.year;
+
+        return os;
+    }
 };
+
