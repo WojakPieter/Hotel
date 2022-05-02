@@ -1,5 +1,5 @@
-#ifndef CPP_PROJECT_RECEPCIONIST_H
-#define CPP_PROJECT_RECEPCIONIST_H
+#ifndef CPP_PROJECT_WAITER_H
+#define CPP_PROJECT_WAITER_H
 #include <iostream>
 #include <string>
 #include <vector>
