@@ -1,9 +1,10 @@
-#include "date.hpp"
+#include "date.cpp"
 #include <iostream>
 #include <vector>
 
 class Room
 {
+protected:
     double area;
     double price;
     bool high_standard;
@@ -12,97 +13,73 @@ class Room
     std::vector<std::pair<Date, Date>> reserved_days;
 
 public:
-    Room(int number, bool high_standard, bool family=false);
+    Room(int number, bool high_standard, bool family);
     double get_area();
     int get_price();
     bool is_high_standard();
-    std::string get_number();
+    int get_number();
     virtual int get_number_of_required_workers()=0;
     virtual int get_number_of_beds()=0;
+    virtual void set_parameters()=0;
     bool is_reserved(Date);
+
+    bool operator==(const Room& second_room)
+    {
+        return(number == second_room.number);
+    }
 };
 
 class OnePersonRoom : public Room
 {
-    OnePersonRoom(int number, bool high_standard);
-    virtual int get_number_of_required_workers()
-    {
-        if(high_standard) return 2;
-        else return 1;
-    }
-    virtual int get_numbers_of_beds()
-    {
-        return 1;
-    }
+public:
+    OnePersonRoom(int number, bool high_standard, bool family);
+    virtual int get_number_of_required_workers();
+    virtual int get_number_of_beds();
+    virtual void set_parameters();
 };
 
 class TwoPersonRoom : public Room
 {
-    TwoPersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family);
-    virtual int get_number_of_required_workers()
-    {
-        if(high_standard) return 4;
-        else return 1;
-    }
-    virtual int get_numbers_of_beds()
-    {
-        if(family) return 1;
-        else return 2;
-    }
-}
+public:
+    TwoPersonRoom(int number, bool high_standard, bool family);
+    virtual int get_number_of_required_workers();
+    virtual int get_number_of_beds();
+    virtual void set_parameters();
+};
 
 class ThreePersonRoom : public Room
 {
-    ThreePersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
-    virtual int get_number_of_required_workers()
-    {
-        if(high_standard) return 3;
-        else return 1;
-    }
-    virtual int get_numbers_of_beds()
-    {
-        if(family) return 2;
-        else return 3;
-    }
-}
+public:
+    ThreePersonRoom(int number, bool high_standard, bool family);
+    virtual int get_number_of_required_workers();
+    virtual int get_number_of_beds();
+    virtual void set_parameters();
+};
 
 class FourPersonRoom : public Room
 {
-    ThreePersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family);
-    virtual int get_number_of_required_workers()
-    {
-        if(high_standard) return 4;
-        else return 2;
-    }
-    virtual int get_numbers_of_beds()
-    {
-        if(family) return 2;
-        else return 3;
-    }
+public:
+    FourPersonRoom(int number, bool high_standard, bool family);
+    virtual int get_number_of_required_workers();
+    virtual int get_number_of_beds();
+    virtual void set_parameters();
+
 };
 
 class Studio : public Room
 {
+public:
     Studio(int number);
-    virtual int get_number_of_required_workers()
-    {
-        return 5;
-    }
-    virtual int get_number_of_beds()
-    {
-        return 4;
-    }
+    virtual int get_number_of_required_workers();
+    virtual int get_number_of_beds();
+    virtual void set_parameters();
 };
 
 class Apartment : public Room
 {
-    Apartment(int number) : Studio(number);
-     virtual int get_number_of_required_workers()
-    {
-        return 7;
-    }
-    virtual int get_number_of_beds()
-    {
-        return 5;
-    }
+public:
+    Apartment(int number);
+    virtual int get_number_of_required_workers();
+    virtual int get_number_of_beds();
+    virtual void set_parameters();
 };
