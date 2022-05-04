@@ -9,10 +9,11 @@
 class maid : public employee
 {
     public:
-    maid(std::string, std::string, std::string, std::string, double, std::vector<std::pair<Date, int>>, std::vector<Date>);
+    maid(std::string, std::string, std::string, std::string, double);
     
     virtual double workingHours();
     virtual double salary();
+    virtual void setHourlyRate(double);
 
     // void tidyRoom(int number);
 
