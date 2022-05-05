@@ -9,6 +9,8 @@ public:
         this->day = day;
         this->month = month;
         this->year = year;
+        if(year < 0 || month < 1 || month > 12 || day < 1 || day > get_month_length(month))
+            throw std::invalid_argument("Improper date");
     }
     int get_day()
     {
@@ -98,13 +100,27 @@ public:
 
     Date operator+=(int days)
     {
-        if(day > this->get_month_length(month))
+        int old_month = month;
+        if(day + days > this->get_month_length(month))
         {
             if(month == 12) {year++; month = 1;}
             else month++;
         }
-        day = (day + days) % this->get_month_length(month);
+        day = (day + days - 1) % this->get_month_length(old_month) + 1;
         return *this;
+    }
+
+    Date& operator++()
+    {
+        this->operator+=(1);
+        return *this;
+    }
+
+    Date operator++(int)
+    {
+        Date old_date = *this;
+        ++(*this);
+        return old_date;
     }
 
     Date operator+(int days) const
@@ -119,10 +135,11 @@ public:
         if(day - days < 0)
         {
             if(month == 1) {year--; month = 12; days = (day - days) % 31;}
-            else {--month; day = (day - days) % get_month_length(month);}
+            else {--month; day = ((day - days + 1) % get_month_length(month)) + 1;}
         }
         return *this;
     }
+
 
     Date operator-(int days)
     {
