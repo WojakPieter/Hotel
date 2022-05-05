@@ -6,11 +6,9 @@ public:
     int day, month, year;
     Date(int day=0, int month=0, int year=0)
     {
-        this->day = day;
-        this->month = month;
-        this->year = year;
-        if(year < 0 || month < 1 || month > 12 || day < 1 || day > get_month_length(month))
-            throw std::invalid_argument("Improper date");
+        this->set_day(day);
+        this->set_month(month);
+        this->set_year(year);
     }
     int get_day()
     {
@@ -59,14 +57,17 @@ public:
 
     void set_day(int new_day)
     {
+        if(new_day < 1 || new_day > get_month_length(month)) throw std::out_of_range("Day out of range");
         day = new_day;
     }
     void set_month(int new_month)
     {
+        if(new_month < 1 || new_month > 12) throw std::out_of_range("Month out of range");
         month = new_month;
     }
     void set_year(int new_year)
     {
+        if(year < 1) throw std::out_of_range("Year cannot be negative");
         year = new_year;
     }
 
