@@ -6,9 +6,10 @@ public:
     int day, month, year;
     Date(int day=0, int month=0, int year=0)
     {
-        this->set_year(year);
-        this->set_month(month);
-        this->set_day(day);
+        this->day = day;
+        this->month = month;
+        this->year = year;
+        this->control_inputs();
     }
     int get_day()
     {
