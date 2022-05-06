@@ -8,45 +8,104 @@
 #include <algorithm>
 
 
-void data::add_employee(std::unique_ptr<employee> ptr){
+bool Data::add_employee(std::unique_ptr<Employee> ptr){
     for (auto& i: database){
         if (ptr -> getPESEL() == i -> getPESEL()) 
-            return;
+            return false;
     }
     database.push_back(std::move(ptr));
+    return true;
 }
 
-void data::remove_employee(std::unique_ptr<employee> ptr){
+bool Data::remove_employee(std::unique_ptr<Employee> ptr){
     try{
         database.erase(std::find(database.begin(), database.end(), ptr));
+        return true;
     }
-    catch(...){}
+    catch(...){ 
+        return false; 
+    }
 }
 
-double data::working_hours(std::string PESEL){
+double Data::working_hours(std::string PESEL){
     for (auto& i: database){
         if (PESEL == i -> getPESEL()) 
             return i -> workingHours();
     }
-    return -1;
+    std::cout << "This employee does not exist.\n";
+    return 0;
 }
 
-double data::salary(std::string PESEL){
+double Data::salary(std::string PESEL){
     for (auto& i: database){
         if (PESEL == i -> getPESEL()) 
             return i -> salary();
     }
-    return -1;
+    std::cout << "This employee does not exist.\n";
+    return 0;
 }
 
-void data::print_rates()
+void Data::print_rates()
 {
-    std::cout << "Pracownicy i ich pensje godzinne: " << std::endl;
-     for (auto& i: database){
-        std::cout << i -> getPESEL() << "  " << i -> getHourlyRate() << std::endl;
+    if (get_size() == 0)
+        std::cout << "Lack of employees.";
+
+    else{
+    std::cout << "Employees and their rates: " << std::endl;
+    for (auto& i: database){
+        std::cout << i -> getFirstName() << "  ";
+        std::cout << i -> getLastName() << "  ";
+        std::cout << i -> getHourlyRate() <<"zl \n";
+    }
     }
 }
 
-int data::get_size(){
+bool Data::print_employee(std::string pesel){
+    for (auto& i: database){
+        if (pesel == i -> getPESEL()) {
+            std::cout << "First name: " << i -> getFirstName() << std::endl;
+            std::cout << "Last name: " << i -> getLastName() << std::endl;
+            std::cout << "Email adress: " << i -> getEmailAdress() << std::endl;
+            std::cout << "PESEL: " << i -> getPESEL() << std::endl;
+            std::cout << "Hourly rate: " << i -> getHourlyRate() << std::endl;
+            return true;
+        }
+    }
+    return false;
+}
+
+int Data::get_size(){
     return database.size();
+}
+
+bool Data::edit_employee(std::string pesel, std::string new_first_name, std::string new_last_name, std::string new_email, double new_rate){
+    for (auto& i: database){
+        if (pesel == i -> getPESEL()){
+            i -> setName(new_first_name, new_last_name);
+            i -> setEmailAdress(new_email);
+            i -> setHourlyRate(new_rate);
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Data::employee_roster(std::string pesel){
+    for (auto& i: database){
+        if (pesel == i -> getPESEL()){
+            i -> printRoster();
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Data::make_employee_roster(std::string pesel, Date first_date){
+    for (auto& i: database){
+        if (pesel == i -> getPESEL()){
+            i -> makeRoster(first_date);
+            return true;
+        }
+    }
+    return false;
 }

@@ -5,7 +5,7 @@
 #include <vector>
 #include "Date.h"
 
-class employee
+class Employee
 {
     protected:
     std::string firstName;
@@ -18,13 +18,14 @@ class employee
 
 
     public:
-    employee(std::string, std::string, std::string, std::string, double);
+    Employee(std::string, std::string, std::string, std::string, double);
     // ~employee();
 
     std::string getFirstName() const;
     std::string getLastName() const;
     std::string getEmailAdress() const;
     std::string getPESEL() const;
+    void printRoster();
     double getHourlyRate() const;
     void setName(std::string, std::string);
     void setEmailAdress(std::string);
@@ -32,11 +33,11 @@ class employee
     virtual void setHourlyRate(double) = 0;
     virtual double workingHours() = 0;
     virtual double salary() = 0;
-    // virtual void makeRoster()=0;
-    // virtual void takeVacation(date)=0;
-    // virtual void removeVacation(date)=0;
+    virtual void makeRoster(Date)=0;
+    // virtual void takeVacation(Date)=0;
+    // virtual void removeVacation(Date)=0;
 
-    bool operator==(const employee& second_employee)
+    bool operator==(const Employee& second_employee)
     {
         return(PESEL == second_employee.PESEL);
     }

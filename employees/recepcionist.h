@@ -5,15 +5,16 @@
 #include <vector>
 #include "employee.h"
 
-class recepcionist : public employee
+class Recepcionist : public Employee
 {
     public:
-    recepcionist(std::string, std::string, std::string, std::string, double, std::vector<std::pair<Date, int>>, std::vector<Date>);
+    Recepcionist(std::string, std::string, std::string, std::string, double);
     
     virtual double workingHours();
     virtual double salary();
+    virtual void setHourlyRate(double);
+    virtual void makeRoster(Date);
 
-    // virtual void makeRoster();
     // virtual void takeVacation(date);
     // virtual void removeVacation(date);
 

@@ -5,20 +5,21 @@
 #include <vector>
 #include "employee.h"
 
-class cook : public employee
+class Cook : public Employee
 {
     public:
-    cook(std::string, std::string, std::string, std::string, double, std::vector<std::pair<Date, int>>, std::vector<Date>);
+    Cook(std::string, std::string, std::string, std::string, double);
     
     virtual double workingHours();
     virtual double salary();
+    virtual void setHourlyRate(double);
+    virtual void makeRoster(Date);
 
     // void addDish(std::string name, double prize);
     // void removeDish(std::string name);
     // void changeNameOfDish(std::string newName);
     // void changePrize(double newPrize);
 
-    // virtual void makeRoster();
     // virtual void takeVacation(date);
     // virtual void removeVacation(date);
 
