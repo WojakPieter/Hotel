@@ -1,47 +1,68 @@
 #include <iostream>
 #include "employee.h"
+#include <algorithm>
+#include <vector>
+#include <string> 
 
-employee::employee(std::string firstName1, std::string lastName1, std::string emailAdress1, std::string PESEL1, double hourlyRate1)
+Employee::Employee(std::string firstName1, std::string lastName1, std::string emailAdress1, std::string PESEL1, double hourlyRate1)
 {
     firstName = firstName1;
     lastName = lastName1;
     emailAdress = emailAdress1;
+
+    if (PESEL1.size() == 11)
+        PESEL = PESEL1;
+    else
+        throw std::range_error("PESEL musi miec 11 cyfr");
+
     PESEL = PESEL1;
-    hourlyRate = hourlyRate1;
+
+    if (hourlyRate1 <= 0)
+        hourlyRate = hourlyRate1;
+    else
+        throw std::range_error("Godzinowa stwka musi byc wieksza od zera");
 }
 
-std::string employee::getFirstName() const{
+std::string Employee::getFirstName() const{
     return firstName;
 }
 
-std::string employee::getLastName() const{
+std::string Employee::getLastName() const{
     return lastName;
 }
 
-std::string employee::getEmailAdress() const{
+std::string Employee::getEmailAdress() const{
     return emailAdress;
 }
 
-std::string employee::getPESEL() const{
+std::string Employee::getPESEL() const{
     return PESEL;
 }
 
-double employee::getHourlyRate() const{
+double Employee::getHourlyRate() const{
     return hourlyRate;
 }
 
-void employee::setName(std::string newFirstName, std::string newLastName) {
+void Employee::setName(std::string newFirstName, std::string newLastName) {
     firstName = newFirstName;
     lastName = newLastName;
 }
 
-void employee::setEmailAdress(std::string newEmailAdress) {
+void Employee::setEmailAdress(std::string newEmailAdress) {
     emailAdress = newEmailAdress;
 }
 
-void employee::setPESEL(std::string newPESEL) {
+void Employee::setPESEL(std::string newPESEL) {
     if (newPESEL.size() == 11)
         PESEL = newPESEL;
     else
         throw std::range_error("PESEL musi miec 11 cyfr");
+}
+
+void Employee::printRoster() {
+    std::cout << "Roster for month: date and part of day \n";
+    for(int i = 0; i < roster.size(); i++){
+        roster[i].first.get_date();
+        std::cout << " " << roster[i].second << std::endl;
+    }
 }

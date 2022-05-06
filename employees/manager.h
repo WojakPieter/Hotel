@@ -5,22 +5,22 @@
 #include <vector>
 #include "employee.h"
 
-class manager : public employee
+class Manager : public Employee
 {
     public:
-    manager(std::string, std::string, std::string, std::string, double, std::vector<std::pair<Date, int>>, std::vector<Date>);
+    Manager(std::string, std::string, std::string, std::string, double);
     
     // void dismissEmployee();
     // void hireEmployee();
     // void changeEmployeesRate();
     // void give
+    // void setEmployeeRate(double newRate);
 
-    void setEmployeeRate(double newRate);
     virtual double workingHours();
     virtual double salary();
+    virtual void setHourlyRate(double);
+    virtual void makeRoster(Date);
 
-
-    // virtual void makeRoster();
     // virtual void takeVacation(date);
     // virtual void removeVacation(date);
 

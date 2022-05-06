@@ -6,17 +6,18 @@
 #include "employee.h"
 // #include "guest.h"
 
-class bodyguard : public employee
+class Bodyguard : public Employee
 {
     public:
-    bodyguard(std::string, std::string, std::string, std::string, double, std::vector<std::pair<Date, int>>, std::vector<Date>);
+    Bodyguard(std::string, std::string, std::string, std::string, double);
     
     virtual double workingHours();
     virtual double salary();
+    virtual void setHourlyRate(double);
+    virtual void makeRoster(Date);
 
     // void removeGuest(guest);
 
-    // virtual void makeRoster();
     // virtual void takeVacation(date);
     // virtual void removeVacation(date);
 

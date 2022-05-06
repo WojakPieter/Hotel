@@ -1,25 +1,40 @@
 #include <iostream>
 #include "recepcionist.h"
+#include <algorithm>
+#include <vector>
 #include "employee.h"
-#include "Date.h"
 
-recepcionist::recepcionist(std::string firstName1, std::string lastName1, std::string emailAdress1, std::string PESEL1, double hourlyRate1, std::vector<std::pair<Date, int>> roster1, std::vector<Date> freeDays1)
+Recepcionist::Recepcionist(std::string firstName, std::string lastName, std::string emailAdress, std::string PESEL, double hourlyRate):
+Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)
+{}
+
+double Recepcionist::workingHours()
 {
-    firstName = firstName1;
-    lastName = lastName1;
-    emailAdress = emailAdress1;
-    PESEL = PESEL1;
-    hourlyRate = hourlyRate1;
-    roster = roster1;
-    freeDays = freeDays1;
+    int days = roster.size();
+    return 8*days;
 }
 
-double recepcionist::workingHours()
-{
-    return 8*roster.size();
-}
-
-double recepcionist::salary()
+double Recepcionist::salary()
 {
     return hourlyRate*workingHours();
+}
+
+void Recepcionist::setHourlyRate(double newRate) {
+    if (newRate > 0)
+        hourlyRate = newRate;
+    else
+        throw std::range_error("Stawka godzinowa musi byc wieksza od zera");
+}
+
+void Recepcionist::makeRoster(Date date1){
+    std::vector<std::pair<Date, int>> schedule;
+    for (int i = 1; i <= 31; i++){
+        std::pair <Date, int> relay(date1, rand() % 4);
+        schedule.push_back(relay);
+        date1 += 1;
+    }
+    std::random_shuffle(schedule.begin(), schedule.end());
+    for(int i = 0; i < 25; i++){
+        roster.push_back(schedule[i]);
+    }
 }

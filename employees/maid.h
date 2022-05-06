@@ -4,20 +4,19 @@
 #include <string>
 #include <vector>
 #include "employee.h"
-// #include "Room.h"
 
-class maid : public employee
+class Maid : public Employee
 {
     public:
-    maid(std::string, std::string, std::string, std::string, double);
+    Maid(std::string, std::string, std::string, std::string, double);
     
     virtual double workingHours();
     virtual double salary();
     virtual void setHourlyRate(double);
+    virtual void makeRoster(Date);
 
     // void tidyRoom(int number);
 
-    // virtual void makeRoster();
     // virtual void takeVacation(date);
     // virtual void removeVacation(date);
 
