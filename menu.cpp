@@ -1,91 +1,101 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Date.h"
 #include "menu.h"
 
-menu::menu(std::string name1, std::vector<std::pair<std::string, double>> dishes1, std::vector<std::pair<std::string, double>> drinks1)
+Menu::Menu(std::string name1, std::vector<Dish> food1, std::vector<Dish> drinks1)
 {
     name = name1;
-    dishes = dishes1;
+    dishes = food1;
     drinks = drinks1;
 }
 
-std::string menu::getName(){
+std::string Menu::get_name(){
     return name;
 }
 
-void menu::setName(std::string newName){
-    name = newName;
+void Menu::set_name(std::string new_name){
+    name = new_name;
 }
 
-void menu::addDish(std::string name, double prize){
-    for(unsigned int i = 0; i < dishes.size(); i++)
-        if (name == dishes[i].first)
+void Menu::add_food(Dish new_food){
+    for(unsigned int i = 0; i < food.size(); i++)
+        if (newfood.get_name() == food[i].get_name())
             return;
-    std::pair <std::string, double> dish(name, prize);
-    dishes.push_back(dish);
+    food.push_back(new_food);
 }
 
-void menu::addDrink(std::string name, double prize){
+void Menu::add_drink(Dish new_drink){
     for(unsigned int i = 0; i < drinks.size(); i++)
-        if (name == drinks[i].first)
+        if (newdrink.get_name() == drinks[i].get_name())
             return;
-    std::pair <std::string, double> drink(name, prize);
-    drinks.push_back(drink);
+    drinks.push_back(new_drink);
 }
 
-void menu::removeDish(std::string name){
-    for(unsigned int i = 0; i < dishes.size(); i++)
-        if (name == dishes[i].first)
+void Menu::remove_food(std::string name){
+    for(unsigned int i = 0; i < food.size(); i++)
+        if (name == food[i].get_name())
         {
-            dishes.erase(dishes.begin() + i);
+            food.erase(food.begin() + i);
             break;
         }
 }
 
-void menu::removeDrink(std::string name){
+void Menu::remove_drink(std::string name){
     for(unsigned int i = 0; i < drinks.size(); i++)
-        if (name == drinks[i].first)
+        if (name == drinks[i].get_name())
         {
             drinks.erase(drinks.begin() + i);
             break;
         }
 }
 
-void menu::changeDish(std::string name, double newPrize){
-    for(unsigned int i = 0; i < dishes.size(); i++)
-        if (name == dishes[i].first)
+void Menu::change_food_price(std::string name, double new_price){
+    for(unsigned int i = 0; i < food.size(); i++)
+        if (name == food[i].get_name())
         {
-            dishes[i].second = newPrize;
+            food[i].set_price(new_price);
             break;
         }
 }
 
-void menu::changeDrink(std::string name, double newPrize){
+void Menu::change_drink_price(std::string name, double new_price){
     for(unsigned int i = 0; i < drinks.size(); i++)
-        if (name == drinks[i].first)
+        if (name == drinks[i].get_name())
         {
-            drinks[i].second = newPrize;
+            drinks[i].set_price(new_price);
             break;
         }
 }
 
-int menu::countDishes(){
-    return dishes.size();
+int Menu::count_food(){
+    return food.size();
 }
 
-int menu::countDrinks(){
+int Menu::count_drinks(){
     return drinks.size();
 }
 
 
-double menu::findPrize(std::string name){
-    for(unsigned int i = 0; i < dishes.size(); i++)
-        if (name == dishes[i].first)
-            return dishes[i].second;
+double Menu::find_price(std::string name){
+    for(unsigned int i = 0; i < food.size(); i++)
+        if (name == food[i].get_name())
+            return food[i].get_price();
     
     for(unsigned int i = 0; i < drinks.size(); i++)
-        if (name == drinks[i].first)
-            return drinks[i].second;
+        if (name == drinks[i].get_name())
+            return drinks[i].get_price();
+    return 0;
 }
+
+double Menu::find_preparation_cost(std::string name){
+     for(unsigned int i = 0; i < food.size(); i++)
+        if (name == food[i].get_name())
+            return food[i].get_preparation_cost();
+    
+    for(unsigned int i = 0; i < drinks.size(); i++)
+        if (name == drinks[i].get_name())
+            return drinks[i].get_preparation_cost();
+    return 0;
+}
+
