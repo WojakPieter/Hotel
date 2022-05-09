@@ -3,30 +3,31 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Date.h"
+#include "dish.h"
 
-class menu
+class Menu
 {
     std::string name;
-    std::vector<std::pair<std::string, double>> dishes;
-    std::vector<std::pair<std::string, double>> drinks;
+    std::vector<Dish> food;
+    std::vector<Dish> drinks;
 
     public:
-    menu(std::string, std::vector<std::pair<std::string, double>>, std::vector<std::pair<std::string, double>>);
+    Menu(std::string, std::vector<Dish>, std::vector<Dish>);
     
-    std::string getName();
-    void setName(std::string);
+    std::string get_name();
+    void set_name(std::string);
 
-    void addDish(std::string, double);
-    void addDrink(std::string, double);
-    void removeDish(std::string);
-    void removeDrink(std::string);
-    void changeDish(std::string, double);
-    void changeDrink(std::string, double);
+    void add_food(Dish);
+    void add_drink(Dish);
+    void remove_food(std::string);
+    void remove_drink(std::string);
+    void change_food_price(std::string, double);
+    void change_drink_price(std::string, double);
 
-    int countDishes();
-    int countDrinks();
+    int count_food();
+    int count_drinks();
 
-    double findPrize(std::string);
+    double find_price(std::string);
+    double find_preparation_cost(std::string);
 };
 #endif
