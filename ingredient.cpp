@@ -1,4 +1,4 @@
-#include "ingredient.h"
+#include "ingredient.hpp"
 
 Ingredient::Ingredient(std::string name, int quantity)
 {
