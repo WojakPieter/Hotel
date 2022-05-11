@@ -112,13 +112,18 @@ public:
 
     Date operator+=(int days)
     {
-        int old_month = month;
-        if(day + days > this->get_month_length(month))
+        if(day + days > get_month_length(month))
         {
-            if(month == 12) {year++; month = 1;}
-            else month++;
+            day += days;
+            do
+            {
+                if(month == 12) {month = 1; year++;}
+                else month++;
+                day -= get_month_length(month);
+            }
+            while(day > get_month_length(month));
         }
-        day = (day + days - 1) % this->get_month_length(old_month) + 1;
+        else day += days;
         return *this;
     }
 
@@ -146,9 +151,16 @@ public:
     {
         if(day - days < 0)
         {
-            if(month == 1) {year--; month = 12; days = (day - days) % 31;}
-            else {--month; day = ((day - days + 1) % get_month_length(month)) + 1;}
+            day -= days;
+            do
+            {
+                if(month == 1) {month = 12; year--;}
+                else month--;
+                day += get_month_length(month);
+            }
+            while(day <= 0);
         }
+        else day -= days;
         return *this;
     }
 
