@@ -3,7 +3,7 @@
 #include "menu.h"
 #include <algorithm>
 #include <vector>
-#include <string> 
+#include <string>
 
 Guest::Guest(std::string first_name_1, std::string last_name_1, std::string email_1, std::string pesel_1, double money_1, int room_number_1)
 {
@@ -112,7 +112,7 @@ void Guest::order_waking_up(int hour){
     if ((price+receipt) > money)
         return;
     receipt += price;
-} // godzina podana i sprawdzic na ktorej zmianie 
+} // godzina podana i sprawdzic na ktorej zmianie
 
 void Guest::order_tidying_room(){
     int price = 30;
@@ -125,3 +125,4 @@ void Guest::order_tidying_room(){
 //     room_number = room.get_number();
 //     receipt += room.get_price();
 // }
+
