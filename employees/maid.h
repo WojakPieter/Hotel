@@ -12,13 +12,13 @@ class Maid : public Employee
     
     virtual double workingHours();
     virtual double salary();
-    virtual void setHourlyRate(double);
+    virtual void setHourlyRate();
     virtual void makeRoster(Date);
 
-    // void tidyRoom(int number);
+    void tidyRoom(Room room);
 
-    // virtual void takeVacation(date);
-    // virtual void removeVacation(date);
+    virtual void takeVacation(date);
+    virtual void removeVacation(date);
 
 };
 #endif

@@ -21,13 +21,14 @@ class Menu
     void add_drink(Dish);
     void remove_food(std::string);
     void remove_drink(std::string);
-    void change_food_price(std::string, double);
-    void change_drink_price(std::string, double);
+    void change_food_price(std::string, double, double);
+    void change_drink_price(std::string, double, double);
 
     int count_food();
     int count_drinks();
 
     double find_price(std::string);
     double find_preparation_cost(std::string);
+    double find_preparation_time(std::string name);
 };
 #endif

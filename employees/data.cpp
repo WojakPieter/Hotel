@@ -55,7 +55,7 @@ void Data::print_rates()
     for (auto& i: database){
         std::cout << i -> getFirstName() << "  ";
         std::cout << i -> getLastName() << "  ";
-        std::cout << i -> getHourlyRate() <<"zl \n";
+        std::cout << i -> gethourlyRate() <<"zl \n";
     }
     }
 }
@@ -67,7 +67,7 @@ bool Data::print_employee(std::string pesel){
             std::cout << "Last name: " << i -> getLastName() << std::endl;
             std::cout << "Email adress: " << i -> getEmailAdress() << std::endl;
             std::cout << "PESEL: " << i -> getPESEL() << std::endl;
-            std::cout << "Hourly rate: " << i -> getHourlyRate() << std::endl;
+            std::cout << "Hourly rate: " << i -> gethourlyRate() << std::endl;
             return true;
         }
     }
@@ -78,12 +78,12 @@ int Data::get_size(){
     return database.size();
 }
 
-bool Data::edit_employee(std::string pesel, std::string new_first_name, std::string new_last_name, std::string new_email, double new_rate){
+bool Data::edit_employee(std::string pesel, std::string new_first_name, std::string new_last_name, std::string new_email){
     for (auto& i: database){
         if (pesel == i -> getPESEL()){
             i -> setName(new_first_name, new_last_name);
             i -> setEmailAdress(new_email);
-            i -> setHourlyRate(new_rate);
+            i -> setHourlyRate();
             return true;
         }
     }

@@ -11,31 +11,28 @@ Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)
 
 double Bodyguard::workingHours()
 {
-    int days = roster.size();
-    return 10*days;
+    return getWorkingDays("bodyguard")*getWorkingHours("bodyguard");
 }
 
 double Bodyguard::salary()
 {
-    return hourlyRate*workingHours();
+    return getHourlyRate("bodyguard")*getWorkingHours("bodyguard");
 }
 
-void Bodyguard::setHourlyRate(double newRate) {
-    if (newRate > 0)
-        hourlyRate = newRate;
-    else
-        throw std::range_error("Stawka godzinowa musi byc wieksza od zera");
+void Bodyguard::setHourlyRate() {
+    hourlyRate = getHourlyRate("bodyguard");
 }
 
 void Bodyguard::makeRoster(Date date1){
     std::vector<std::pair<Date, int>> schedule;
     for (int i = 1; i <= 31; i++){
-        std::pair <Date, int> relay(date1, rand() % 4);
+        std::pair <Date, int> relay(date1, (rand() % 3)+1);
         schedule.push_back(relay);
         date1 += 1;
     }
+    roster = {};
     std::random_shuffle(schedule.begin(), schedule.end());
-    for(int i = 0; i < 25; i++){
+    for(int i = 0; i < (getWorkingDays("bodyguard")-1); i++){
         roster.push_back(schedule[i]);
     }
 }

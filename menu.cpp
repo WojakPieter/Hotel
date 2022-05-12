@@ -50,20 +50,22 @@ void Menu::remove_drink(std::string name){
         }
 }
 
-void Menu::change_food_price(std::string name, double new_price){
+void Menu::change_food_price(std::string name, double new_price, double preparation_cost){
     for(unsigned int i = 0; i < food.size(); i++)
         if (name == food[i].get_name())
         {
             food[i].set_price(new_price);
+            food[i].set_preparation_cost(preparation_cost);
             break;
         }
 }
 
-void Menu::change_drink_price(std::string name, double new_price){
+void Menu::change_drink_price(std::string name, double new_price, double preparation_cost){
     for(unsigned int i = 0; i < drinks.size(); i++)
         if (name == drinks[i].get_name())
         {
             drinks[i].set_price(new_price);
+            drinks[i].set_preparation_cost(preparation_cost);
             break;
         }
 }
@@ -99,3 +101,13 @@ double Menu::find_preparation_cost(std::string name){
     return 0;
 }
 
+double Menu::find_preparation_time(std::string name){
+     for(unsigned int i = 0; i < food.size(); i++)
+        if (name == food[i].get_name())
+            return food[i].get_preparation_time();
+    
+    for(unsigned int i = 0; i < drinks.size(); i++)
+        if (name == drinks[i].get_name())
+            return drinks[i].get_preparation_time();
+    return 0;
+}

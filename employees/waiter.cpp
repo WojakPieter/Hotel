@@ -12,31 +12,32 @@ Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)
 
 double Waiter::workingHours()
 {
-    int days = roster.size();
-    return 8*days;
+    return getWorkingDays("waiter")*getWorkingHours("waiter");
 }
 
 double Waiter::salary()
 {
-    return hourlyRate*workingHours();
+    return getHourlyRate("waiter")*getWorkingHours("waiter");
 }
 
-void Waiter::setHourlyRate(double newRate) {
-    if (newRate > 0)
-        hourlyRate = newRate;
-    else
-        throw std::range_error("Stawka godzinowa musi byc wieksza od zera");
+void Waiter::setHourlyRate() {
+    hourlyRate = getHourlyRate("waiter");
 }
 
 void Waiter::makeRoster(Date date1){
     std::vector<std::pair<Date, int>> schedule;
     for (int i = 1; i <= 31; i++){
-        std::pair <Date, int> relay(date1, rand() % 3);
+        std::pair <Date, int> relay(date1, (rand() % 2)+1);
         schedule.push_back(relay);
         date1 += 1;
     }
+    roster = {};
     std::random_shuffle(schedule.begin(), schedule.end());
-    for(int i = 0; i < 25; i++){
+    for(int i = 0; i < (getWorkingDays("waiter")-1); i++){
         roster.push_back(schedule[i]);
     }
+}
+
+void Waiter::bring_the_dish(){
+    x += 0.4; //kwadrans na rozdanie dania do pokoju
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "employee.h"
 #include <algorithm>
+#include <fstream>
 #include <vector>
 #include <string> 
 
@@ -17,10 +18,18 @@ Employee::Employee(std::string firstName1, std::string lastName1, std::string em
 
     PESEL = PESEL1;
 
-    if (hourlyRate1 <= 0)
+    if (hourlyRate1 > 0)
         hourlyRate = hourlyRate1;
     else
         throw std::range_error("Godzinowa stwka musi byc wieksza od zera");
+}
+
+void Employee::start_day() const{
+    x = 0;
+}
+
+double Employee::gethourlyRate() const{
+    return hourlyRate;
 }
 
 std::string Employee::getFirstName() const{
@@ -39,8 +48,81 @@ std::string Employee::getPESEL() const{
     return PESEL;
 }
 
-double Employee::getHourlyRate() const{
-    return hourlyRate;
+void Employee::sethourlyRate(double new_rate){
+    if (new_rate > 0)
+        hourlyRate = new_rate;
+}
+
+double Employee::getHourlyRate(std::string employee_name) const{
+    std::ifstream outfile;
+    outfile.open("working_plan.txt");
+    if (!outfile) {
+        throw std::logic_error("Couldn't open the file!");
+    }
+    std::string firstLine;
+    getline (outfile,firstLine);
+    std::string employee;
+    double HourlyRate;
+    int workingDays, workingHours;
+    for (int i = 1; i <= 7; i ++)
+    {
+        outfile >> employee >> HourlyRate >> workingDays >> workingHours;
+        if (employee == employee_name)
+        {
+            outfile.close();
+            return HourlyRate;
+        }
+    }
+    outfile.close();
+    return 0;
+}
+
+int Employee::getWorkingDays(std::string employee_name) const{
+    std::ifstream outfile;
+    outfile.open("working_plan.txt");
+    if (!outfile) {
+        throw std::logic_error("Couldn't open the file!");
+    }
+    std::string firstLine;
+    getline (outfile,firstLine);
+    std::string employee;
+    double HourlyRate;
+    int workingDays, workingHours;
+    for (int i = 1; i <= 7; i ++)
+    {
+        outfile >> employee >> HourlyRate >> workingDays >> workingHours;
+        if (employee == employee_name)
+        {
+            outfile.close();
+            return workingDays;
+        }
+    }
+    outfile.close();
+    return 0;
+}
+
+int Employee::getWorkingHours(std::string employee_name) const{
+    std::ifstream outfile;
+    outfile.open("working_plan.txt");
+    if (!outfile) {
+        throw std::logic_error("Couldn't open the file!");
+    }
+    std::string firstLine;
+    getline (outfile,firstLine);
+    std::string employee;
+    double HourlyRate;
+    int workingDays, workingHours;
+    for (int i = 1; i <= 7; i ++)
+    {
+        outfile >> employee >> HourlyRate >> workingDays >> workingHours;
+        if (employee == employee_name)
+        {
+            outfile.close();
+            return workingHours;
+        }
+    }
+    outfile.close();
+    return 0;
 }
 
 void Employee::setName(std::string newFirstName, std::string newLastName) {
@@ -61,7 +143,7 @@ void Employee::setPESEL(std::string newPESEL) {
 
 void Employee::printRoster() {
     std::cout << "Roster for month: date and part of day \n";
-    for(int i = 0; i < roster.size(); i++){
+    for(long unsigned int i = 0; i < roster.size(); i++){
         roster[i].first.get_date();
         std::cout << " " << roster[i].second << std::endl;
     }
