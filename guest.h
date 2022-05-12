@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Date.h"
+#include "date.cpp"
 
 class Guest
 {
@@ -14,10 +14,12 @@ class Guest
     double money;
     int room_number;
     double receipt;
+    Date first_day, last_day;
+    Room room; //mysle ze dobrze bedzie zeby obiekt klasy Room byl atrybutem goscia
 
     public:
     Guest(std::string, std::string, std::string, std::string, double, int);
-    
+
     // gettery i settery
     std::string get_first_name();
     std::string get_last_name();
@@ -34,12 +36,13 @@ class Guest
     void set_receipt(double);
     void set_room_number(int);
 
-    void change_date_of_stay(Date, Date); //usuniecie z kalendarza pokoju oraz zwrot pewnej kwoty
+    bool change_date_of_stay(Date); //usuniecie z kalendarza pokoju oraz zwrot pewnej kwoty
     void order_taxi();
     void order_dish(std::string);
-    void order_waking_up(int); // godzina podana i sprawdzic na ktorej zmianie 
+    void order_waking_up(int); // godzina podana i sprawdzic na ktorej zmianie
     void order_tidying_room();
-    // void book_room();
+    bool book_room();
 
 };
 #endif
+
