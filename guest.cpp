@@ -5,14 +5,14 @@
 #include <vector>
 #include <string>
 
-Guest::Guest(std::string first_name_1, std::string last_name_1, std::string email_1, std::string pesel_1, double money_1, int room_number_1)
+Guest::Guest(std::string first_name_1, std::string last_name_1, std::string email_1, std::string pesel_1, double money_1)
 {
     first_name = first_name_1;
     last_name = last_name_1;
     email_adress = email_1;
     PESEL = pesel_1;
     money = money_1;
-    room_number = room_number_1; //Sajmon sugeruje usunac to z konstruktora, gdyz na poczatku nie wiemy jaki gosc bedzie mial pokoj :)
+    room_number = room_number_1;
 }
 
 std::string Guest::get_first_name(){
