@@ -12,7 +12,7 @@ Guest::Guest(std::string first_name_1, std::string last_name_1, std::string emai
     email_adress = email_1;
     PESEL = pesel_1;
     money = money_1;
-    room_number = room_number_1;
+    room_number = room_number_1; //Sajmon sugeruje usunac to z konstruktora, gdyz na poczatku nie wiemy jaki gosc bedzie mial pokoj :)
 }
 
 std::string Guest::get_first_name(){
@@ -76,27 +76,34 @@ void Guest::order_taxi(){
     receipt += price;
 }
 
-void Guest::change_date_of_stay(Date old_last_date, Date new_last_date){
-    if (old_last_date >= new_last_date){
-        double days = new_last_date - old_last_date;
+bool Guest::change_date_of_stay(Date new_last_date){
+    if (last_day >= new_last_date){
+        double days = new_last_date - last_day;
         receipt = receipt - days*room.get_price();
-        while(old_last_date > new_last_date)
+        while(last_day > new_last_date)
         {
-            room.remove_day(new_last_date);
-            new_last_date += 1;
+            room.remove_reserved_day(new_last_date);
+            new_last_date++;
         }
     }
     else{
-        double days = old_last_date - new_last_date;
+        double days = last_day - new_last_date;
         if(days*room.get_price()+receipt >= money)
         {
             receipt += days*room.get_price();
-            while(old_last_date <= new_last_date)
+            while(last_day < new_last_date)
             {
-                room.add_day(old_last_date);
-                old_last_date += 1;
+                current_checked_date = last_day + 1;
+                if(room.is_reserved(current_checked_date)) return false;
             }
+            while(last_day <= new_last_date)
+            {
+                room.add_reserved_day(last_day);
+                last_day++;
+            }
+            return true;
         }
+        else return false;
     }
 } //usuniecie z kalendarza pokoju oraz zwrot pewnej kwoty
 
@@ -121,8 +128,19 @@ void Guest::order_tidying_room(){
     receipt += price;
 }
 
-// void Guest::book_room(Room room){
-//     room_number = room.get_number();
-//     receipt += room.get_price();
-// }
+bool Guest::book_room(Room room, Date arrival_date, Date leave_date){
+     Date iter;
+     for(iter=arrival_date; iter <= leave_date; iter++)
+     {
+         if(room.is_reserved(iter)) return false;
+     }
+     for(iter=arrival_date; iter <= leave_date; iter++)
+     {
+         room.add_reserved_day(iter);
+     }
+     this->room = room;
+     room_number = room.get_number();
+     receipt += room.get_price();
+     return true;
+}
 
