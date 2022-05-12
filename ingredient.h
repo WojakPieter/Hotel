@@ -1,3 +1,5 @@
+#ifndef CPP_PROJECT_INGREDIENT_H
+#define CPP_PROJECT_INGREDIENT_H
 #include <iostream>
 
 class Ingredient
@@ -27,3 +29,5 @@ public:
 
     friend std::ostream& operator<<(std::ostream& os, const Ingredient& i);
 };
+
+#endif

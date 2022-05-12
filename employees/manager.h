@@ -10,19 +10,17 @@ class Manager : public Employee
     public:
     Manager(std::string, std::string, std::string, std::string, double);
     
-    // void dismissEmployee();
-    // void hireEmployee();
-    // void changeEmployeesRate();
-    // void give
-    // void setEmployeeRate(double newRate);
+    void dismissEmployee(std::string, std::vector <employee>);
+    void hireEmployee(Employee, std::vector <employee>);
+    void setEmployeeRate(std::string, double, std::vector <employee>);
 
     virtual double workingHours();
     virtual double salary();
-    virtual void setHourlyRate(double);
+    virtual void setHourlyRate();
     virtual void makeRoster(Date);
 
-    // virtual void takeVacation(date);
-    // virtual void removeVacation(date);
+    virtual void takeVacation(date);
+    virtual void removeVacation(date);
 
 };
 #endif

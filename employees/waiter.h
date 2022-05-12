@@ -12,9 +12,10 @@ class Waiter : public Employee
     
     virtual double workingHours();
     virtual double salary();
-    virtual void setHourlyRate(double);
+    virtual void setHourlyRate();
     virtual void makeRoster(Date);
 
+    void bring_the_dish();
     // double receipt();
 
     // virtual void takeVacation(date)=0;

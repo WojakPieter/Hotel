@@ -19,7 +19,7 @@ class Data
     double working_hours(std::string PESEL);
     double salary(std::string PESEL);
     bool print_employee(std::string);
-    bool edit_employee(std::string, std::string, std::string, std::string, double);
+    bool edit_employee(std::string, std::string, std::string, std::string);
     void print_rates();
     bool employee_roster(std::string pesel);
     bool make_employee_roster(std::string, Date);

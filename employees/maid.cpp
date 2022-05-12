@@ -10,20 +10,16 @@ Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)
 
 double Maid::workingHours()
 {
-    int days = roster.size();
-    return 9*days;
+    return getWorkingDays("maid")*getWorkingHours("maid");
 }
 
 double Maid::salary()
 {
-    return hourlyRate*workingHours();
+    return getHourlyRate("maid")*getWorkingHours("maid");
 }
 
-void Maid::setHourlyRate(double newRate) {
-    if (newRate > 0)
-        hourlyRate = newRate;
-    else
-        throw std::range_error("Stawka godzinowa musi byc wieksza od zera");
+void Maid::setHourlyRate() {
+    hourlyRate = getHourlyRate("maid");
 }
 
 void Maid::makeRoster(Date date1){
@@ -35,8 +31,14 @@ void Maid::makeRoster(Date date1){
         schedule.push_back(relay);
         date1 += 1;
     }
+    roster = {};
     std::random_shuffle(schedule.begin(), schedule.end());
-    for(int i = 0; i < 25; i++){
+    for(int i = 0; i < (getWorkingDays("maid")-1); i++){
         roster.push_back(schedule[i]);
     }
+}
+
+void Maid::tidyRoom(Room room){
+    room.set_parameters(false);
+    x += 1;
 }
