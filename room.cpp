@@ -1,4 +1,5 @@
 #include "room.hpp"
+#include <algorithm>
 
 double Room::get_area()
 {
@@ -15,30 +16,96 @@ int Room::get_number()
     return number;
 }
 
+char Room::get_type()
+{
+    return type;
+}
+
 Room::Room(int number, bool high_standard, bool family)
 {
     this->number = number;
     this->high_standard = high_standard;
     this->family = family;
+    base_price = 150;
+    base_area = 50;
 }
 
-OnePersonRoom::OnePersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, false)
+void Room::set_parameters(double price_multiplier_low, double area_multiplier_low,
+                          double price_multiplier_high, double area_multiplier_high)
 {
-    this->set_parameters();
+    if(high_standard)
+    {
+        price = price_multiplier_high * base_price;
+        area = area_multiplier_high * base_area;
+    }
+    else
+    {
+        price = price_multiplier_low * base_price;
+        area = area_multiplier_low * base_area;
+    }
+}
+
+OnePersonRoom::OnePersonRoom(int number, bool high_standard) : Room(number, high_standard, false)
+{
+    type = '1';
+    Room::set_parameters(0.7, 0.9, 0.85, 1.1);
+}
+
+TwoPersonRoom::TwoPersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
+{
+    type = '2';
+    Room::set_parameters(0.75, 0.9, 0.9, 1.15);
+}
+
+ThreePersonRoom::ThreePersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
+{
+    type = '3';
+    Room::set_parameters(0.8, 0.95, 0.95, 1.2);
+}
+
+FourPersonRoom::FourPersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
+{
+    type = '4';
+    Room::set_parameters(0.85, 1, 1, 1.2);
+}
+
+Studio::Studio(int number) : Room(number, false, false)
+{
+    type = 's';
+    Room::set_parameters(0.8, 0.95, 0, 0);
+}
+
+Apartment::Apartment(int number) : Room(number, true, true)
+{
+    type = 'a';
+    Room::set_parameters(0, 0, 1.4, 1.5);
 }
 
 bool Room::is_reserved(Date date)
 {
-    for(std::pair<Date, Date> interval : reserved_days)
-    {
-        if(date <= interval.second && date >= interval.first)   return true;
-    }
-    return false;
+    return(std::count(reserved_days.begin(), reserved_days.end(), date));
 }
 
 bool Room::is_high_standard()
 {
     return high_standard;
+}
+
+bool Room::is_family()
+{
+    return family;
+}
+
+void Room::add_reserved_day(Date d)
+{
+    if(is_reserved(d)) return;
+    reserved_days.push_back(d);
+}
+
+void Room::remove_reserved_day(Date d)
+{
+    if(!(is_reserved(d))) return;
+    reserved_days.erase(std::find(reserved_days.begin(), reserved_days.end(), d));
 }
 
 void OnePersonRoom::set_parameters()
