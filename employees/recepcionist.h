@@ -13,12 +13,8 @@ class Recepcionist : public Employee
     virtual double workingHours();
     virtual double salary();
     virtual void setHourlyRate();
-    virtual void makeRoster(Date);
+    virtual void makeRoster(std::vector<std::pair<Date, int>>);
 
     void book_room(Room, Date, Date, Guest);
-
-    virtual void takeVacation(date);
-    virtual void removeVacation(date);
-
 };
 #endif

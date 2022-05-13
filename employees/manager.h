@@ -17,10 +17,7 @@ class Manager : public Employee
     virtual double workingHours();
     virtual double salary();
     virtual void setHourlyRate();
-    virtual void makeRoster(Date);
-
-    virtual void takeVacation(date);
-    virtual void removeVacation(date);
+    virtual void makeRoster(std::vector<std::pair<Date, int>>);
 
 };
 #endif

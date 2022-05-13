@@ -13,13 +13,9 @@ class Waiter : public Employee
     virtual double workingHours();
     virtual double salary();
     virtual void setHourlyRate();
-    virtual void makeRoster(Date);
+    virtual void makeRoster(std::vector<std::pair<Date, int>>);
 
     void bring_the_dish();
     // double receipt();
-
-    // virtual void takeVacation(date)=0;
-    // virtual void removeVacation(date)=0;
-
 };
 #endif

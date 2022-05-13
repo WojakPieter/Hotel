@@ -1,4 +1,4 @@
-#include "room.hpp"
+#include "room.h"
 #include <algorithm>
 
 double Room::get_area()

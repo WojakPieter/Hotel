@@ -13,15 +13,11 @@ class Cook : public Employee
     virtual double workingHours();
     virtual double salary();
     virtual void setHourlyRate();
-    virtual void makeRoster(Date);
+    virtual void makeRoster(std::vector<std::pair<Date, int>>);
 
     void addDish(std::string, double, double, std::vector<Ingredient>, std::vector<std::string>, Menu);
     void changeDishPrice(std::string, double, double, Menu);
     void removeDish(std::string, Menu);
     void doDish(std::string);
-
-    virtual void takeVacation(date);
-    virtual void removeVacation(date);
-
 };
 #endif
