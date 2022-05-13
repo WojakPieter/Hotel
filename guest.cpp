@@ -129,18 +129,18 @@ void Guest::order_tidying_room(){
 }
 
 bool Guest::book_room(Room room, Date arrival_date, Date leave_date){
-     Date iter;
-     for(iter=arrival_date; iter <= leave_date; iter++)
-     {
-         if(room.is_reserved(iter)) return false;
-     }
-     for(iter=arrival_date; iter <= leave_date; iter++)
-     {
-         room.add_reserved_day(iter);
-     }
-     this->room = room;
-     room_number = room.get_number();
-     receipt += room.get_price();
-     return true;
+    Date iter;
+    for(iter=arrival_date; iter <= leave_date; iter++)
+    {
+        if(room.is_reserved(iter)) return false;
+    }
+    for(iter=arrival_date; iter <= leave_date; iter++)
+    {
+        room.add_reserved_day(iter);
+    }
+    this->room = room;
+    room_number = room.get_number();
+    receipt += room.get_price();
+    return true;
 }
 

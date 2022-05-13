@@ -15,12 +15,11 @@ class Guest
     int room_number;
     double receipt;
     Date first_day, last_day;
-    Room room; //mysle ze dobrze bedzie zeby obiekt klasy Room byl atrybutem goscia
+    Room room; 
 
     public:
     Guest(std::string, std::string, std::string, std::string, double, int);
 
-    // gettery i settery
     std::string get_first_name();
     std::string get_last_name();
     std::string get_email_adress();

@@ -148,3 +148,14 @@ void Employee::printRoster() {
         std::cout << " " << roster[i].second << std::endl;
     }
 }
+
+void Employee::takeVacation(Date new_date){
+    for(unsigned int i = 0; i < freeDays.size(); i++)
+        if (new_date == freeDays[i])
+            return;
+    freeDays.push_back(new_date);
+}
+
+void Employee::removeVacation(Date date){
+    freeDays.erase(std::find(freeDays.begin(), freeDays.end(), date));
+}

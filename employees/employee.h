@@ -38,10 +38,10 @@ class Employee
     virtual void setHourlyRate() = 0;
     virtual double workingHours() = 0;
     virtual double salary() = 0;
-    virtual void makeRoster(Date)=0;
+    virtual void makeRoster(std::vector<std::pair<Date, int>>)=0;
     void start_day() const;
-    // virtual void takeVacation(Date)=0;
-    // virtual void removeVacation(Date)=0;
+    void takeVacation(Date);
+    void removeVacation(Date);
 
     bool operator==(const Employee& second_employee)
     {
