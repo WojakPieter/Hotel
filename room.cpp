@@ -30,6 +30,11 @@ Room::Room(int number, bool high_standard, bool family)
     base_area = 50;
 }
 
+std::pair<double,double> Room::get_maintain_costs_function()
+{
+    return maintain_costs_function;
+}
+
 void Room::set_parameters(double price_multiplier_low, double area_multiplier_low,
                           double price_multiplier_high, double area_multiplier_high)
 {
@@ -45,39 +50,50 @@ void Room::set_parameters(double price_multiplier_low, double area_multiplier_lo
     }
 }
 
+int Room::quantity_of_reserved_days(Date first_date, Date second_date)
+{
+    return std::count_if(reserved_days.begin(), reserved_days.end(), [&](Date d){return(first_date <= d && d <= second_date);});
+}
+
 OnePersonRoom::OnePersonRoom(int number, bool high_standard) : Room(number, high_standard, false)
 {
     type = '1';
+    maintain_costs_function = std::make_pair(1, 10);
     Room::set_parameters(0.7, 0.9, 0.85, 1.1);
 }
 
 TwoPersonRoom::TwoPersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
 {
     type = '2';
+    maintain_costs_function = std::make_pair(1, 15);
     Room::set_parameters(0.75, 0.9, 0.9, 1.15);
 }
 
 ThreePersonRoom::ThreePersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
 {
     type = '3';
+    maintain_costs_function = std::make_pair(2, 15);
     Room::set_parameters(0.8, 0.95, 0.95, 1.2);
 }
 
 FourPersonRoom::FourPersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
 {
     type = '4';
+    maintain_costs_function = std::make_pair(3, 15);
     Room::set_parameters(0.85, 1, 1, 1.2);
 }
 
 Studio::Studio(int number) : Room(number, false, false)
 {
     type = 's';
+    maintain_costs_function = std::make_pair(4, 20);
     Room::set_parameters(0.8, 0.95, 0, 0);
 }
 
 Apartment::Apartment(int number) : Room(number, true, true)
 {
     type = 'a';
+    maintain_costs_function = std::make_pair(5, 25);
     Room::set_parameters(0, 0, 1.4, 1.5);
 }
 
@@ -108,19 +124,6 @@ void Room::remove_reserved_day(Date d)
     reserved_days.erase(std::find(reserved_days.begin(), reserved_days.end(), d));
 }
 
-void OnePersonRoom::set_parameters()
-{
-        if(high_standard)
-        {
-            area = 25;
-            price = 100;
-        }
-        else
-        {
-            area = 15;
-            price = 80;
-        }
-}
 
 int OnePersonRoom::get_number_of_beds()
 {
@@ -133,19 +136,6 @@ int OnePersonRoom::get_number_of_required_workers()
     else return 1;
 }
 
-void TwoPersonRoom::set_parameters()
-{
-        if(high_standard)
-        {
-            area = 35;
-            price = 110;
-        }
-        else
-        {
-            area = 25;
-            price = 90;
-        }
-}
 
 int TwoPersonRoom::get_number_of_beds()
 {
@@ -159,19 +149,6 @@ int TwoPersonRoom::get_number_of_required_workers()
     else return 1;
 }
 
-void ThreePersonRoom::set_parameters()
-{
-        if(high_standard)
-        {
-            area = 55;
-            price = 130;
-        }
-        else
-        {
-            area = 45;
-            price = 100;
-        }
-}
 
 int ThreePersonRoom::get_number_of_beds()
 {
@@ -185,19 +162,6 @@ int ThreePersonRoom::get_number_of_required_workers()
     else return 1;
 }
 
-void FourPersonRoom::set_parameters()
-{
-        if(high_standard)
-        {
-            area = 65;
-            price = 160;
-        }
-        else
-        {
-            area = 45;
-            price = 120;
-        }
-}
 
 int FourPersonRoom::get_number_of_beds()
 {
@@ -211,11 +175,6 @@ int FourPersonRoom::get_number_of_required_workers()
     else return 2;
 }
 
-void Studio::set_parameters()
-{
-        area = 45;
-        price = 120;
-}
 
 int Studio::get_number_of_beds()
 {
@@ -227,11 +186,6 @@ int Studio::get_number_of_required_workers()
     return 5;
 }
 
-void Apartment::set_parameters()
-{
-    area = 80;
-    price = 200;
-}
 
 int Apartment::get_number_of_beds()
 {

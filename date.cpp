@@ -1,4 +1,5 @@
 #include <iostream>
+#pragma once
 
 class Date
 {
@@ -164,6 +165,19 @@ public:
         return *this;
     }
 
+    int operator-(const Date& date)
+    {
+        int i=0;
+        if(*this < date)
+        {
+            while(*this + i < date) i++;
+        }
+        else
+        {
+            while(*this - i < date) i--;
+        }
+        return i;
+    }
 
     Date operator-(int days)
     {

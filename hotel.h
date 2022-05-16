@@ -3,10 +3,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Date.h"
 #include "guest.h"
-#include "data.h"
-#include "data_room.h"
+#include "employees/data.h"
+#include "database.hpp"
 #include "menu.h"
 
 class Hotel
@@ -18,20 +17,29 @@ class Hotel
     Data employees; //(na tych bazach danych z pracy domowej)
     Data_room rooms;
     Menu menu;
+    Date current_date;
 
     public:
-    Hotel(std::string, int, double, std::vector<Guest>, Data, Data_room, Menu);
+    Hotel(std::string, int, double, Data, Data_room, Menu);
+
+    std::string get_name();
+    int get_stars();
+    double get_budget();
+    Date get_current_date();
 
     void set_name(std::string new_name);
     void set_stars(int new_stars);
     void set_budget(double new_budget);
     void set_menu(Menu new_menu);
-    // + settery
+    void increment_current_date();
 
-    void check_in(); //gosc i losowanie mu pokoju
+    void increase_budget(double income);
+    bool decrease_budget(double outgo);
+    bool check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period); //gosc i losowanie mu pokoju
     void check_out(Guest);
-    void shortening_the_stay(Guest, Date);
-    void handing_out_salary();
+    bool shortening_the_stay(Guest, Date);
+    bool handing_out_salary();
     void creating_schedule(); //odwolanie u kazdego pracownika do funkcji make_roster
     void paying_the_bills();
-}
+};
+#endif

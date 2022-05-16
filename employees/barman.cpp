@@ -4,7 +4,7 @@
 #include <vector>
 #include <fstream>
 #include "barman.h"
-#include "menu.h"
+#include "../menu.h"
 
 Barman::Barman(std::string firstName, std::string lastName, std::string emailAdress, std::string PESEL, double hourlyRate):
 Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)
@@ -27,6 +27,8 @@ void Barman::setHourlyRate() {
 void Barman::makeRoster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
     std::vector<std::pair<Date, int>> new_schedule = schedule;
+    auto pend = std::remove_if(schedule.begin(), schedule.end(), [&](std::pair<double, double> changes){return changes.second == 3;});
+    schedule.erase(pend, schedule.end());
     for(unsigned int i = 0; i < freeDays.size(); i++)
         new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), freeDays[i]));
 
@@ -52,7 +54,7 @@ void Barman::removeDrink(std::string name, Menu menu){
 void Barman::doDrink(std::string name){
     double time = menu.findPreparationTime(name);
     x += time;
-    // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana 
+    // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana
 }
 
 std::string Barman::get_type(){

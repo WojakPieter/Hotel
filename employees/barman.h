@@ -4,12 +4,14 @@
 #include <string>
 #include <vector>
 #include "employee.h"
+#include "../dish.h"
+#include "../menu.h"
 
 class Barman : public Employee
 {
     public:
     Barman(std::string, std::string, std::string, std::string, double);
-    
+
     virtual double workingHours();
     virtual double salary();
     virtual void setHourlyRate();
