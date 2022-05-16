@@ -10,7 +10,6 @@ Employee::Employee(std::string firstName1, std::string lastName1, std::string em
     firstName = firstName1;
     lastName = lastName1;
     emailAdress = emailAdress1;
-
     if (PESEL1.size() == 11)
         PESEL = PESEL1;
     else
@@ -24,8 +23,16 @@ Employee::Employee(std::string firstName1, std::string lastName1, std::string em
         throw std::range_error("Godzinowa stwka musi byc wieksza od zera");
 }
 
-void Employee::start_day() const{
-    x = 0;
+void Employee::setWorkedHours(double new_hours){
+    x = new_hours;
+}
+
+double Employee::getWorkedHours() const{
+    return x;
+}
+
+void Employee::start_day(){
+    setWorkedHours(0);
 }
 
 double Employee::gethourlyRate() const{
@@ -151,11 +158,22 @@ void Employee::printRoster() {
 
 void Employee::takeVacation(Date new_date){
     for(unsigned int i = 0; i < freeDays.size(); i++)
-        if (new_date == freeDays[i])
+        if (new_date == freeDays[i].first)
             return;
-    freeDays.push_back(new_date);
+    std::pair <Date, int> new_free_day;
+    new_free_day.first = new_date;
+    if (getWorkingDays(get_type()) > (30 - freeDays.size()))
+        for (int i = 1; i <= 3; i++){
+            new_free_day.second = i;
+            freeDays.push_back(new_free_day);
+        }
 }
 
 void Employee::removeVacation(Date date){
-    freeDays.erase(std::find(freeDays.begin(), freeDays.end(), date));
+    std::pair <Date, int> free_day;
+    free_day.first = date;
+    for (int i = 1; i <= 3; i++){
+        free_day.second = i;
+        freeDays.erase(std::find(freeDays.begin(), freeDays.end(), free_day));
+    }
 }

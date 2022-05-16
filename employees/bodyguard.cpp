@@ -35,3 +35,7 @@ void Bodyguard::makeRoster(std::vector<std::pair<Date, int>> schedule){
         roster.push_back(new_schedule[i]);
     }
 }
+
+std::string Bodyguard::get_type(){
+    return "bodyguard";
+}

@@ -44,3 +44,7 @@ void Recepcionist::book_room(Room room, Date first_date, Date last_date, Guest g
     guest.set_room_number(room.get_number());
     guest.set_receipt(room.get_price()*(last_date-first_date+1) + guest.get_receipt());
 }
+
+std::string Recepcionist::get_type(){
+    return "recepcionist";
+}
