@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <fstream>
 #include <vector>
-#include <string> 
+#include <string>
 
 Employee::Employee(std::string firstName1, std::string lastName1, std::string emailAdress1, std::string PESEL1, double hourlyRate1)
 {
@@ -151,7 +151,7 @@ void Employee::setPESEL(std::string newPESEL) {
 void Employee::printRoster() {
     std::cout << "Roster for month: date and part of day \n";
     for(long unsigned int i = 0; i < roster.size(); i++){
-        roster[i].first.get_date();
+        roster[i].first.get_day();
         std::cout << " " << roster[i].second << std::endl;
     }
 }

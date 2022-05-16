@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <vector>
 #include "bodyguard.h"
-#include "guest.h"
+#include "../guest.h"
 
 Bodyguard::Bodyguard(std::string firstName, std::string lastName, std::string emailAdress, std::string PESEL, double hourlyRate):
 Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)

@@ -109,7 +109,7 @@ void Dish::remove_ingredient(Ingredient i)
 {
     if(!(this->does_dish_contain_the_ingredient(i))) throw std::invalid_argument("Cannot remove non-existing ingredient");
     ingredients.erase(std::find(ingredients.begin(), ingredients.end(), i));
-    mass -= i->get_quantity();
+    mass -= i.get_quantity();
 }
 
 void Dish::add_allergen(std::string al)
@@ -240,9 +240,9 @@ bool Dish::operator==(Dish& second_dish)
 std::ostream& operator<<(std::ostream& os, Dish& d)
 {
     os << d.get_name() << "  " << '(' << d.get_mass() << "g)" << "  " << d.get_price() << "zl" << std::endl << "Ingredients:" << std::endl;
-    for(Ingredient *i : d.ingredients)
+    for(Ingredient i : d.ingredients)
     {
-        os << *i << std::endl;
+        os << i << std::endl;
     }
     if(d.allergens.size() > 0) os << "Allergens:" << std::endl;
     for(std::string al : d.allergens)

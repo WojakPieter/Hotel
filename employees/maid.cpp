@@ -25,6 +25,8 @@ void Maid::setHourlyRate() {
 void Maid::makeRoster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
     std::vector<std::pair<Date, int>> new_schedule = schedule;
+    auto pend = std::remove_if(schedule.begin(), schedule.end(), [&](std::pair<double, double> changes){return changes.second == 3;});
+    schedule.erase(pend, schedule.end());
     for(unsigned int i = 0; i < freeDays.size(); i++)
         new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), freeDays[i]));
 

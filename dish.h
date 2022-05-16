@@ -38,8 +38,8 @@ class Dish
     void remove_allergen(std::string al);
 
     void sort_allergens_by_alphabet();
-    std::vector<Ingredient> sort_ingredients_by_name();
-    std::vector<Ingredient> sort_ingredients_by_quantity();
+    void sort_ingredients_by_name();
+    void sort_ingredients_by_quantity();
     int number_of_allergens();
     int number_of_ingredients();
     int number_of_ingredients_bigger_than(int mass);

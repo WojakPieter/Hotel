@@ -1,6 +1,6 @@
 #ifndef CPP_PROJECT_DATA_H
 #define CPP_PROJECT_DATA_H
-#include <iostream> 
+#include <iostream>
 #include <vector>
 #include <string>
 #include <memory>
@@ -9,9 +9,10 @@
 
 class Data
 {
-    std::vector<std::unique_ptr<Employee>> database;
+
 
     public:
+    std::vector<std::unique_ptr<Employee>> database;
     bool add_employee(std::unique_ptr<Employee>);
     bool remove_employee(std::unique_ptr<Employee>);
 

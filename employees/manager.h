@@ -9,10 +9,10 @@ class Manager : public Employee
 {
     public:
     Manager(std::string, std::string, std::string, std::string, double);
-    
-    void dismissEmployee(std::string, std::vector <employee>);
-    void hireEmployee(Employee, std::vector <employee>);
-    void setEmployeeRate(std::string, double, std::vector <employee>);
+
+    void dismissEmployee(std::string, std::vector<Employee>);
+    //void hireEmployee(Employee, std::vector<Employee>);
+    void setEmployeeRate(std::string, double, std::vector<Employee>);
 
     virtual double workingHours();
     virtual double salary();

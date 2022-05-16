@@ -12,8 +12,7 @@ class Menu
     std::vector<Dish> drinks;
 
     public:
-    Menu(std::string, std::vector<Dish>, std::vector<Dish>);
-    
+
     std::string get_name();
     void set_name(std::string);
 
