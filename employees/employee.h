@@ -15,13 +15,15 @@ class Employee
     double hourlyRate;
     double x;
     std::vector<std::pair<Date, int>> roster;
-    std::vector<Date> freeDays;
+    std::vector<std::pair<Date, int>> freeDays;
 
 
     public:
     Employee(std::string, std::string, std::string, std::string, double);
     // ~employee();  wirtualny konstruktor
 
+    double getWorkedHours() const;
+    void setWorkedHours(double);
     std::string getFirstName() const;
     std::string getLastName() const;
     std::string getEmailAdress() const;
@@ -39,9 +41,10 @@ class Employee
     virtual double workingHours() = 0;
     virtual double salary() = 0;
     virtual void makeRoster(std::vector<std::pair<Date, int>>)=0;
-    void start_day() const;
+    void start_day();
     void takeVacation(Date);
     void removeVacation(Date);
+    virtual std::string get_type();
 
     bool operator==(const Employee& second_employee)
     {

@@ -19,5 +19,7 @@ class Barman : public Employee
     void changeDrinkPrice(std::string, double, double, Menu);
     void removeDrink(std::string, Menu);
     void doDrink(std::string);
+
+    virtual std::string get_type();
 };
 #endif

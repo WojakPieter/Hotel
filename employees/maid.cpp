@@ -38,3 +38,7 @@ void Maid::tidyRoom(Room room){
     room.set_parameters(false);
     x += 1;
 }
+
+std::string Maid::get_type(){
+    return "maid";
+}

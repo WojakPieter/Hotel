@@ -54,3 +54,7 @@ void Barman::doDrink(std::string name){
     x += time;
     // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana 
 }
+
+std::string Barman::get_type(){
+    return "barman";
+}

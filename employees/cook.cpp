@@ -1,5 +1,7 @@
 #include <iostream>
 #include "employee.h"
+#include "menu.h"
+#include "ingredient.h"
 #include <algorithm>
 #include <vector>
 #include "cook.h"
@@ -23,10 +25,11 @@ void Cook::setHourlyRate() {
 }
 
 void Cook::makeRoster(std::vector<std::pair<Date, int>> schedule){
-   roster = {};
+    roster = {};
     std::vector<std::pair<Date, int>> new_schedule = schedule;
-    for(unsigned int i = 0; i < freeDays.size(); i++)
+    for(unsigned int i = 0; i < freeDays.size(); i++){
         new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), freeDays[i]));
+    }
 
     std::random_shuffle(new_schedule.begin(), new_schedule.end());
     for(int i = 0; i < (getWorkingDays("cook")-1); i++){
@@ -35,7 +38,7 @@ void Cook::makeRoster(std::vector<std::pair<Date, int>> schedule){
 }
 
 void Cook::addDish(std::string name, double price, double preparation_cost, double preparation_time, std::vector<Ingredient> ingredients, std::vector<std::string> allergens, Menu menu){
-    Dish new_dish(name, price, preparation_cost, preparation_time, ingredients, allergens);
+    Dish new_drink(name, price, preparation_cost, preparation_time, ingredients, allergens);
     menu.add_food(new_drink);
 }
 
@@ -44,11 +47,15 @@ void Cook::changeDishPrice(std::string name, double new_price, double new_prepar
 }
 
 void Cook::removeDish(std::string name, Menu menu){
-    menu.food(name);
+    menu.remove_drink(name);
 }
 
-void Cook::doDish(std::string name){
-    double time = menu.findPreparationTime(name);
+void Cook::doDish(std::string name, Menu menu){
+    double time = menu.find_preparation_time(name);
     x += time;
     // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana 
+}
+
+std::string Cook::get_type(){
+    return "cook";
 }

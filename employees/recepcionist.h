@@ -14,6 +14,7 @@ class Recepcionist : public Employee
     virtual double salary();
     virtual void setHourlyRate();
     virtual void makeRoster(std::vector<std::pair<Date, int>>);
+    virtual std::string get_type();
 
     void book_room(Room, Date, Date, Guest);
 };

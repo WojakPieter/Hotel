@@ -57,3 +57,7 @@ void setEmployeeRate(std::string PESEL, double newRate, std::vector <employee> e
             employees[i].sethourlyRate(newRate);
 
 }
+
+std::string Manager::get_type(){
+    return "manager";
+}

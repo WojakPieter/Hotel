@@ -19,5 +19,6 @@ class Manager : public Employee
     virtual void setHourlyRate();
     virtual void makeRoster(std::vector<std::pair<Date, int>>);
 
+    virtual std::string get_type();
 };
 #endif
