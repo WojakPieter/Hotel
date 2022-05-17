@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../date.cpp"
+#include "../Date.h"
 
 class Employee
 {
@@ -20,7 +20,7 @@ class Employee
 
     public:
     Employee(std::string, std::string, std::string, std::string, double);
-    // ~employee();  wirtualny konstruktor
+    virtual ~Employee();
 
     double getWorkedHours() const;
     void setWorkedHours(double);
@@ -44,7 +44,7 @@ class Employee
     void start_day();
     void takeVacation(Date);
     void removeVacation(Date);
-    virtual std::string get_type();
+    virtual std::string get_type()=0;
 
     bool operator==(const Employee& second_employee)
     {

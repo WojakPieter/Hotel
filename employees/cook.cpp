@@ -27,10 +27,15 @@ void Cook::setHourlyRate() {
 void Cook::makeRoster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
     std::vector<std::pair<Date, int>> new_schedule = schedule;
-    auto pend = std::remove_if(schedule.begin(), schedule.end(), [&](std::pair<double, double> changes){return changes.second == 3;});
-    schedule.erase(pend, schedule.end());
     for(unsigned int i = 0; i < freeDays.size(); i++){
-        new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), freeDays[i]));
+        for(unsigned int j = 0; j < new_schedule.size(); j++)
+        {
+            if (new_schedule[j].second == freeDays[i].second && new_schedule[j].first == freeDays[i].first)
+            {
+                new_schedule.erase(new_schedule.begin() + j);
+                break;
+            }
+        }
     }
 
     std::random_shuffle(new_schedule.begin(), new_schedule.end());

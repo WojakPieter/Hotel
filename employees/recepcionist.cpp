@@ -26,10 +26,15 @@ void Recepcionist::setHourlyRate() {
 void Recepcionist::makeRoster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
     std::vector<std::pair<Date, int>> new_schedule = schedule;
-    auto pend = std::remove_if(schedule.begin(), schedule.end(), [&](std::pair<double, double> changes){return changes.second == 3;});
-    schedule.erase(pend, schedule.end());
     for(unsigned int i = 0; i < freeDays.size(); i++)
-        new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), freeDays[i]));
+        for(unsigned int j = 0; j < new_schedule.size(); j++)
+        {
+            if (new_schedule[j].second == freeDays[i].second && new_schedule[j].first == freeDays[i].first)
+            {
+                new_schedule.erase(new_schedule.begin() + j);
+                break;
+            }
+        }
 
     std::random_shuffle(new_schedule.begin(), new_schedule.end());
     for(int i = 0; i < (getWorkingDays("recepcionist")-1); i++){
@@ -37,14 +42,8 @@ void Recepcionist::makeRoster(std::vector<std::pair<Date, int>> schedule){
     }
 }
 
-void Recepcionist::book_room(Room room, Date first_date, Date last_date, Guest guest){
-    while(first_date<=last_date)
-    {
-        room.add_reserved_day(first_date);
-        first_date += 1;
-    }
-    guest.set_room_number(room.get_number());
-    guest.set_receipt(room.get_price()*(last_date-first_date+1) + guest.get_receipt());
+void Recepcionist::book_room(int room_number, Date first_date, Date last_date, Guest guest){
+    ;
 }
 
 std::string Recepcionist::get_type(){

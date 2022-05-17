@@ -1,8 +1,9 @@
-#include "date.cpp"
+#ifndef CPP_PROJECT_ROOM_H
+#define CPP_PROJECT_ROOM_H
 #include <iostream>
 #include <vector>
 #include <map>
-#pragma once
+#include "Date.h"
 
 class Room
 {
@@ -93,3 +94,5 @@ public:
     virtual int get_number_of_required_workers();
     virtual int get_number_of_beds();
 };
+
+#endif

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <fstream>
 #include <vector>
-#include <string>
+#include <string> 
 
 Employee::Employee(std::string firstName1, std::string lastName1, std::string emailAdress1, std::string PESEL1, double hourlyRate1)
 {
@@ -26,6 +26,8 @@ Employee::Employee(std::string firstName1, std::string lastName1, std::string em
 void Employee::setWorkedHours(double new_hours){
     x = new_hours;
 }
+
+Employee::~Employee() {}
 
 double Employee::getWorkedHours() const{
     return x;
@@ -151,7 +153,7 @@ void Employee::setPESEL(std::string newPESEL) {
 void Employee::printRoster() {
     std::cout << "Roster for month: date and part of day \n";
     for(long unsigned int i = 0; i < roster.size(); i++){
-        roster[i].first.get_day();
+        roster[i].first.get_date();
         std::cout << " " << roster[i].second << std::endl;
     }
 }
@@ -172,8 +174,11 @@ void Employee::takeVacation(Date new_date){
 void Employee::removeVacation(Date date){
     std::pair <Date, int> free_day;
     free_day.first = date;
-    for (int i = 1; i <= 3; i++){
-        free_day.second = i;
-        freeDays.erase(std::find(freeDays.begin(), freeDays.end(), free_day));
+    for(unsigned int j = 0; j < freeDays.size(); j++)
+    {
+        if (freeDays[j].first == date)
+        {
+            freeDays.erase(freeDays.begin() + j);
+        }
     }
 }

@@ -4,8 +4,8 @@
 #include <string>
 #include <vector>
 #include "guest.h"
-#include "employees/data.h"
-#include "database.hpp"
+#include "data.h"
+#include "database.h"
 #include "menu.h"
 
 class Hotel
@@ -16,11 +16,11 @@ class Hotel
     std::vector <Guest> guests;
     Data employees; //(na tych bazach danych z pracy domowej)
     Data_room rooms;
-    Menu menu;
+    Menu menu();
     Date current_date;
 
     public:
-    Hotel(std::string, int, double, Data, Data_room, Menu);
+    Hotel(std::string, int, double);
 
     std::string get_name();
     int get_stars();
@@ -30,7 +30,6 @@ class Hotel
     void set_name(std::string new_name);
     void set_stars(int new_stars);
     void set_budget(double new_budget);
-    void set_menu(Menu new_menu);
     void increment_current_date();
 
     void increase_budget(double income);

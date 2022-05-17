@@ -1,16 +1,16 @@
-#include <iostream> 
+#include <iostream>
 #include <vector>
 #include <string>
 #include <memory>
 #include <vector>
-#include "employee.h"
+#include "employees/employee.h"
 #include "data.h"
 #include <algorithm>
 
 
 bool Data::add_employee(std::unique_ptr<Employee> ptr){
     for (auto& i: database){
-        if (ptr -> getPESEL() == i -> getPESEL()) 
+        if (ptr -> getPESEL() == i -> getPESEL())
             return false;
     }
     database.push_back(std::move(ptr));
@@ -22,14 +22,14 @@ bool Data::remove_employee(std::unique_ptr<Employee> ptr){
         database.erase(std::find(database.begin(), database.end(), ptr));
         return true;
     }
-    catch(...){ 
-        return false; 
+    catch(...){
+        return false;
     }
 }
 
 double Data::working_hours(std::string PESEL){
     for (auto& i: database){
-        if (PESEL == i -> getPESEL()) 
+        if (PESEL == i -> getPESEL())
             return i -> workingHours();
     }
     std::cout << "This employee does not exist.\n";
@@ -38,7 +38,7 @@ double Data::working_hours(std::string PESEL){
 
 double Data::salary(std::string PESEL){
     for (auto& i: database){
-        if (PESEL == i -> getPESEL()) 
+        if (PESEL == i -> getPESEL())
             return i -> salary();
     }
     std::cout << "This employee does not exist.\n";
@@ -90,6 +90,13 @@ bool Data::edit_employee(std::string pesel, std::string new_first_name, std::str
     return false;
 }
 
+void Data::set_employee_rate(std::string pesel, double newRate){
+    for (auto& i: database){
+        if (pesel == i -> getPESEL())
+            i -> sethourlyRate(newRate);
+    }
+}
+
 bool Data::employee_roster(std::string pesel){
     for (auto& i: database){
         if (pesel == i -> getPESEL()){
@@ -100,10 +107,10 @@ bool Data::employee_roster(std::string pesel){
     return false;
 }
 
-bool Data::make_employee_roster(std::string pesel, Date first_date){
+bool Data::make_employee_roster(std::string pesel, std::vector<std::pair<Date, int>> dates){
     for (auto& i: database){
         if (pesel == i -> getPESEL()){
-            i -> makeRoster(first_date);
+            i -> makeRoster(dates);
             return true;
         }
     }
