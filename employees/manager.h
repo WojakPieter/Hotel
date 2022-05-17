@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "../data.h"
+#include <memory>
 #include "employee.h"
 
 class Manager : public Employee
@@ -10,9 +12,10 @@ class Manager : public Employee
     public:
     Manager(std::string, std::string, std::string, std::string, double);
 
-    void dismissEmployee(std::string, std::vector<Employee>);
-    //void hireEmployee(Employee, std::vector<Employee>);
-    void setEmployeeRate(std::string, double, std::vector<Employee>);
+    void dismissEmployee(std::unique_ptr<Employee>, Data);
+    // data - przekazac
+    void hireEmployee(std::unique_ptr<Employee>, Data);
+    void setEmployeeRate(std::string, double, Data);
 
     virtual double workingHours();
     virtual double salary();

@@ -1,5 +1,7 @@
 #include <iostream>
 #include "employee.h"
+#include "../ingredient.h"
+#include "../menu.h"
 #include <algorithm>
 #include <vector>
 #include <fstream>
@@ -27,11 +29,15 @@ void Barman::setHourlyRate() {
 void Barman::makeRoster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
     std::vector<std::pair<Date, int>> new_schedule = schedule;
-    auto pend = std::remove_if(schedule.begin(), schedule.end(), [&](std::pair<double, double> changes){return changes.second == 3;});
-    schedule.erase(pend, schedule.end());
     for(unsigned int i = 0; i < freeDays.size(); i++)
-        new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), freeDays[i]));
-
+        for(unsigned int j = 0; j < new_schedule.size(); j++)
+        {
+            if (new_schedule[j].second == freeDays[i].second && new_schedule[j].first == freeDays[i].first)
+            {
+                new_schedule.erase(new_schedule.begin() + j);
+                break;
+            }
+        }
     std::random_shuffle(new_schedule.begin(), new_schedule.end());
     for(int i = 0; i < (getWorkingDays("barman")-1); i++){
         roster.push_back(new_schedule[i]);
@@ -51,8 +57,8 @@ void Barman::removeDrink(std::string name, Menu menu){
     menu.remove_drink(name);
 }
 
-void Barman::doDrink(std::string name){
-    double time = menu.findPreparationTime(name);
+void Barman::doDrink(std::string name, Menu menu){
+    double time = menu.find_preparation_time(name);
     x += time;
     // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana
 }

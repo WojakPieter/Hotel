@@ -146,4 +146,3 @@ bool Guest::book_room(std::unique_ptr<Room> room, Date arrival_date, Date leave_
      receipt += room->get_price();
      return true;
 }
-

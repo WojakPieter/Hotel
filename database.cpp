@@ -1,5 +1,5 @@
-#include "database.hpp"
-#include <conio.h>
+#include "database.h"
+#include <iostream>
 #include <algorithm>
 
 bool Data_room::add_room(std::unique_ptr<Room> room_ptr)
@@ -34,11 +34,12 @@ std::vector<int> Data_room::get_rooms_numbers()
 
 bool Data_room::book_room(int room_number, std::pair<Date, Date> period)
 {
-    for(auto& ptr : rooms)
+    for (auto& ptr : rooms)
     {
         if(ptr->get_number() == room_number)
         {
-            if(!(is_room_free(room_number, period))) return false;
+            if (!is_room_free(room_number, period)) 
+                return false;
             for(Date d=period.first; d<=period.second; d++)
             {
                 ptr -> add_reserved_day(d);

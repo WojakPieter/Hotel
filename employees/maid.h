@@ -17,6 +17,6 @@ class Maid : public Employee
     virtual void makeRoster(std::vector<std::pair<Date, int>>);
     virtual std::string get_type();
 
-    void tidyRoom(Room room);
+    void tidyRoom();
 };
 #endif

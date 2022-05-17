@@ -1,8 +1,12 @@
 #include "hotel.h"
+#include <string>
+#include <iostream>
 
-Hotel::Hotel(std::string name, int stars, double budget, Data employees, Data_room rooms, Menu menu)
+Hotel::Hotel(std::string name1, int stars1, double budget1)
 {
-    ;
+    name = name1;
+    stars = stars1;
+    budget = budget1;
 }
 
 std::string Hotel::get_name()
@@ -51,7 +55,11 @@ bool Hotel::check_in(Guest guest, char type, bool high_standard, bool family, st
     {
         if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family)
         {
-            if(rooms.book_room(ptr->get_number(), period)) {guest.set_room_number(ptr->get_number()); return true;}
+            if(rooms.book_room(ptr->get_number(), period)) {
+                guest.set_room_number(ptr->get_number()); 
+                guest.set_receipt(ptr->get_price()*(period.second-period.first+1) + guest.get_receipt());
+                return true;
+            }
         }
     }
     return false;

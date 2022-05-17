@@ -237,18 +237,18 @@ bool Dish::operator==(Dish& second_dish)
     else return false;
 }
 
-std::ostream& operator<<(std::ostream& os, Dish& d)
-{
-    os << d.get_name() << "  " << '(' << d.get_mass() << "g)" << "  " << d.get_price() << "zl" << std::endl << "Ingredients:" << std::endl;
-    for(Ingredient i : d.ingredients)
-    {
-        os << i << std::endl;
-    }
-    if(d.allergens.size() > 0) os << "Allergens:" << std::endl;
-    for(std::string al : d.allergens)
-    {
-        os << al << std::endl;
-    }
-    os << std::endl;
-    return os;
-}
+// std::ostream& operator<<(std::ostream& os, Dish& d)
+// {
+//     os << d.get_name() << "  " << '(' << d.get_mass() << "g)" << "  " << d.get_price() << "zl" << std::endl << "Ingredients:" << std::endl;
+//     for(Ingredient *i : d.ingredients)
+//     {
+//         os << *i << std::endl;
+//     }
+//     if(d.allergens.size() > 0) os << "Allergens:" << std::endl;
+//     for(std::string al : d.allergens)
+//     {
+//         os << al << std::endl;
+//     }
+//     os << std::endl;
+//     return os;
+// }

@@ -3,8 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "date.cpp"
-#include "database.hpp"
+#include "database.h"
 #include "menu.h"
 
 class Guest
@@ -52,4 +51,3 @@ class Guest
 
 };
 #endif
-

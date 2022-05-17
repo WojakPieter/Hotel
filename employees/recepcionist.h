@@ -3,9 +3,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "employee.h"
-#include "../room.h"
 #include "../guest.h"
+#include "../room.h"
+#include "employee.h"
 
 class Recepcionist : public Employee
 {
@@ -18,6 +18,6 @@ class Recepcionist : public Employee
     virtual void makeRoster(std::vector<std::pair<Date, int>>);
     virtual std::string get_type();
 
-    void book_room(Room, Date, Date, Guest);
+    void book_room(int, Date, Date, Guest);
 };
 #endif
