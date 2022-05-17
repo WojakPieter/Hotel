@@ -49,13 +49,25 @@ bool Hotel::decrease_budget(double outgo)
     return false;
 }
 
+void Hotel::add_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
+    employees.add_employee(type,first_name,second_name,email_adress,pesel,hourly_rate);
+}
+
+void Hotel::remove_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
+    employees.remove_employee(type,first_name,second_name,email_adress,pesel,hourly_rate);
+}
+
+void Hotel::change_employee_rate(std::string pesel, double new_rate){
+    employees.set_employee_rate(pesel, new_rate);
+}
+
 bool Hotel::check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date,Date> period)
 {
     for(auto& ptr : rooms.rooms)
     {
         if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family)
         {
-            if(rooms.book_room(ptr->get_number(), period)) {
+            if(rooms.book_room(ptr->get_number(), period) && guest.get_receipt() >= (ptr->get_price()*(period.second-period.first+1))) {
                 guest.set_room_number(ptr->get_number()); 
                 guest.set_receipt(ptr->get_price()*(period.second-period.first+1) + guest.get_receipt());
                 return true;
@@ -67,7 +79,12 @@ bool Hotel::check_in(Guest guest, char type, bool high_standard, bool family, st
 
 void Hotel::check_out(Guest guest)
 {
-    ;
+    try{
+        guests.erase(std::find(guests.begin(), guests.end(), guest));
+    }
+    catch(...){}
+    increase_budget(guest.get_receipt());
+    // zamowic sprzatanie u sprzataczki
 }
 
 bool Hotel::handing_out_salary()
@@ -80,7 +97,7 @@ bool Hotel::handing_out_salary()
     return decrease_budget(outgo);
 }
 
-void Hotel::creating_schedule()
+void Hotel::creating_schedule(Date)
 {
     for(auto& ptr : employees.database)
     {

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <vector>
 #include "employee.h"
-#include "../room.h"
+#include "room.h"
 
 Recepcionist::Recepcionist(std::string firstName, std::string lastName, std::string emailAdress, std::string PESEL, double hourlyRate):
 Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)

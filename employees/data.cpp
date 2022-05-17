@@ -8,8 +8,10 @@
 #include <algorithm>
 
 
-bool Data::add_employee(std::unique_ptr<Employee> ptr){
-    for (auto& i: database){
+bool Data::add_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
+    
+    std::unique_ptr<Employee> ptr = make_employee_pointer(type,first_name,second_name,email_adress,pesel,hourly_rate);
+    for (auto& i: database) {
         if (ptr -> getPESEL() == i -> getPESEL()) 
             return false;
     }
@@ -17,13 +19,51 @@ bool Data::add_employee(std::unique_ptr<Employee> ptr){
     return true;
 }
 
-bool Data::remove_employee(std::unique_ptr<Employee> ptr){
+bool Data::remove_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate){
+    std::unique_ptr<Employee> ptr = make_employee_pointer(type,first_name,second_name,email_adress,pesel,hourly_rate);
     try{
         database.erase(std::find(database.begin(), database.end(), ptr));
         return true;
     }
     catch(...){ 
         return false; 
+    }
+}
+
+std::unique_ptr<Employee> Data::make_employee_pointer(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate){
+    if (type == "barman") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Barman>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+
+    if (type == "bodyguard") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Bodyguard>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+
+    if (type == "cook") {   
+        std::unique_ptr<Employee> new_employee = std::make_unique<Cook>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+        
+    if (type == "maid") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Maid>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+        
+    if (type == "manager") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Manager>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+        
+    if (type == "recepcionist") {    
+        std::unique_ptr<Employee> new_employee = std::make_unique<Recepcionist>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+
+    if (type == "waiter") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Waiter>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
     }
 }
 
@@ -90,6 +130,13 @@ bool Data::edit_employee(std::string pesel, std::string new_first_name, std::str
     return false;
 }
 
+void Data::set_employee_rate(std::string pesel, double newRate){
+    for (auto& i: database){
+        if (pesel == i -> getPESEL())
+            i -> sethourlyRate(newRate);
+    }
+}
+
 bool Data::employee_roster(std::string pesel){
     for (auto& i: database){
         if (pesel == i -> getPESEL()){
@@ -100,10 +147,10 @@ bool Data::employee_roster(std::string pesel){
     return false;
 }
 
-bool Data::make_employee_roster(std::string pesel, Date first_date){
+bool Data::make_employee_roster(std::string pesel, std::vector<std::pair<Date, int>> dates){
     for (auto& i: database){
         if (pesel == i -> getPESEL()){
-            i -> makeRoster(first_date);
+            i -> makeRoster(dates);
             return true;
         }
     }

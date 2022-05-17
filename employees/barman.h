@@ -2,6 +2,8 @@
 #define CPP_PROJECT_BARMAN_H
 #include <iostream>
 #include <string>
+#include "ingredient.h"
+#include "menu.h"
 #include <vector>
 #include "employee.h"
 

@@ -1,12 +1,11 @@
 #include <iostream>
 #include "employee.h"
-#include "../ingredient.h"
-#include "../menu.h"
+#include "ingredient.h"
+#include "menu.h"
 #include <algorithm>
 #include <vector>
 #include <fstream>
 #include "barman.h"
-#include "../menu.h"
 
 Barman::Barman(std::string firstName, std::string lastName, std::string emailAdress, std::string PESEL, double hourlyRate):
 Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)
@@ -60,7 +59,7 @@ void Barman::removeDrink(std::string name, Menu menu){
 void Barman::doDrink(std::string name, Menu menu){
     double time = menu.find_preparation_time(name);
     x += time;
-    // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana
+    // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana 
 }
 
 std::string Barman::get_type(){

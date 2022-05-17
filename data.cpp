@@ -1,35 +1,75 @@
-#include <iostream>
+#include <iostream> 
 #include <vector>
 #include <string>
 #include <memory>
 #include <vector>
-#include "employees/employee.h"
+#include "employee.h"
 #include "data.h"
 #include <algorithm>
 
 
-bool Data::add_employee(std::unique_ptr<Employee> ptr){
-    for (auto& i: database){
-        if (ptr -> getPESEL() == i -> getPESEL())
+bool Data::add_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
+    
+    std::unique_ptr<Employee> ptr = make_employee_pointer(type,first_name,second_name,email_adress,pesel,hourly_rate);
+    for (auto& i: database) {
+        if (ptr -> getPESEL() == i -> getPESEL()) 
             return false;
     }
     database.push_back(std::move(ptr));
     return true;
 }
 
-bool Data::remove_employee(std::unique_ptr<Employee> ptr){
+bool Data::remove_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate){
+    std::unique_ptr<Employee> ptr = make_employee_pointer(type,first_name,second_name,email_adress,pesel,hourly_rate);
     try{
         database.erase(std::find(database.begin(), database.end(), ptr));
         return true;
     }
-    catch(...){
-        return false;
+    catch(...){ 
+        return false; 
+    }
+}
+
+std::unique_ptr<Employee> Data::make_employee_pointer(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate){
+    if (type == "barman") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Barman>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+
+    if (type == "bodyguard") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Bodyguard>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+
+    if (type == "cook") {   
+        std::unique_ptr<Employee> new_employee = std::make_unique<Cook>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+        
+    if (type == "maid") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Maid>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+        
+    if (type == "manager") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Manager>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+        
+    if (type == "recepcionist") {    
+        std::unique_ptr<Employee> new_employee = std::make_unique<Recepcionist>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
+    }
+
+    if (type == "waiter") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Waiter>(first_name, second_name, email_adress, pesel, hourly_rate);
+        return new_employee;
     }
 }
 
 double Data::working_hours(std::string PESEL){
     for (auto& i: database){
-        if (PESEL == i -> getPESEL())
+        if (PESEL == i -> getPESEL()) 
             return i -> workingHours();
     }
     std::cout << "This employee does not exist.\n";
@@ -38,7 +78,7 @@ double Data::working_hours(std::string PESEL){
 
 double Data::salary(std::string PESEL){
     for (auto& i: database){
-        if (PESEL == i -> getPESEL())
+        if (PESEL == i -> getPESEL()) 
             return i -> salary();
     }
     std::cout << "This employee does not exist.\n";

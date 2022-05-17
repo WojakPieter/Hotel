@@ -3,7 +3,7 @@
 #include "manager.h"
 #include <algorithm>
 #include <memory>
-#include "../data.h"
+#include "data.h"
 #include <vector>
 
 Manager::Manager(std::string firstName, std::string lastName, std::string emailAdress, std::string PESEL, double hourlyRate):
@@ -43,18 +43,18 @@ void Manager::makeRoster(std::vector<std::pair<Date, int>> schedule){
     }
 }
 
-void dismissEmployee(std::unique_ptr<Employee> ptr, Data data){
-    data.remove_employee(std::move(ptr));
-}
+// void Manager::dismissEmployee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate, Data data){
+//     data.remove_employee(type, first_name, second_name, email_adress, pesel, hourly_rate);
+// }
 
-void hireEmployee(std::unique_ptr<Employee> ptr, Data data)
-{
-    data.add_employee(std::move(ptr));
-}
+// void Manager::hireEmployee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate, Data data)
+// {
+//     data.add_employee(type, first_name, second_name, email_adress, pesel, hourly_rate);
+// }
 
-void setEmployeeRate(std::string PESEL, double newRate, Data data){
-    data.set_employee_rate(PESEL, newRate);
-}
+// void Manager::setEmployeeRate(std::string PESEL, double newRate, Data data){
+//     data.set_employee_rate(PESEL, newRate);
+// }
 
 std::string Manager::get_type(){
     return "manager";

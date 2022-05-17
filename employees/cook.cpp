@@ -1,7 +1,7 @@
 #include <iostream>
 #include "employee.h"
-#include "../menu.h"
-#include "../ingredient.h"
+#include "menu.h"
+#include "ingredient.h"
 #include <algorithm>
 #include <vector>
 #include "cook.h"
@@ -60,7 +60,7 @@ void Cook::removeDish(std::string name, Menu menu){
 void Cook::doDish(std::string name, Menu menu){
     double time = menu.find_preparation_time(name);
     x += time;
-    // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana
+    // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana 
 }
 
 std::string Cook::get_type(){
