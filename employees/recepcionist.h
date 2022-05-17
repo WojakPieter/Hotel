@@ -3,15 +3,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../guest.h"
-#include "../room.h"
+#include "guest.h"
+#include "room.h"
 #include "employee.h"
 
 class Recepcionist : public Employee
 {
     public:
     Recepcionist(std::string, std::string, std::string, std::string, double);
-
+    
     virtual double workingHours();
     virtual double salary();
     virtual void setHourlyRate();

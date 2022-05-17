@@ -1,20 +1,27 @@
 #ifndef CPP_PROJECT_DATA_H
 #define CPP_PROJECT_DATA_H
-#include <iostream>
+#include <iostream> 
 #include <vector>
 #include <string>
 #include <memory>
 #include <vector>
-#include "employees/employee.h"
-
+#include "employee.h"
+#include "barman.h"
+#include "bodyguard.h"
+#include "cook.h"
+#include "maid.h"
+#include "manager.h"
+#include "recepcionist.h"
+#include "waiter.h"
 
 class Data
 {
     std::vector<std::unique_ptr<Employee>> database;
 
     public:
-    bool add_employee(std::unique_ptr<Employee>);
-    bool remove_employee(std::unique_ptr<Employee>);
+    bool add_employee(std::string, std::string, std::string, std::string, std::string, double);
+    bool remove_employee(std::string, std::string, std::string, std::string, std::string, double);
+    std::unique_ptr<Employee> make_employee_pointer(std::string, std::string, std::string, std::string, std::string, double);
 
     int get_size();
     double working_hours(std::string);

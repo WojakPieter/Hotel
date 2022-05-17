@@ -1,0 +1,20 @@
+Q
+check_in Adam K sks@wp.pl 2000 1 true true 15.10.2020 20.15.2020
+check_out Kasia M psp@onet.eu 20200
+
+
+
+Q
+....
+
+
+
+
+Metody:
+- zamów rozrywkę
+- sprawdzic czy nie trzeba kogos wymeldowac danego dnia
+- zrobic baze danych z pracownikami na danej zmianie
+- 
+
+
+Zrobic plik z bazowym hotelem.

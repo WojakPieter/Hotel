@@ -18,6 +18,7 @@ class Hotel
     Data_room rooms;
     Menu menu();
     Date current_date;
+    Data current_employees;
 
     public:
     Hotel(std::string, int, double);
@@ -27,18 +28,27 @@ class Hotel
     double get_budget();
     Date get_current_date();
 
+    void add_employee(std::string, std::string, std::string, std::string, std::string, double);
+    void remove_employee(std::string, std::string, std::string, std::string, std::string, double);
+    void change_employee_rate(std::string, double);
+
+    // DO ZROBIENIA 4 FUNKCJE:
+    void add_room();
+    void remove_room();
+    void change_room_price();
+    void set_current_employees();
+
     void set_name(std::string new_name);
     void set_stars(int new_stars);
     void set_budget(double new_budget);
     void increment_current_date();
-
     void increase_budget(double income);
     bool decrease_budget(double outgo);
     bool check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period); //gosc i losowanie mu pokoju
     void check_out(Guest);
     bool shortening_the_stay(Guest, Date);
     bool handing_out_salary();
-    void creating_schedule(); //odwolanie u kazdego pracownika do funkcji make_roster
+    void creating_schedule(Date); //odwolanie u kazdego pracownika do funkcji make_roster
     void paying_the_bills();
 };
 #endif
