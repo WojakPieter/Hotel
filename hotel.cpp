@@ -81,17 +81,19 @@ void Hotel::add_dish(std::string type, std::string name, double price, double pr
 {
     Dish dish(name, price, prep_cost, prep_time, ingredients, allergens);
     if (type == "drink")
-        menu.add_drink(dish);
+        menu().add_drink(dish);
     else
-        menu.add_food(dish);
+        menu().add_food(dish);
 }
 
 void Hotel::check_out(Guest guest)
 {
-    try{
-        guests.erase(std::find(guests.begin(), guests.end(), guest));
-    }
-    catch(...){}
+    for(unsigned int i = 0; i < guests.size(); i++)
+        if (guest.get_PESEL() == guests[i].get_PESEL())
+        {
+            guests.erase(guests.begin() + i);
+            break;
+        }
     increase_budget(guest.get_receipt());
     // zamowic sprzatanie u sprzataczki
 }
@@ -121,7 +123,7 @@ bool Hotel::shortening_the_stay(Guest guest, Date new_last_date)
         if(room_ptr->get_number() == guest.get_room_number())
         {
             double receipt = 0;
-            if (guest.last_day >= new_last_date){
+            if (guest.last_day >= new_last_date) {
                 double days = new_last_date - guest.last_day;
                 receipt = receipt - days*room_ptr->get_price();
                 while(guest.last_day > new_last_date)
@@ -130,7 +132,7 @@ bool Hotel::shortening_the_stay(Guest guest, Date new_last_date)
                     new_last_date++;
                 }
             }
-            else{
+            else {
                 double days = guest.last_day - new_last_date;
                 if(days*room_ptr->get_price()+receipt >= guest.get_money())
                 {
