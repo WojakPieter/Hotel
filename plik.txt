@@ -10,11 +10,22 @@ Q
 
 
 
-Metody:
-- zamów rozrywkę
+Metody: +1 za nazwe funkcji
+- zamów rozrywkę (nazwa, gosc-pesel) +2
+- dodaj pracownika (type, firstN, lastN, email, pesel, hourlyRate) +6
+- usun pracownika (type, firstN, lastN, email, pesel, hourlyRate)	+6
+- check in () +?
+- paying the bills ()
+- handing out salary ()
+- creating schedule ()
+- check guests ()
+- change current employees ()
+- add dish (type, name, price, prep_cost, prep_time, ile_allergenow, alergeny, ile_sklad, (nazwa, masa)) 
+	+7 +n*1 +m*2
+- remove dish (type, name) +2
+
+
 - sprawdzic czy nie trzeba kogos wymeldowac danego dnia
 - zrobic baze danych z pracownikami na danej zmianie
-- 
-
 
 Zrobic plik z bazowym hotelem.
