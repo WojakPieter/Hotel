@@ -5,152 +5,150 @@
 #include <vector>
 #include <string> 
 
-Employee::Employee(std::string firstName1, std::string lastName1, std::string emailAdress1, std::string PESEL1, double hourlyRate1)
+Employee::Employee(std::string first_name1, std::string last_name1, std::string email_adress1, std::string PESEL1, double hourly_rate1)
 {
-    firstName = firstName1;
-    lastName = lastName1;
-    emailAdress = emailAdress1;
+    first_name = first_name1;
+    last_name = last_name1;
+    email_adress = email_adress1;
     if (PESEL1.size() == 11)
         PESEL = PESEL1;
     else
         throw std::range_error("PESEL musi miec 11 cyfr");
 
-    PESEL = PESEL1;
-
-    if (hourlyRate1 > 0)
-        hourlyRate = hourlyRate1;
+    if (hourly_rate1 > 0)
+        hourly_rate = hourly_rate1;
     else
         throw std::range_error("Godzinowa stwka musi byc wieksza od zera");
 }
 
-void Employee::setWorkedHours(double new_hours){
+void Employee::set_worked_hours(double new_hours){
     x = new_hours;
 }
 
 Employee::~Employee() {}
 
-double Employee::getWorkedHours() const{
+double Employee::get_worked_hours() const{
     return x;
 }
 
 void Employee::start_day(){
-    setWorkedHours(0);
+    set_worked_hours(0);
 }
 
-double Employee::gethourlyRate() const{
-    return hourlyRate;
+double Employee::get_Hourly_rate() const{
+    return hourly_rate;
 }
 
-std::string Employee::getFirstName() const{
-    return firstName;
+std::string Employee::get_first_name() const{
+    return first_name;
 }
 
-std::string Employee::getLastName() const{
-    return lastName;
+std::string Employee::get_last_name() const{
+    return last_name;
 }
 
-std::string Employee::getEmailAdress() const{
-    return emailAdress;
+std::string Employee::get_email_adress() const{
+    return email_adress;
 }
 
-std::string Employee::getPESEL() const{
+std::string Employee::get_PESEL() const{
     return PESEL;
 }
 
-void Employee::sethourlyRate(double new_rate){
+void Employee::set_Hourly_rate(double new_rate){
     if (new_rate > 0)
-        hourlyRate = new_rate;
+        hourly_rate = new_rate;
 }
 
-double Employee::getHourlyRate(std::string employee_name) const{
+double Employee::get_hourly_rate(std::string employee_name) const{
     std::ifstream outfile;
     outfile.open("working_plan.txt");
     if (!outfile) {
         throw std::logic_error("Couldn't open the file!");
     }
-    std::string firstLine;
-    getline (outfile,firstLine);
+    std::string first_line;
+    getline (outfile,first_line);
     std::string employee;
-    double HourlyRate;
-    int workingDays, workingHours;
+    double Hourly_rate;
+    int working_days, working_hours;
     for (int i = 1; i <= 7; i ++)
     {
-        outfile >> employee >> HourlyRate >> workingDays >> workingHours;
+        outfile >> employee >> Hourly_rate >> working_days >> working_hours;
         if (employee == employee_name)
         {
             outfile.close();
-            return HourlyRate;
+            return Hourly_rate;
         }
     }
     outfile.close();
     return 0;
 }
 
-int Employee::getWorkingDays(std::string employee_name) const{
+int Employee::get_working_days(std::string employee_name) const{
     std::ifstream outfile;
     outfile.open("working_plan.txt");
     if (!outfile) {
         throw std::logic_error("Couldn't open the file!");
     }
-    std::string firstLine;
-    getline (outfile,firstLine);
+    std::string first_line;
+    getline (outfile,first_line);
     std::string employee;
-    double HourlyRate;
-    int workingDays, workingHours;
+    double Hourly_rate;
+    int working_days, working_hours;
     for (int i = 1; i <= 7; i ++)
     {
-        outfile >> employee >> HourlyRate >> workingDays >> workingHours;
+        outfile >> employee >> Hourly_rate >> working_days >> working_hours;
         if (employee == employee_name)
         {
             outfile.close();
-            return workingDays;
+            return working_days;
         }
     }
     outfile.close();
     return 0;
 }
 
-int Employee::getWorkingHours(std::string employee_name) const{
+int Employee::get_working_hours(std::string employee_name) const{
     std::ifstream outfile;
     outfile.open("working_plan.txt");
     if (!outfile) {
         throw std::logic_error("Couldn't open the file!");
     }
-    std::string firstLine;
-    getline (outfile,firstLine);
+    std::string first_line;
+    getline (outfile,first_line);
     std::string employee;
-    double HourlyRate;
-    int workingDays, workingHours;
+    double Hourly_rate;
+    int working_days, working_hours;
     for (int i = 1; i <= 7; i ++)
     {
-        outfile >> employee >> HourlyRate >> workingDays >> workingHours;
+        outfile >> employee >> Hourly_rate >> working_days >> working_hours;
         if (employee == employee_name)
         {
             outfile.close();
-            return workingHours;
+            return working_hours;
         }
     }
     outfile.close();
     return 0;
 }
 
-void Employee::setName(std::string newFirstName, std::string newLastName) {
-    firstName = newFirstName;
-    lastName = newLastName;
+void Employee::set_name(std::string new_first_name, std::string new_last_name) {
+    first_name = new_first_name;
+    last_name = new_last_name;
 }
 
-void Employee::setEmailAdress(std::string newEmailAdress) {
-    emailAdress = newEmailAdress;
+void Employee::set_email_adress(std::string new_email_adress) {
+    email_adress = new_email_adress;
 }
 
-void Employee::setPESEL(std::string newPESEL) {
-    if (newPESEL.size() == 11)
-        PESEL = newPESEL;
+void Employee::set_PESEL(std::string new_PESEL) {
+    if (new_PESEL.size() == 11)
+        PESEL = new_PESEL;
     else
         throw std::range_error("PESEL musi miec 11 cyfr");
 }
 
-void Employee::printRoster() {
+void Employee::print_roster() {
     std::cout << "Roster for month: date and part of day \n";
     for(long unsigned int i = 0; i < roster.size(); i++){
         roster[i].first.get_date();
@@ -158,27 +156,27 @@ void Employee::printRoster() {
     }
 }
 
-void Employee::takeVacation(Date new_date){
-    for(unsigned int i = 0; i < freeDays.size(); i++)
-        if (new_date == freeDays[i].first)
+void Employee::take_vacation(Date new_date){
+    for(unsigned int i = 0; i < free_days.size(); i++)
+        if (new_date == free_days[i].first)
             return;
     std::pair <Date, int> new_free_day;
     new_free_day.first = new_date;
-    if (getWorkingDays(get_type()) > (30 - freeDays.size()))
+    if (get_working_days(get_type()) > (30 - free_days.size()))
         for (int i = 1; i <= 3; i++){
             new_free_day.second = i;
-            freeDays.push_back(new_free_day);
+            free_days.push_back(new_free_day);
         }
 }
 
-void Employee::removeVacation(Date date){
+void Employee::remove_vacation(Date date){
     std::pair <Date, int> free_day;
     free_day.first = date;
-    for(unsigned int j = 0; j < freeDays.size(); j++)
+    for(unsigned int j = 0; j < free_days.size(); j++)
     {
-        if (freeDays[j].first == date)
+        if (free_days[j].first == date)
         {
-            freeDays.erase(freeDays.begin() + j);
+            free_days.erase(free_days.begin() + j);
         }
     }
 }

@@ -12,15 +12,15 @@ class Barman : public Employee
     public:
     Barman(std::string, std::string, std::string, std::string, double);
     
-    virtual double workingHours();
+    virtual double working_hours();
     virtual double salary();
-    virtual void setHourlyRate();
-    virtual void makeRoster(std::vector<std::pair<Date, int>>);
+    virtual void set_hourly_rate();
+    virtual void make_roster(std::vector<std::pair<Date, int>>);
 
-    void addDrink(std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>, Menu);
-    void changeDrinkPrice(std::string, double, double, Menu);
-    void removeDrink(std::string, Menu);
-    void doDrink(std::string, Menu);
+    void add_drink(std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>, Menu);
+    void change_drink_price(std::string, double, double, Menu);
+    void remove_drink(std::string, Menu);
+    void do_drink(std::string, Menu);
 
     virtual std::string get_type();
 };
