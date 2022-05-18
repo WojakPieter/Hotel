@@ -39,8 +39,11 @@ class Hotel
     void set_current_employees();
     void change_current_employees(Date, int);
     void choose_entertainment(std::string guest_pesel, std::string name);
+    void check_guests();
 
-
+    void add_dish(std::string, std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>);
+    void remove_dish(std::string, std::string);
+    
     void set_name(std::string new_name);
     void set_stars(int new_stars);
     void set_budget(double new_budget);

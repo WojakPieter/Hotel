@@ -4,7 +4,7 @@
 #include <vector>
 #include <fstream>
 
-Simulation::Simulation(std::string file_name1, Date start_date1 std::string hotel_file1)
+Simulation::Simulation(std::string file_name1, Date start_date1, std::string hotel_file1)
 {
     file_name = file_name1;
     start_date = start_date1;
@@ -23,6 +23,7 @@ void Simulation::start()
     current_date = start_date;
     int relay = 1;
 
+    std::string p = "";
     while (!outfile.eof())
     {
         outfile >> p;
@@ -72,11 +73,16 @@ void Simulation::start()
             double money;
             char type;
             bool high_standard, family;
-            Date first_date, last_date;
+            int first_date_day, first_date_month, first_date_year, last_date_day, last_date_month, last_date_year;
             outfile >> first_name >> last_name >> email_adress >> PESEL >> money;
             Guest guest(first_name, last_name, email_adress, PESEL, money);
-            outfile >> type >> high_standard >> family >> first_date >> last_date;
-            std::pair<Date, Date> period = (first_date, last_date);
+            outfile >> type >> high_standard >> family;
+            outfile >> first_date_day >> first_date_month >> first_date_year >> last_date_day >> last_date_month >> last_date_year;
+            Date first_date(first_date_day, first_date_month, first_date_year);
+            Date last_date(last_date_day, last_date_month, last_date_year);
+            std::pair<Date, Date> period;
+            period.first = first_date;
+            period.second = last_date;
             hotel.check_in(guest, type, high_standard, family, period);
         }
 
@@ -89,9 +95,9 @@ void Simulation::start()
 
         if (p == "add_dish")
         {
-            std::string type, name, allergen, name_ingredient, mass;
+            std::string type, name, allergen, name_ingredient;
             double price, preparation_cost, preparation_time;
-            int amount_of_allergens, amount_of_ingredients;
+            int amount_of_allergens, amount_of_ingredients, mass;
             std::vector<Ingredient> ingredients;
             std::vector<std::string> allergens;
             outfile >> type >> name >> price >> preparation_cost >> preparation_time;

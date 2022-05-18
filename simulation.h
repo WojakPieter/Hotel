@@ -3,7 +3,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "hotel.h
+#include "hotel.h"
+#include "Date.h"
 
 class Simulation
 {
@@ -14,13 +15,13 @@ class Simulation
     Hotel hotel;
 
     public:
-    Simulation(std::string, Date);
+    Simulation(std::string, Date, std::string);
     
     void start();
     int change_relay(int);
     void set_hotel();
     // pracownicy: dodanie, usuniecie, zmiana stawki
     // gosc: bookowanie, zmiana daty, wypisanie, rozrywki
-}
+};
 
 #endif
