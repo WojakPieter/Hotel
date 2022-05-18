@@ -77,6 +77,15 @@ bool Hotel::check_in(Guest guest, char type, bool high_standard, bool family, st
     return false;
 }
 
+void Hotel::add_dish(std::string type, std::string name, double price, double prep_cost, double prep_time, std::vector<Ingredient> ingredients, std::vector<std::string> allergens)
+{
+    Dish dish(name, price, prep_cost, prep_time, ingredients, allergens);
+    if (type == "drink")
+        menu.add_drink(dish);
+    else
+        menu.add_food(dish);
+}
+
 void Hotel::check_out(Guest guest)
 {
     try{

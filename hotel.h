@@ -37,6 +37,9 @@ class Hotel
     void remove_room();
     void change_room_price();
     void set_current_employees();
+    void change_current_employees(Date, int);
+    void choose_entertainment(std::string guest_pesel, std::string name);
+
 
     void set_name(std::string new_name);
     void set_stars(int new_stars);
