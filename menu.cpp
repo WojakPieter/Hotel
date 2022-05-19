@@ -3,7 +3,7 @@
 #include <vector>
 #include "menu.h"
 
-Menu::Menu(std::string name1="", std::vector<Dish> food1={}, std::vector<Dish> drinks1={})
+Menu::Menu(std::string name1="", std::vector<Dish> food1 = {}, std::vector<Dish> drinks1 = {})
 {
     name = name1;
     food = food1;
@@ -83,7 +83,7 @@ double Menu::find_price(std::string name){
     for(unsigned int i = 0; i < food.size(); i++)
         if (name == food[i].get_name())
             return food[i].get_price();
-    
+
     for(unsigned int i = 0; i < drinks.size(); i++)
         if (name == drinks[i].get_name())
             return drinks[i].get_price();
@@ -94,7 +94,7 @@ double Menu::find_preparation_cost(std::string name){
     for(unsigned int i = 0; i < food.size(); i++)
         if (name == food[i].get_name())
             return food[i].get_preparation_cost();
-    
+
     for(unsigned int i = 0; i < drinks.size(); i++)
         if (name == drinks[i].get_name())
             return drinks[i].get_preparation_cost();
@@ -105,7 +105,7 @@ double Menu::find_preparation_time(std::string name){
      for(unsigned int i = 0; i < food.size(); i++)
         if (name == food[i].get_name())
             return food[i].get_preparation_time();
-    
+
     for(unsigned int i = 0; i < drinks.size(); i++)
         if (name == drinks[i].get_name())
             return drinks[i].get_preparation_time();

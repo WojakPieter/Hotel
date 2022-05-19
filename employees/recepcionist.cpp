@@ -3,25 +3,12 @@
 #include <algorithm>
 #include <vector>
 #include "employee.h"
-#include "room.h"
+#include "../room.h"
 
 Recepcionist::Recepcionist(std::string first_name, std::string last_name, std::string email_adress, std::string PESEL, double hourly_rate):
 Employee(first_name, last_name, email_adress, PESEL, hourly_rate)
-{}
+{type = "recepcionist";}
 
-double Recepcionist::working_hours()
-{
-    return get_working_days("recepcionist")*get_working_hours("recepcionist");
-}
-
-double Recepcionist::salary()
-{
-    return get_hourly_rate("recepcionist")*get_working_hours("recepcionist");
-}
-
-void Recepcionist::set_hourly_rate() {
-    hourly_rate = get_hourly_rate("recepcionist");
-}
 
 void Recepcionist::make_roster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
@@ -46,6 +33,3 @@ void Recepcionist::book_room(int room_number, Date first_date, Date last_date, G
     ;
 }
 
-std::string Recepcionist::get_type(){
-    return "recepcionist";
-}

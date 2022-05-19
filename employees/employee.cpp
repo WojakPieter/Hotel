@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <fstream>
 #include <vector>
-#include <string> 
+#include <string>
 
 Employee::Employee(std::string first_name1, std::string last_name1, std::string email_adress1, std::string PESEL1, double hourly_rate1)
 {
@@ -53,6 +53,24 @@ std::string Employee::get_email_adress() const{
 
 std::string Employee::get_PESEL() const{
     return PESEL;
+}
+
+std::string Employee::get_type() const {
+    return type;
+}
+
+double Employee::working_hours()
+{
+    return get_working_days(type)*get_working_hours(type);
+}
+
+double Employee::salary()
+{
+    return get_hourly_rate(type)*get_working_hours(type);
+}
+
+void Employee::set_hourly_rate() {
+    hourly_rate = get_hourly_rate(type);
 }
 
 void Employee::set_Hourly_rate(double new_rate){
@@ -148,13 +166,13 @@ void Employee::set_PESEL(std::string new_PESEL) {
         throw std::range_error("PESEL musi miec 11 cyfr");
 }
 
-void Employee::print_roster() {
+/*void Employee::print_roster() {
     std::cout << "Roster for month: date and part of day \n";
     for(long unsigned int i = 0; i < roster.size(); i++){
         roster[i].first.get_date();
         std::cout << " " << roster[i].second << std::endl;
     }
-}
+}*/
 
 void Employee::take_vacation(Date new_date){
     for(unsigned int i = 0; i < free_days.size(); i++)
@@ -179,4 +197,9 @@ void Employee::remove_vacation(Date date){
             free_days.erase(free_days.begin() + j);
         }
     }
+}
+
+bool Employee::works_in_a_change(Date date, int change)
+{
+    return std::count_if(roster.begin(), roster.end(), [&](std::pair<Date,int> p){return p.first==date && p.second==change;});
 }

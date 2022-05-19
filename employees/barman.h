@@ -2,8 +2,8 @@
 #define CPP_PROJECT_BARMAN_H
 #include <iostream>
 #include <string>
-#include "ingredient.h"
-#include "menu.h"
+#include "../ingredient.h"
+#include "../menu.h"
 #include <vector>
 #include "employee.h"
 
@@ -11,10 +11,7 @@ class Barman : public Employee
 {
     public:
     Barman(std::string, std::string, std::string, std::string, double);
-    
-    virtual double working_hours();
-    virtual double salary();
-    virtual void set_hourly_rate();
+
     virtual void make_roster(std::vector<std::pair<Date, int>>);
 
     void add_drink(std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>, Menu);
@@ -22,6 +19,5 @@ class Barman : public Employee
     void remove_drink(std::string, Menu);
     void do_drink(std::string, Menu);
 
-    virtual std::string get_type();
 };
 #endif

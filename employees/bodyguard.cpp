@@ -3,25 +3,13 @@
 #include <algorithm>
 #include <vector>
 #include "bodyguard.h"
-#include "guest.h"
+#include "../guest.h"
 
 Bodyguard::Bodyguard(std::string first_name, std::string last_name, std::string email_adress, std::string PESEL, double hourly_rate):
 Employee(first_name, last_name, email_adress, PESEL, hourly_rate)
-{}
+{{type = "bodyguard";}}
 
-double Bodyguard::working_hours()
-{
-    return get_working_days("bodyguard")*get_working_hours("bodyguard");
-}
 
-double Bodyguard::salary()
-{
-    return get_hourly_rate("bodyguard")*get_working_hours("bodyguard");
-}
-
-void Bodyguard::set_hourly_rate() {
-    hourly_rate = get_hourly_rate("bodyguard");
-}
 
 void Bodyguard::make_roster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
@@ -41,6 +29,3 @@ void Bodyguard::make_roster(std::vector<std::pair<Date, int>> schedule){
     }
 }
 
-std::string Bodyguard::get_type(){
-    return "bodyguard";
-}

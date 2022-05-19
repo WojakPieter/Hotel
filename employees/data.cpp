@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <iostream>
 #include <vector>
 #include <string>
 #include <memory>
@@ -9,10 +9,10 @@
 
 
 bool Data::add_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
-    
+
     std::unique_ptr<Employee> ptr = make_employee_pointer(type,first_name,second_name,email_adress,pesel,hourly_rate);
     for (auto& i: database) {
-        if (ptr -> get_PESEL() == i -> get_PESEL()) 
+        if (ptr -> get_PESEL() == i -> get_PESEL())
             return false;
     }
     database.push_back(std::move(ptr));
@@ -25,8 +25,8 @@ bool Data::remove_employee(std::string type, std::string first_name, std::string
         database.erase(std::find(database.begin(), database.end(), ptr));
         return true;
     }
-    catch(...){ 
-        return false; 
+    catch(...){
+        return false;
     }
 }
 
@@ -41,22 +41,22 @@ std::unique_ptr<Employee> Data::make_employee_pointer(std::string type, std::str
         return new_employee;
     }
 
-    if (type == "cook") {   
+    if (type == "cook") {
         std::unique_ptr<Employee> new_employee = std::make_unique<Cook>(first_name, second_name, email_adress, pesel, hourly_rate);
         return new_employee;
     }
-        
+
     if (type == "maid") {
         std::unique_ptr<Employee> new_employee = std::make_unique<Maid>(first_name, second_name, email_adress, pesel, hourly_rate);
         return new_employee;
     }
-        
+
     if (type == "manager") {
         std::unique_ptr<Employee> new_employee = std::make_unique<Manager>(first_name, second_name, email_adress, pesel, hourly_rate);
         return new_employee;
     }
-        
-    if (type == "recepcionist") {    
+
+    if (type == "recepcionist") {
         std::unique_ptr<Employee> new_employee = std::make_unique<Recepcionist>(first_name, second_name, email_adress, pesel, hourly_rate);
         return new_employee;
     }
@@ -69,7 +69,7 @@ std::unique_ptr<Employee> Data::make_employee_pointer(std::string type, std::str
 
 double Data::working_hours(std::string PESEL){
     for (auto& i: database){
-        if (PESEL == i -> get_PESEL()) 
+        if (PESEL == i -> get_PESEL())
             return i -> working_hours();
     }
     std::cout << "This employee does not exist.\n";
@@ -78,7 +78,7 @@ double Data::working_hours(std::string PESEL){
 
 double Data::salary(std::string PESEL){
     for (auto& i: database){
-        if (PESEL == i -> get_PESEL()) 
+        if (PESEL == i -> get_PESEL())
             return i -> salary();
     }
     std::cout << "This employee does not exist.\n";
@@ -140,7 +140,7 @@ void Data::set_employee_rate(std::string pesel, double newRate){
 bool Data::employee_roster(std::string pesel){
     for (auto& i: database){
         if (pesel == i -> get_PESEL()){
-            i -> print_roster();
+            //i -> print_roster();
             return true;
         }
     }
@@ -155,4 +155,9 @@ bool Data::make_employee_roster(std::string pesel, std::vector<std::pair<Date, i
         }
     }
     return false;
+}
+
+void Data::clear()
+{
+    database.clear();
 }

@@ -1,6 +1,6 @@
 #ifndef CPP_PROJECT_DATA_H
 #define CPP_PROJECT_DATA_H
-#include <iostream> 
+#include <iostream>
 #include <vector>
 #include <string>
 #include <memory>
@@ -33,7 +33,7 @@ class Data
     bool employee_roster(std::string);
     bool make_employee_roster(std::string, std::vector<std::pair<Date, int>>);
     friend class Hotel;
-    friend class Manager;
+    void clear();
 };
 
 #endif

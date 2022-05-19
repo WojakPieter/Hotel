@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Date.h"
+#include "../date.cpp"
 
 class Employee
 {
@@ -12,6 +12,7 @@ class Employee
     std::string last_name;
     std::string email_adress;
     std::string PESEL;
+    std::string type;
     double hourly_rate;
     double x;
     std::vector<std::pair<Date, int>> roster;
@@ -28,6 +29,7 @@ class Employee
     std::string get_last_name() const;
     std::string get_email_adress() const;
     std::string get_PESEL() const;
+    std::string get_type() const;
     double get_Hourly_rate() const;
     void set_Hourly_rate(double);
     void print_roster();
@@ -37,14 +39,14 @@ class Employee
     void set_name(std::string, std::string);
     void set_email_adress(std::string);
     void set_PESEL(std::string);
-    virtual void set_hourly_rate() = 0;
-    virtual double working_hours() = 0;
-    virtual double salary() = 0;
+    virtual void set_hourly_rate();
+    virtual double working_hours();
+    virtual double salary();
     virtual void make_roster(std::vector<std::pair<Date, int>>)=0;
     void start_day();
     void take_vacation(Date);
     void remove_vacation(Date);
-    virtual std::string get_type()=0;
+    bool works_in_a_change(Date, int);
 
     bool operator==(const Employee& second_employee)
     {

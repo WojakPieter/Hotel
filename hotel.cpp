@@ -68,7 +68,7 @@ bool Hotel::check_in(Guest guest, char type, bool high_standard, bool family, st
         if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family)
         {
             if(rooms.book_room(ptr->get_number(), period) && guest.get_receipt() >= (ptr->get_price()*(period.second-period.first+1))) {
-                guest.set_room_number(ptr->get_number()); 
+                guest.set_room_number(ptr->get_number());
                 guest.set_receipt(ptr->get_price()*(period.second-period.first+1) + guest.get_receipt());
                 return true;
             }
@@ -81,12 +81,12 @@ void Hotel::add_dish(std::string type, std::string name, double price, double pr
 {
     Dish dish(name, price, prep_cost, prep_time, ingredients, allergens);
     if (type == "drink")
-        menu().add_drink(dish);
+        menu.add_drink(dish);
     else
-        menu().add_food(dish);
+        menu.add_food(dish);
 }
 
-void Hotel::check_out(Guest guest)
+void Hotel::check_out(Guest& guest)
 {
     for(unsigned int i = 0; i < guests.size(); i++)
         if (guest.get_PESEL() == guests[i].get_PESEL())
@@ -96,6 +96,24 @@ void Hotel::check_out(Guest guest)
         }
     increase_budget(guest.get_receipt());
     // zamowic sprzatanie u sprzataczki
+}
+
+void Hotel::check_guests()
+{
+    for(Guest& g : guests)
+    {
+        if(g.get_last_date() == current_date) check_out(g);
+    }
+}
+
+void Hotel::change_current_employees(Date date, int change)
+{
+    current_employees.clear();
+    for(auto& ptr : employees.database)
+    {
+        if(ptr->works_in_a_change(date,change))
+            current_employees.add_employee(ptr->get_type(),ptr->get_first_name(),ptr->get_last_name(), ptr->get_email_adress(), ptr->get_PESEL(), ptr->get_hourly_rate(ptr->get_type()));
+    }
 }
 
 bool Hotel::handing_out_salary()
@@ -108,15 +126,22 @@ bool Hotel::handing_out_salary()
     return decrease_budget(outgo);
 }
 
-void Hotel::creating_schedule(Date)
+void Hotel::creating_schedule(Date date)
 {
+    std::vector<std::pair<Date, int>> changes;
+    for(int i=0; i<30; i++)
+    {
+        changes.push_back(std::make_pair<Date, int>(date+i,1));
+        changes.push_back(std::make_pair<Date, int>(date+i,2));
+        changes.push_back(std::make_pair<Date, int>(date+i,3));
+    }
     for(auto& ptr : employees.database)
     {
-        ;
+        ptr->make_roster(changes);
     }
 }
 
-bool Hotel::shortening_the_stay(Guest guest, Date new_last_date)
+bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
 {
     for(auto& room_ptr : rooms.rooms)
     {

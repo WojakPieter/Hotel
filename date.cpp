@@ -91,7 +91,7 @@ public:
         else return false;
     }
 
-    bool operator==(const Date& second_date)
+    bool operator==(const Date& second_date) const
     {
         return (year == second_date.year && month == second_date.month && day == second_date.day);
     }
