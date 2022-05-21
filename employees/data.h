@@ -32,8 +32,9 @@ class Data
     void set_employee_rate(std::string, double);
     bool employee_roster(std::string);
     bool make_employee_roster(std::string, std::vector<std::pair<Date, int>>);
-    friend class Hotel;
     void clear();
+    std::vector<std::unique_ptr<Employee>>::iterator begin();
+    std::vector<std::unique_ptr<Employee>>::iterator end();
 };
 
 #endif

@@ -47,6 +47,8 @@ class Employee
     void take_vacation(Date);
     void remove_vacation(Date);
     bool works_in_a_change(Date, int);
+    auto begin();
+    auto end();
 
     bool operator==(const Employee& second_employee)
     {

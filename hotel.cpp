@@ -63,7 +63,7 @@ void Hotel::change_employee_rate(std::string pesel, double new_rate){
 
 bool Hotel::check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date,Date> period)
 {
-    for(auto& ptr : rooms.rooms)
+    for(auto& ptr : rooms)
     {
         if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family)
         {
@@ -84,6 +84,68 @@ void Hotel::add_dish(std::string type, std::string name, double price, double pr
         menu.add_drink(dish);
     else
         menu.add_food(dish);
+}
+
+void Hotel::remove_dish(std::string type, std::string name)
+{
+    if(type == "drink")
+        menu.remove_drink(name);
+    else
+        menu.remove_food(name);
+}
+
+void Hotel::add_room(char type, int number, bool is_high_standard, bool is_family)
+{
+    switch(type)
+    {
+        case '1':
+            {
+                std::unique_ptr<Room> room_ptr = std::make_unique<OnePersonRoom>(number, is_high_standard);
+                rooms.add_room(std::move(room_ptr));
+                break;
+            }
+        case '2':
+            {
+                std::unique_ptr<Room> room_ptr = std::make_unique<TwoPersonRoom>(number, is_high_standard, is_family);
+                rooms.add_room(std::move(room_ptr));
+                break;
+            }
+        case '3':
+            {
+                std::unique_ptr<Room> room_ptr = std::make_unique<ThreePersonRoom>(number, is_high_standard, is_family);
+                rooms.add_room(std::move(room_ptr));
+                break;
+            }
+        case '4':
+            {
+                std::unique_ptr<Room> room_ptr = std::make_unique<FourPersonRoom>(number, is_high_standard, is_family);
+                rooms.add_room(std::move(room_ptr));
+                break;
+            }
+        case 's':
+            {
+                std::unique_ptr<Room> room_ptr = std::make_unique<Studio>(number);
+                rooms.add_room(std::move(room_ptr));
+                break;
+            }
+        case 'a':
+            {
+                std::unique_ptr<Room> room_ptr = std::make_unique<Apartment>(number);
+                rooms.add_room(std::move(room_ptr));
+                break;
+            }
+    }
+}
+
+void Hotel::remove_room(int number)
+{
+    for(auto& ptr : rooms)
+    {
+        if(ptr->get_number() == number)
+        {
+            rooms.remove_room(std::move(ptr));
+        }
+    }
 }
 
 void Hotel::check_out(Guest& guest)
@@ -109,7 +171,7 @@ void Hotel::check_guests()
 void Hotel::change_current_employees(Date date, int change)
 {
     current_employees.clear();
-    for(auto& ptr : employees.database)
+    for(auto& ptr : employees)
     {
         if(ptr->works_in_a_change(date,change))
             current_employees.add_employee(ptr->get_type(),ptr->get_first_name(),ptr->get_last_name(), ptr->get_email_adress(), ptr->get_PESEL(), ptr->get_hourly_rate(ptr->get_type()));
@@ -119,7 +181,7 @@ void Hotel::change_current_employees(Date date, int change)
 bool Hotel::handing_out_salary()
 {
     bool outgo = 0;
-    for(auto& ptr : employees.database)
+    for(auto& ptr : employees)
     {
         outgo += ptr->salary();
     }
@@ -135,7 +197,7 @@ void Hotel::creating_schedule(Date date)
         changes.push_back(std::make_pair<Date, int>(date+i,2));
         changes.push_back(std::make_pair<Date, int>(date+i,3));
     }
-    for(auto& ptr : employees.database)
+    for(auto& ptr : employees)
     {
         ptr->make_roster(changes);
     }
@@ -143,7 +205,7 @@ void Hotel::creating_schedule(Date date)
 
 bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
 {
-    for(auto& room_ptr : rooms.rooms)
+    for(auto& room_ptr : rooms)
     {
         if(room_ptr->get_number() == guest.get_room_number())
         {
@@ -187,7 +249,7 @@ void Hotel::paying_the_bills()
     double bill = 0;
     if(current_date.get_day() == 20)
     {
-        for(auto& room_ptr : rooms.rooms)
+        for(auto& room_ptr : rooms)
         {
             std::pair<double,double> func = room_ptr->get_maintain_costs_function();
             bill += (func.first * room_ptr->quantity_of_reserved_days(current_date - current_date.get_month_length(current_date.get_month()), current_date) + func.second);

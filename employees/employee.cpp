@@ -203,3 +203,4 @@ bool Employee::works_in_a_change(Date date, int change)
 {
     return std::count_if(roster.begin(), roster.end(), [&](std::pair<Date,int> p){return p.first==date && p.second==change;});
 }
+

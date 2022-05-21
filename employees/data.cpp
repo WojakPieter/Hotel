@@ -161,3 +161,13 @@ void Data::clear()
 {
     database.clear();
 }
+
+std::vector<std::unique_ptr<Employee>>::iterator Data::begin()
+{
+    return database.begin();
+}
+
+std::vector<std::unique_ptr<Employee>>::iterator Data::end()
+{
+    return database.end();
+}

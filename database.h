@@ -16,5 +16,6 @@ public:
     bool remove_room(std::unique_ptr<Room>);
     bool book_room(int room_number, std::pair<Date, Date>);
     bool is_room_free(int room_number, std::pair<Date, Date>);
-friend class Hotel;
+    std::vector<std::unique_ptr<Room>>::iterator begin();
+    std::vector<std::unique_ptr<Room>>::iterator end();
 };
