@@ -34,6 +34,18 @@ void Hotel::increment_current_date()
     current_date++;
 }
 
+void Hotel::choose_entertainment(std::string guest_pesel, std::string name)
+{
+    for(Guest& g : guests)
+    {
+        if(g->get_PESEL() == guest_pesel)
+        {
+            if(name == "taxi") g->order_taxi();
+            if(name == "tidying") g->order_waking_up(0);
+        }
+    }
+}
+
 void Hotel::increase_budget(double income)
 {
     budget += income;

@@ -21,7 +21,6 @@ std::string Simulation::get_file_name() {
 void Simulation::start()
 {
     set_hotel();
-
     std::ifstream outfile;
     outfile.open(file_name);
     if (!outfile) {
@@ -50,7 +49,7 @@ void Simulation::start()
             print_monthly_action(nr_of_employees, cash, bills);
         }
 
-        if (p == "choose_entertainment")
+        /*if (p == "choose_entertainment")
         {
             std::string name, guest_pesel, type;
             int hour;
