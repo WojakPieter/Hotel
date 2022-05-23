@@ -4,19 +4,21 @@
 #include <string>
 #include <vector>
 #include "hotel.h"
-#include "Date.h"
+#include "date.cpp"
 
 class Simulation
 {
     std::string file_name;
-    std::string hotel_file;
+    std::string room_file_name;
+    std::string employee_file_name;
     Date start_date;
     Date current_date;
-    Hotel hotel;
+    Hotel hotel = Hotel("",0,0);
 
     public:
-    Simulation(std::string, Date, std::string);
-    
+    Simulation(std::string, Date, std::string, std::string);
+    void load_rooms();
+    void load_employees();
     void start();
     int change_relay(int);
     void set_hotel();

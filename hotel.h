@@ -32,12 +32,12 @@ class Hotel
     void remove_employee(std::string, std::string, std::string, std::string, std::string, double);
     void change_employee_rate(std::string, double);
 
-    void add_room(char type, int number, bool is_high_standard, bool is_family);
+    void add_room(char type='0', int number=0, bool is_high_standard=true, bool is_family=true);
     void remove_room(int number);
     void change_room_price();
 
     void change_current_employees(Date, int);
-    //void choose_entertainment(std::string guest_pesel, std::string name);
+    void choose_entertainment(std::string guest_pesel, std::string name);
     void check_guests();
 
     void add_dish(std::string, std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>);
