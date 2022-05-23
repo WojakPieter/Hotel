@@ -4,7 +4,6 @@
 #include <string>
 #include <vector>
 #include "hotel.h"
-#include "date.cpp"
 
 class Simulation
 {
@@ -17,13 +16,24 @@ class Simulation
 
     public:
     Simulation(std::string, Date, std::string, std::string);
-    void load_rooms();
-    void load_employees();
+    
+    std::string get_file_name();
     void start();
     int change_relay(int);
+    void load_rooms();
+    void load_employees();
     void set_hotel();
-    // pracownicy: dodanie, usuniecie, zmiana stawki
-    // gosc: bookowanie, zmiana daty, wypisanie, rozrywki
+
+// gettery i settery
+    // void print_change_date_of_stay();  dorobic
+
+    void print_checking_in(std::string, std::string);
+    void print_adding_employee(std::string, std::string);
+    void print_removing_employee(std::string, std::string);
+    void print_choosing_entertainment(std::string, std::string, std::string, int);
+    void print_removing_dish(std::string);
+    void print_adding_dish(std::string);
+    void print_monthly_action(int, double, double);
 };
 
 #endif

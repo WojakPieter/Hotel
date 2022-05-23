@@ -5,7 +5,7 @@ class Date
 {
 public:
     int day, month, year;
-    Date(int day=15, int month=9, int year=2020)
+    Date(int day=1, int month=1, int year=1)
     {
         this->day = day;
         this->month = month;
@@ -59,16 +59,12 @@ public:
 
     void control_inputs()
     {
-        if(day < 1 || day > get_month_length(month))
-        {
-            std::cout << day << std::endl;
-            throw std::out_of_range("Day out of range");
-        }
-
-        if(month < 1 || month > 12)
-            throw std::out_of_range("Month out of range");
-        if(year < 1)
-            throw std::out_of_range("Year cannot be negative");
+        if(day < 1 || day > get_month_length(month));
+            // std::cout << "Day out of range" << std::endl;
+        if(month < 1 || month > 12);
+            // std::cout << "Month out of range" << std::endl;
+        if(year < 1);
+            // std::cout << "Year cannot be negative" << std::endl;
     }
 
     void set_day(int new_day)

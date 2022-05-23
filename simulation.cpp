@@ -14,6 +14,10 @@ Simulation::Simulation(std::string file_name1, Date start_date1, std::string roo
     employee_file_name = employee_file1;
 }
 
+std::string Simulation::get_file_name() {
+    return file_name;
+}
+
 void Simulation::start()
 {
     set_hotel();
@@ -22,10 +26,9 @@ void Simulation::start()
     if (!outfile) {
         throw std::logic_error("Couldn't open the file!");
     }
+    std::string p="";
     current_date = start_date;
-    int relay = 1;
-
-    std::string p = "";
+    int relay = 1;   
     while (!outfile.eof())
     {
         outfile >> p;
@@ -36,49 +39,60 @@ void Simulation::start()
             outfile >> p;
         }
 
-        // ile wartosci pobiera kazda metoda "p"
-        // pobrac linie i z niej sprawdzic
 
         if (relay == 1 && start_date.get_day() == current_date.get_day())
         {
-            hotel.creating_schedule(current_date);
-            hotel.paying_the_bills();
-            bool y = hotel.handing_out_salary();
+            int nr_of_employees = hotel.creating_schedule(current_date);
+            double bills = hotel.paying_the_bills();
+            double cash = hotel.handing_out_salary();
+
+            print_monthly_action(nr_of_employees, cash, bills);
         }
 
         /*if (p == "choose_entertainment")
         {
-            std::string name, guest_pesel;
+            std::string name, guest_pesel, type;
+            int hour;
             outfile >> guest_pesel >> name;
-            hotel.choose_entertainment(guest_pesel, name);
-        }*/
+            if (name == "order_dish")
+                outfile >> type;
+            if (name == "order_waking_up")
+                outfile >> hour;
+            hotel.choose_entertainment(guest_pesel, name, type, hour);
+            print_choosing_entertainment(guest_pesel, name, type, hour);
+        }
 
-        if (p == "add_employee")
+        else if (p == "add_employee")
         {
             std::string type, firstN, lastN, email, pesel;
             double hourlyRate;
-            outfile >> type >> firstN >> lastN >> email >> pesel >> hourlyRate;
+            outfile >> type >> firstN >> lastN >> email >> pesel;
+            outfile >> hourlyRate;
             hotel.add_employee(type, firstN, lastN, email, pesel, hourlyRate);
+            print_adding_employee(firstN, lastN);
         }
 
-        if (p == "remove_employee")
+        else if (p == "remove_employee")
         {
             std::string type, firstN, lastN, email, pesel;
             double hourlyRate;
             outfile >> type >> firstN >> lastN >> email >> pesel >> hourlyRate;
             hotel.remove_employee(type, firstN, lastN, email, pesel, hourlyRate);
+            print_removing_employee(firstN, lastN);
         }
 
-        if (p == "check_in")
+        else if (p == "check_in") 
         {
             std::string first_name, last_name, email_adress, PESEL;
             double money;
             char type;
             bool high_standard, family;
-            int first_date_day=1, first_date_month=1, first_date_year=1, last_date_day=2, last_date_month=1, last_date_year=1;
-            outfile >> first_name >> last_name >> email_adress >> PESEL >> money;
+            int first_date_day, first_date_month, first_date_year, last_date_day, last_date_month, last_date_year;
+            outfile >> first_name >> last_name >> email_adress >> PESEL;
+            outfile >> money;
             Guest guest(first_name, last_name, email_adress, PESEL, money);
-            outfile >> type >> high_standard >> family;
+            outfile >> type;
+            outfile >> high_standard >> family;
             outfile >> first_date_day >> first_date_month >> first_date_year >> last_date_day >> last_date_month >> last_date_year;
             Date first_date(first_date_day, first_date_month, first_date_year);
             Date last_date(last_date_day, last_date_month, last_date_year);
@@ -86,16 +100,18 @@ void Simulation::start()
             period.first = first_date;
             period.second = last_date;
             hotel.check_in(guest, type, high_standard, family, period);
+            print_checking_in(first_name, last_name);
         }
 
-        if (p == "remove_dish")
+        else if (p == "remove_dish") 
         {
             std::string type, name;
             outfile >> type >> name;
             hotel.remove_dish(type, name);
+            print_removing_dish(name);
         }
 
-        if (p == "add_dish")
+        else if (p == "add_dish")
         {
             std::string type, name, allergen, name_ingredient;
             double price, preparation_cost, preparation_time;
@@ -117,13 +133,60 @@ void Simulation::start()
                 ingredients.push_back(ingredient);
             }
             hotel.add_dish(type, name, price, preparation_cost, preparation_time, ingredients, allergens);
+            print_adding_dish(name);
         }
 
         hotel.check_guests();
-        // jezeli roznica miedzy datami %=7 to sprzatanie pokoi
         p = "";
     }
     outfile.close();
+}
+
+
+void Simulation::print_adding_employee(std::string first_name, std::string last_name) {
+    std::cout << first_name << " " << last_name;
+    std::cout << " was just hired" << std::endl;
+}
+
+void Simulation::print_monthly_action(int nr_of_employees, double cash, double bills){
+    std::cout << "Hotel created a schedule for " << nr_of_employees << " employees." << std::endl;
+    std::cout << "Hotel paid " << bills << " zl for the bills." << std::endl;
+    std::cout << "Hotel paid " << cash << " zl for the employees' salaries." << std::endl;
+}
+
+void Simulation::print_removing_employee(std::string first_name, std::string last_name) {
+    std::cout << first_name << " " << last_name;
+    std::cout << " was just fired" << std::endl;
+}
+
+void Simulation::print_checking_in(std::string first_name, std::string last_name) {
+    std::cout << first_name << " " << last_name;
+    std::cout << " booked the room." << std::endl;
+}
+
+void Simulation::print_choosing_entertainment(std::string PESEL, std::string name, std::string type, int nr) {
+    std::cout << "Guest with PESEL " << PESEL << " " << name;
+    if (name == "order_dish")
+        std::cout << ": " << type << std::endl;
+    if (name == "order_waking_up")
+        std::cout << "at " << nr << std::endl;
+}
+
+void Simulation::print_removing_dish(std::string name) {
+    std::cout << name << " was removed from menu" << std::endl;
+}
+
+void Simulation::print_adding_dish(std::string name) {
+    std::cout << name << " was added to menu" << std::endl;
+}
+
+int Simulation::change_relay(int relay) {
+    if (relay == 3) {
+        current_date += 1;
+        return 1;
+    }
+    else
+        return relay+1;
 }
 
 void Simulation::load_rooms()
@@ -188,13 +251,4 @@ void Simulation::set_hotel() {
     load_rooms();
     load_employees();
 
-}
-
-int Simulation::change_relay(int relay) {
-    if (relay == 3) {
-        current_date += 1;
-        return 1;
-    }
-    else
-        return relay+1;
 }

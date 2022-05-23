@@ -10,125 +10,81 @@
 
 bool Data::add_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
 
-    std::unique_ptr<Employee> new_employee;
+    std::unique_ptr<Employee> new_employee = std::make_unique<Waiter>(first_name, second_name, email_adress, pesel, hourly_rate);
+    
     if (type == "barman") {
-        new_employee = std::make_unique<Barman>(first_name, second_name, email_adress, pesel, hourly_rate);
-        database.push_back(std::move(new_employee));
-        for (auto& i: database) {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Barman>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "bodyguard") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Bodyguard>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "cook") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Cook>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "maid") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Maid>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "manager") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Manager>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "recepcionist") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Recepcionist>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type != "waiter") {
+        return false;
+    }
+
+    for (auto& i: database) {
         if (new_employee -> get_PESEL() == i -> get_PESEL())
             return false;
     }
-    return true;
-    }
-
-    if (type == "bodyguard") {
-        new_employee = std::make_unique<Bodyguard>(first_name, second_name, email_adress, pesel, hourly_rate);
-        for (auto& i: database) {
-        if (new_employee -> get_PESEL() == i -> get_PESEL())
-            return false;
-    }
-        database.push_back(std::move(new_employee));
-
-    return true;
-    }
-
-    if (type == "cook") {
-        new_employee = std::make_unique<Cook>(first_name, second_name, email_adress, pesel, hourly_rate);
-        for (auto& i: database) {
-        if (new_employee -> get_PESEL() == i -> get_PESEL())
-            return false;
-    }
-        database.push_back(std::move(new_employee));
-    return true;
-    }
-
-    if (type == "maid") {
-        new_employee = std::make_unique<Maid>(first_name, second_name, email_adress, pesel, hourly_rate);
-        for (auto& i: database) {
-        if (new_employee -> get_PESEL() == i -> get_PESEL())
-            return false;
-    }
-        database.push_back(std::move(new_employee));
-    return true;
-    }
-
-    if (type == "manager") {
-        new_employee = std::make_unique<Manager>(first_name, second_name, email_adress, pesel, hourly_rate);
-        for (auto& i: database) {
-        if (new_employee -> get_PESEL() == i -> get_PESEL())
-            return false;
-    }
-        database.push_back(std::move(new_employee));
-    return true;
-    }
-
-    if (type == "recepcionist") {
-        new_employee = std::make_unique<Recepcionist>(first_name, second_name, email_adress, pesel, hourly_rate);
-        for (auto& i: database) {
-        if (new_employee -> get_PESEL() == i -> get_PESEL())
-            return false;
-    }
-        database.push_back(std::move(new_employee));
-    return true;
-    }
-
-    if (type == "waiter") {
-        new_employee = std::make_unique<Waiter>(first_name, second_name, email_adress, pesel, hourly_rate);
-        for (auto& i: database) {
-        if (new_employee -> get_PESEL() == i -> get_PESEL())
-            return false;
-    }
-        database.push_back(std::move(new_employee));
-    return true;
-    }
+    database.push_back(std::move(new_employee));
     return true;
 }
 
 bool Data::remove_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate){
-    std::unique_ptr<Employee> ptr = make_employee_pointer(type,first_name,second_name,email_adress,pesel,hourly_rate);
+    std::unique_ptr<Employee> new_employee = std::make_unique<Waiter>(first_name, second_name, email_adress, pesel, hourly_rate);
+
+    if (type == "barman") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Barman>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "bodyguard") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Bodyguard>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "cook") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Cook>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "maid") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Maid>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "manager") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Manager>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type == "recepcionist") {
+        std::unique_ptr<Employee> new_employee = std::make_unique<Recepcionist>(first_name, second_name, email_adress, pesel, hourly_rate);
+    }
+
+    else if (type != "waiter") {
+        return false;
+    }
+
     try{
-        database.erase(std::find(database.begin(), database.end(), ptr));
+        database.erase(std::find(database.begin(), database.end(), new_employee));
         return true;
     }
     catch(...){
         return false;
-    }
-}
-
-std::unique_ptr<Employee> Data::make_employee_pointer(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate){
-    if (type == "barman") {
-        std::unique_ptr<Employee> new_employee = std::make_unique<Barman>(first_name, second_name, email_adress, pesel, hourly_rate);
-        return std::move(new_employee);
-    }
-
-    if (type == "bodyguard") {
-        std::unique_ptr<Employee> new_employee = std::make_unique<Bodyguard>(first_name, second_name, email_adress, pesel, hourly_rate);
-        return std::move(new_employee);
-    }
-
-    if (type == "cook") {
-        std::unique_ptr<Employee> new_employee = std::make_unique<Cook>(first_name, second_name, email_adress, pesel, hourly_rate);
-        return std::move(new_employee);
-    }
-
-    if (type == "maid") {
-        std::unique_ptr<Employee> new_employee = std::make_unique<Maid>(first_name, second_name, email_adress, pesel, hourly_rate);
-        return std::move(new_employee);
-    }
-
-    if (type == "manager") {
-        std::unique_ptr<Employee> new_employee = std::make_unique<Manager>(first_name, second_name, email_adress, pesel, hourly_rate);
-        return std::move(new_employee);
-    }
-
-    if (type == "recepcionist") {
-        std::unique_ptr<Employee> new_employee = std::make_unique<Recepcionist>(first_name, second_name, email_adress, pesel, hourly_rate);
-        return std::move(new_employee);
-    }
-
-    if (type == "waiter") {
-        std::unique_ptr<Employee> new_employee = std::make_unique<Waiter>(first_name, second_name, email_adress, pesel, hourly_rate);
-        return std::move(new_employee);
     }
 }
 

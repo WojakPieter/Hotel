@@ -1,3 +1,3 @@
-Kuzyn Prezesa wp@wp.pl 02253101031 maid 400
-Jan Kowalski onet@onet.pl 03345594345 foo 25
-Mietek Zul interia@interia.pl 97834577266 foo 10
+Kuzyn Prezesa wp@wp.pl 02253101031 manager 400
+Jan Kowalski onet@onet.pl 03345594345 cook 25
+Mietek Zul interia@interia.pl 97834577266 maid 10

@@ -1,7 +1,14 @@
+#include <iostream>
+// #include "hotel.h"
 #include "simulation.h"
+#include <memory>
+#include <vector>
+#include <string>
+#include <fstream>
 
-int main()
-{
-	Simulation s("plik.txt", Date(15,10,2020), "rooms.txt", "employees.txt");
-	s.start();
+int main(){
+	Date data(3, 9, 2020);
+    Simulation play("plik.txt", data, "rooms.txt", "employees.txt");
+	// std::cout << play.get_file_name();
+	play.start();
 }
