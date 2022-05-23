@@ -2,13 +2,16 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstdlib>
 #include <fstream>
+#include <sstream>
 
-Simulation::Simulation(std::string file_name1, Date start_date1, std::string hotel_file1)
+Simulation::Simulation(std::string file_name1, Date start_date1, std::string room_file1, std::string employee_file1)
 {
     file_name = file_name1;
     start_date = start_date1;
-    hotel_file = hotel_file1;
+    room_file_name = room_file1;
+    employee_file_name = employee_file1;
 }
 
 std::string Simulation::get_file_name() {
@@ -17,7 +20,7 @@ std::string Simulation::get_file_name() {
 
 void Simulation::start()
 {
-    // set_hotel();
+    set_hotel();
 
     std::ifstream outfile;
     outfile.open(file_name);
@@ -140,14 +143,6 @@ void Simulation::start()
     outfile.close();
 }
 
-void Simulation::set_hotel() {
-    std::ifstream outfile;
-    outfile.open(hotel_file);
-    if (!outfile) {
-        throw std::logic_error("Couldn't open the file with basic hotel!");
-    }
-    while (!outfile.eof()){}
-}
 
 void Simulation::print_adding_employee(std::string first_name, std::string last_name) {
     std::cout << first_name << " " << last_name;
@@ -193,4 +188,68 @@ int Simulation::change_relay(int relay) {
     }
     else
         return relay+1;
+}
+
+void Simulation::load_rooms()
+{
+    std::fstream room_file;
+    room_file.open(room_file_name, std::ios::in);
+    if(!room_file.good())
+        throw std::logic_error("Couldn't open the file!");
+    std::string line;
+    while(std::getline(room_file, line))
+    {
+        std::stringstream line_str(line);
+        int number;
+        char type;
+        bool is_high_standard, family;
+        std::string nr_str, type_str, hs_str, f_str;
+        getline(line_str, nr_str, ' ');
+        number = std::atoi(nr_str.c_str());
+        getline(line_str, type_str, ' ');
+        type = type_str[0];
+        getline(line_str, hs_str, ' ');
+        getline(line_str, f_str, ' ');
+        if(hs_str == "true")
+            is_high_standard = true;
+        if(hs_str == "false")
+            is_high_standard = false;
+        if(f_str == "true")
+            family = true;
+        if(f_str == "false")
+            family = false;
+        hotel.add_room(type, number, is_high_standard, family);
+    }
+    room_file.close();
+}
+
+void Simulation::load_employees()
+{
+    std::fstream employees_file;
+    employees_file.open(employee_file_name, std::ios::in);
+    if(!employees_file.good())
+        throw std::logic_error("Couldn't open the file!");
+    std::string line;
+    while(std::getline(employees_file, line))
+    {
+        std::stringstream line_str(line);
+        std::string first_name, last_name, email, pesel, type, rate_str;
+        double rate;
+        std::string::size_type sz;
+        getline(line_str, first_name, ' ');
+        getline(line_str, last_name, ' ');
+        getline(line_str, email, ' ');
+        getline(line_str, pesel, ' ');
+        getline(line_str, type, ' ');
+        getline(line_str, rate_str, ' ');
+        rate = std::stod(rate_str);
+        hotel.add_employee(type, first_name, last_name, email, pesel, rate);
+    }
+    employees_file.close();
+}
+
+void Simulation::set_hotel() {
+    load_rooms();
+    load_employees();
+
 }

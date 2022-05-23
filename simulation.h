@@ -8,17 +8,25 @@
 class Simulation
 {
     std::string file_name;
-    std::string hotel_file;
+    std::string room_file_name;
+    std::string employee_file_name;
     Date start_date;
     Date current_date;
     Hotel hotel = Hotel("",0,0);
+
     public:
-    Simulation(std::string, Date, std::string);
+    Simulation(std::string, Date, std::string, std::string);
     
     std::string get_file_name();
     void start();
     int change_relay(int);
+    void load_rooms();
+    void load_employees();
     void set_hotel();
+
+// gettery i settery
+    // void print_change_date_of_stay();  dorobic
+
     void print_checking_in(std::string, std::string);
     void print_adding_employee(std::string, std::string);
     void print_removing_employee(std::string, std::string);
@@ -26,8 +34,6 @@ class Simulation
     void print_removing_dish(std::string);
     void print_adding_dish(std::string);
     void print_monthly_action(int, double, double);
-    // pracownicy: dodanie, usuniecie, zmiana stawki
-    // gosc: bookowanie, zmiana daty, wypisanie, rozrywki
 };
 
 #endif

@@ -178,18 +178,23 @@ void Hotel::change_current_employees(Date date, int change)
     }
 }
 
-bool Hotel::handing_out_salary()
+double Hotel::handing_out_salary()
 {
-    bool outgo = 0;
+    double outgo = 0;
     for(auto& ptr : employees)
     {
         outgo += ptr->salary();
     }
-    return decrease_budget(outgo);
+    bool flag = decrease_budget(outgo);
+    if(flag)
+        return outgo;
+    else 
+        return 0;
 }
 
-void Hotel::creating_schedule(Date date)
+int Hotel::creating_schedule(Date date)
 {
+    int nr_of_employees = 0;
     std::vector<std::pair<Date, int>> changes;
     for(int i=0; i<30; i++)
     {
@@ -200,7 +205,9 @@ void Hotel::creating_schedule(Date date)
     for(auto& ptr : employees)
     {
         ptr->make_roster(changes);
+        nr_of_employees += 1;
     }
+    return nr_of_employees;
 }
 
 bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
@@ -244,7 +251,7 @@ bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
     }
 }
 
-void Hotel::paying_the_bills()
+double Hotel::paying_the_bills()
 {
     double bill = 0;
     if(current_date.get_day() == 20)
@@ -255,6 +262,16 @@ void Hotel::paying_the_bills()
             bill += (func.first * room_ptr->quantity_of_reserved_days(current_date - current_date.get_month_length(current_date.get_month()), current_date) + func.second);
         }
     }
+    return bill;
 }
 
-void Hotel::choose_entertainment(std::string name, std::string PESEL, std::string type, int hour){}
+void Hotel::choose_entertainment(std::string name, std::string PESEL, std::string type, int hour) {
+    // for(Guest& g : guests)
+    // {
+    //     if(g->get_PESEL() == PESEL)
+    //     {
+    //         if(name == "taxi") g->order_taxi();
+    //         if(name == "tidying") g->order_waking_up(0);
+    //     }
+    // }
+}
