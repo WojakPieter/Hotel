@@ -256,3 +256,5 @@ void Hotel::paying_the_bills()
         }
     }
 }
+
+void Hotel::choose_entertainment(std::string name, std::string PESEL, std::string type, int hour){}
