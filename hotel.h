@@ -49,7 +49,7 @@ class Hotel
     void increment_current_date();
     void increase_budget(double income);
     bool decrease_budget(double outgo);
-    bool check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period); //gosc i losowanie mu pokoju
+    int check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period); //gosc i losowanie mu pokoju
     void check_out(Guest&);
     bool shortening_the_stay(Guest&, Date);
     double handing_out_salary();
