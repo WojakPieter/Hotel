@@ -61,20 +61,21 @@ void Hotel::change_employee_rate(std::string pesel, double new_rate){
     employees.set_employee_rate(pesel, new_rate);
 }
 
-bool Hotel::check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date,Date> period)
+int Hotel::check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date,Date> period)
 {
     for(auto& ptr : rooms)
     {
         if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family)
         {
-            if(rooms.book_room(ptr->get_number(), period) && guest.get_receipt() >= (ptr->get_price()*(period.second-period.first+1))) {
+            // return ptr->get_number();
+            if(rooms.book_room(ptr->get_number(), period) && guest.get_money() >= (ptr->get_price()*(period.second-period.first+1))) {
                 guest.set_room_number(ptr->get_number());
                 guest.set_receipt(ptr->get_price()*(period.second-period.first+1) + guest.get_receipt());
-                return true;
+                return ptr->get_number();
             }
         }
     }
-    return false;
+    return 0;
 }
 
 void Hotel::add_dish(std::string type, std::string name, double price, double prep_cost, double prep_time, std::vector<Ingredient> ingredients, std::vector<std::string> allergens)
@@ -186,10 +187,7 @@ double Hotel::handing_out_salary()
         outgo += ptr->salary();
     }
     bool flag = decrease_budget(outgo);
-    if(flag)
-        return outgo;
-    else 
-        return 0;
+    return outgo;
 }
 
 int Hotel::creating_schedule(Date date)
@@ -254,13 +252,10 @@ bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
 double Hotel::paying_the_bills()
 {
     double bill = 0;
-    if(current_date.get_day() == 20)
+    for(auto& room_ptr : rooms)
     {
-        for(auto& room_ptr : rooms)
-        {
-            std::pair<double,double> func = room_ptr->get_maintain_costs_function();
-            bill += (func.first * room_ptr->quantity_of_reserved_days(current_date - current_date.get_month_length(current_date.get_month()), current_date) + func.second);
-        }
+        std::pair<double,double> func = room_ptr->get_maintain_costs_function();
+        bill += (func.first * room_ptr->quantity_of_reserved_days(current_date - current_date.get_month_length(current_date.get_month()), current_date) + func.second);
     }
     return bill;
 }

@@ -28,6 +28,7 @@ void Simulation::start()
         throw std::logic_error("Couldn't open the file!");
     }
     std::string p="";
+    int i = 0;
     current_date = start_date;
     int relay = 1;   
     while (!outfile.eof())
@@ -37,16 +38,17 @@ void Simulation::start()
         {
             relay = change_relay(relay);
             hotel.change_current_employees(current_date, relay);
+            i = 0;
             outfile >> p;
         }
 
 
-        if (relay == 1 && start_date.get_day() == current_date.get_day())
+        if (i == 0 && relay == 1 && start_date.get_day() == current_date.get_day())
         {
             int nr_of_employees = hotel.creating_schedule(current_date);
             double bills = hotel.paying_the_bills();
             double cash = hotel.handing_out_salary();
-
+            i = 1;
             print_monthly_action(nr_of_employees, cash, bills);
         }
 
@@ -100,8 +102,8 @@ void Simulation::start()
             std::pair<Date, Date> period;
             period.first = first_date;
             period.second = last_date;
-            hotel.check_in(guest, type, high_standard, family, period);
-            print_checking_in(first_name, last_name);
+            int room_number = hotel.check_in(guest, type, high_standard, family, period);
+            print_checking_in(first_name, last_name, room_number);
         }
 
         else if (p == "remove_dish") 
@@ -160,9 +162,9 @@ void Simulation::print_removing_employee(std::string first_name, std::string las
     std::cout << " was just fired" << std::endl;
 }
 
-void Simulation::print_checking_in(std::string first_name, std::string last_name) {
+void Simulation::print_checking_in(std::string first_name, std::string last_name, int room_number) {
     std::cout << first_name << " " << last_name;
-    std::cout << " booked the room." << std::endl;
+    std::cout << " booked the room nr " << room_number << std::endl;
 }
 
 void Simulation::print_choosing_entertainment(std::string PESEL, std::string name, std::string type, int nr) {
