@@ -77,6 +77,16 @@ void Guest::set_stay_length(int length)
     stay_length = length;
 }
 
+void Guest::set_first_date(Date date)
+{
+    first_day = date;
+}
+
+void Guest::set_last_date(Date date)
+{
+    last_day = date;
+}
+
 void Guest::order_taxi(){
     // wczytac z pliku jakis cennik atrakcji
     int price = 100;
@@ -96,10 +106,6 @@ bool Guest::subtract_money(double outgo)
     money -= outgo;
     return true;
 }
-
-bool Guest::change_date_of_stay(Date new_last_date){
-    ;
-} //usuniecie z kalendarza pokoju oraz zwrot pewnej kwoty
 
 void Guest::order_dish(std::string dish_name, Menu menu){
     int price = menu.find_price(dish_name);
@@ -133,15 +139,6 @@ Date Guest::get_last_date()
 }
 
 bool Guest::book_room(std::unique_ptr<Room> room, Date arrival_date, Date leave_date){
-     Date iter;
-     for(iter=arrival_date; iter <= leave_date; iter++)
-     {
-         if(room->is_reserved(iter)) return false;
-     }
-     for(iter=arrival_date; iter <= leave_date; iter++)
-     {
-         room->add_reserved_day(iter);
-     }
      room_number = room->get_number();
      receipt += room->get_price();
      return true;

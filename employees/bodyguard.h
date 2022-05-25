@@ -11,12 +11,8 @@ class Bodyguard : public Employee
     public:
     Bodyguard(std::string, std::string, std::string, std::string, double);
 
-    virtual double workingHours();
-    virtual double salary();
-    virtual void setHourlyRate();
-    virtual void makeRoster(std::vector<std::pair<Date, int>>);
-    virtual std::string get_type();
+    virtual void make_roster(std::vector<std::pair<Date, int>>);
 
-    void removeGuest(Guest, std::vector<Guest>);
+    void remove_guest(Guest, std::vector<Guest>);
 };
 #endif

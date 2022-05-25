@@ -9,12 +9,8 @@ class Waiter : public Employee
 {
     public:
     Waiter(std::string, std::string, std::string, std::string, double);
-    
-    virtual double workingHours();
-    virtual double salary();
-    virtual void setHourlyRate();
-    virtual void makeRoster(std::vector<std::pair<Date, int>>);
-    virtual std::string get_type();
+
+    virtual void make_roster(std::vector<std::pair<Date, int>>);
 
     void bring_the_dish();
     // double receipt();

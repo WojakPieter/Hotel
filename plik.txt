@@ -1,0 +1,7 @@
+book_room Adam K sks@wp.pl 03301500823 2000 1 0 1 15 10 2020 20 10 2020
+book_room Maja Z s@wp.pl 02301509084 200090 3 0 1 10 10 2020 11 10 2020
+add_employee cook Kasia Szymczak j@ep.pl 02301500823 7
+
+CHANGE
+book_room Adam K sks@wp.pl 03301500882 20000 4 1 1 4 10 2020 5 10 2020
+choose_entertainment 03301500823 order_dish cake

@@ -3,59 +3,39 @@
 #include "manager.h"
 #include <algorithm>
 #include <memory>
-#include "../data.h"
+#include "data.h"
 #include <vector>
 
-Manager::Manager(std::string firstName, std::string lastName, std::string emailAdress, std::string PESEL, double hourlyRate):
-Employee(firstName, lastName, emailAdress, PESEL, hourlyRate)
-{}
+Manager::Manager(std::string first_name, std::string last_name, std::string email_adress, std::string PESEL, double hourly_rate):
+Employee(first_name, last_name, email_adress, PESEL, hourly_rate)
+{type = "manager";}
 
-double Manager::workingHours()
-{
-    return getWorkingDays("manager")*getWorkingHours("manager");
-}
 
-double Manager::salary()
-{
-    return getHourlyRate("manager")*getWorkingHours("manager");
-}
-
-void Manager::setHourlyRate() {
-    hourlyRate = getHourlyRate("manager");
-}
-
-void Manager::makeRoster(std::vector<std::pair<Date, int>> schedule){
+void Manager::make_roster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
     std::vector<std::pair<Date, int>> new_schedule = schedule;
-    for(unsigned int i = 0; i < freeDays.size(); i++)
-        for(unsigned int j = 0; j < new_schedule.size(); j++)
-        {
-            if (new_schedule[j].second == freeDays[i].second && new_schedule[j].first == freeDays[i].first)
-            {
-                new_schedule.erase(new_schedule.begin() + j);
-                break;
-            }
-        }
+    auto pend = std::remove_if(schedule.begin(), schedule.end(), [&](std::pair<Date, int> changes){return (changes.second == 3 || changes.second == 2);});
+    schedule.erase(pend, schedule.end());
+    for(unsigned int i = 0; i < free_days.size(); i++)
+        new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), free_days[i]));
 
     std::random_shuffle(new_schedule.begin(), new_schedule.end());
-    for(int i = 0; i < (getWorkingDays("manager")-1); i++){
+    for(int i = 0; i < (get_working_days("manager")-1); i++){
         roster.push_back(new_schedule[i]);
     }
 }
 
-void dismissEmployee(std::unique_ptr<Employee> ptr, Data data){
-    data.remove_employee(std::move(ptr));
-}
 
-void hireEmployee(std::unique_ptr<Employee> ptr, Data data)
-{
-    data.add_employee(std::move(ptr));
-}
+// void Manager::dismissEmployee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate, Data data){
+//     data.remove_employee(type, first_name, second_name, email_adress, pesel, hourly_rate);
+// }
 
-void setEmployeeRate(std::string PESEL, double newRate, Data data){
-    data.set_employee_rate(PESEL, newRate);
-}
+// void Manager::hireEmployee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate, Data data)
+// {
+//     data.add_employee(type, first_name, second_name, email_adress, pesel, hourly_rate);
+// }
 
-std::string Manager::get_type(){
-    return "manager";
-}
+// void Manager::setEmployeeRate(std::string PESEL, double newRate, Data data){
+//     data.set_employee_rate(PESEL, newRate);
+// }
+

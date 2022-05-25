@@ -39,10 +39,12 @@ class Guest
     void set_receipt(double);
     void set_stay_length(int);
     void set_room_number(int);
+    void set_first_date(Date);
+    void set_last_date(Date);
 
     void add_money(double);
     bool subtract_money(double);
-    bool change_date_of_stay(Date); //usuniecie z kalendarza pokoju oraz zwrot pewnej kwoty
+    // bool change_date_of_stay(Date); //usuniecie z kalendarza pokoju oraz zwrot pewnej kwoty
     void order_taxi();
     void order_dish(std::string, Menu);
     void order_waking_up(int); // godzina podana i sprawdzic na ktorej zmianie
