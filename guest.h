@@ -42,6 +42,8 @@ class Guest
     void set_receipt(double);
     void set_stay_length(int);
     void set_room_number(int);
+    void set_first_date(Date);
+    void set_last_date(Date);
 
     void add_money(double);
     bool subtract_money(double);

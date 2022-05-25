@@ -57,7 +57,7 @@ bool Data_room::book_room(int room_number, std::pair<Date, Date> period)
     return false;
 }
 
-bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
+/*bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
 {
     for(auto& ptr : rooms)
     {
@@ -70,7 +70,7 @@ bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
         }
     }
     return true;
-}
+}*/
 
 std::vector<std::unique_ptr<Room>>::iterator Data_room::begin()
 {
