@@ -32,11 +32,11 @@ class Simulation
     // void print_change_date_of_stay();  dorobic
 
     void print_checking_in(std::string, std::string, int);
-    void print_adding_employee(std::string, std::string);
-    void print_removing_employee(std::string, std::string);
-    void print_choosing_entertainment(std::string, std::string, std::string, int);
-    void print_removing_dish(std::string);
-    void print_adding_dish(std::string);
+    void print_adding_employee(std::string, std::string, bool);
+    void print_removing_employee(std::string, std::string, bool);
+    void print_choosing_entertainment(std::string, std::string, std::string, int, bool);
+    void print_removing_dish(std::string, bool);
+    void print_adding_dish(std::string, bool);
     void print_monthly_action(int, double, double);
 };
 

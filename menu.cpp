@@ -18,36 +18,40 @@ void Menu::set_name(std::string new_name){
     name = new_name;
 }
 
-void Menu::add_food(Dish new_food){
+bool Menu::add_food(Dish new_food){
     for(unsigned int i = 0; i < food.size(); i++)
         if (new_food.get_name() == food[i].get_name())
-            return;
+            return false;
     food.push_back(new_food);
+    return true;
 }
 
-void Menu::add_drink(Dish new_drink){
+bool Menu::add_drink(Dish new_drink){
     for(unsigned int i = 0; i < drinks.size(); i++)
         if (new_drink.get_name() == drinks[i].get_name())
-            return;
+            return false;
     drinks.push_back(new_drink);
+    return true;
 }
 
-void Menu::remove_food(std::string name){
+bool Menu::remove_food(std::string name){
     for(unsigned int i = 0; i < food.size(); i++)
         if (name == food[i].get_name())
         {
             food.erase(food.begin() + i);
-            break;
+            return true;
         }
+    return false;
 }
 
-void Menu::remove_drink(std::string name){
+bool Menu::remove_drink(std::string name){
     for(unsigned int i = 0; i < drinks.size(); i++)
         if (name == drinks[i].get_name())
         {
             drinks.erase(drinks.begin() + i);
-            break;
+            return true;
         }
+    return false;
 }
 
 void Menu::change_food_price(std::string name, double new_price, double preparation_cost){

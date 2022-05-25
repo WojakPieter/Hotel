@@ -1,8 +1,18 @@
-Hotel created a schedule for 3employees
-Hotel paid 85.000000 zl for the bills
-Hotel paid 480.000000 zl for the employees' salaries
-Adam K booked the room nr -1
-Maja Z booked the room nr 224
+Hotel created a schedule for 24 employees
+Hotel paid 575.000000 zl for the bills
+Hotel paid 3840.000000 zl for the employees' salaries
+It is not possible to book a room for Adam Krol
+Maja Zryk booked the room nr 3
+Kasia Robak booked the room nr 35
 Kasia Szymczak was just hired
-Adam K booked the room nr 335
-Guest with PESEL 03301500823 order_dish: cake
+Adam K booked the room nr 4
+Guest with PESEL 03301500823 cannot choose this entertainment
+Guest with PESEL 02020202222 cannot choose this entertainment
+Guest with PESEL 02020202222 cannot choose this entertainment
+Guest with PESEL 02020202222 cannot choose this entertainment
+Guest with PESEL 02020202222 cannot choose this entertainment
+Dominika Wyszynska was just fired
+Grzegorz Grzeg booked the room nr 10
+Guest with PESEL 02301920930 cannot choose this entertainment
+Impossible attempt to add a employee named Agnieszka Mazur
+Impossible attempt to remove a notexistent dish named pina_colada

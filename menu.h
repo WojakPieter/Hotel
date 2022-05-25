@@ -17,10 +17,10 @@ class Menu
     std::string get_name();
     void set_name(std::string);
 
-    void add_food(Dish);
-    void add_drink(Dish);
-    void remove_food(std::string);
-    void remove_drink(std::string);
+    bool add_food(Dish);
+    bool add_drink(Dish);
+    bool remove_food(std::string);
+    bool remove_drink(std::string);
     void change_food_price(std::string, double, double);
     void change_drink_price(std::string, double, double);
 

@@ -3,15 +3,22 @@
 #include <algorithm>
 
 bool Data_room::add_room(std::unique_ptr<Room> room_ptr)
-{
-    for(auto& i : rooms)
-    {
-        if(i == room_ptr) return false;
+{   
+    try{
+        for(auto& i : rooms)
+        {
+            if(i == room_ptr) 
+                return false;
+        }
+        int nr = room_ptr -> get_number();
+        rooms.push_back(std::move(room_ptr));
+        numbers_of_rooms.push_back(nr);
+        return true;
     }
-    int nr = room_ptr -> get_number();
-    rooms.push_back(std::move(room_ptr));
-    numbers_of_rooms.push_back(nr);
-    return true;
+    catch(...) 
+    { 
+        return false; 
+    }
 }
 
 bool Data_room::remove_room(std::unique_ptr<Room> room_ptr)
