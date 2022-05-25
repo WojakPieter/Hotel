@@ -97,9 +97,18 @@ Apartment::Apartment(int number) : Room(number, true, true)
     Room::set_parameters(0, 0, 1.4, 1.5);
 }
 
-bool Room::is_reserved(Date date)
+bool Room::is_reserved_at_day(Date date)
 {
     return(std::count(reserved_days.begin(), reserved_days.end(), date));
+}
+
+bool Room::is_reserved_in_period(std::pair<Date,Date> period)
+{
+    for(Date iter=period.first; iter<=period.second; iter++)
+    {
+        if(is_reserved_at_day(iter)) return true;
+    }
+    return false;
 }
 
 bool Room::is_high_standard()
@@ -114,13 +123,13 @@ bool Room::is_family()
 
 void Room::add_reserved_day(Date d)
 {
-    if(is_reserved(d)) return;
+    if(is_reserved_at_day(d)) return;
     reserved_days.push_back(d);
 }
 
 void Room::remove_reserved_day(Date d)
 {
-    if(!(is_reserved(d))) return;
+    if(!(is_reserved_at_day(d))) return;
     reserved_days.erase(std::find(reserved_days.begin(), reserved_days.end(), d));
 }
 

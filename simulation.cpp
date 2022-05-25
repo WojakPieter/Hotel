@@ -24,7 +24,7 @@ void Simulation::start()
     set_hotel();
 
     clear_simulation_file();
-    
+
     std::ifstream outfile;
     outfile.open(file_name);
     if (!outfile) {
@@ -33,7 +33,7 @@ void Simulation::start()
     std::string p="";
     int i = 0;
     current_date = start_date;
-    int relay = 1;   
+    int relay = 1;
     while (!outfile.eof())
     {
         outfile >> p;
@@ -87,7 +87,7 @@ void Simulation::start()
             print_removing_employee(firstN, lastN);
         }
 
-        else if (p == "check_in") 
+        else if (p == "book_room")
         {
             std::string first_name, last_name, email_adress, PESEL;
             double money;
@@ -105,11 +105,11 @@ void Simulation::start()
             std::pair<Date, Date> period;
             period.first = first_date;
             period.second = last_date;
-            int room_number = hotel.check_in(guest, type, high_standard, family, period);
+            int room_number = hotel.book_room(guest, type, high_standard, family, period);
             print_checking_in(first_name, last_name, room_number);
         }
 
-        else if (p == "remove_dish") 
+        else if (p == "remove_dish")
         {
             std::string type, name;
             outfile >> type >> name;

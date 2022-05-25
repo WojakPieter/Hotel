@@ -3,12 +3,13 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#pragma once
 
 class Date
 {
     public:
     int day, month, year;
-    Date(int, int, int);
+    Date(int=1, int=1, int=1);
 
     int get_day();
     int get_month();

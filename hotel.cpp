@@ -1,6 +1,7 @@
 #include "hotel.h"
 #include <string>
 #include <iostream>
+#include <random>
 
 Hotel::Hotel(std::string name1, int stars1, double budget1)
 {
@@ -61,21 +62,38 @@ void Hotel::change_employee_rate(std::string pesel, double new_rate){
     employees.set_employee_rate(pesel, new_rate);
 }
 
-int Hotel::check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date,Date> period)
+int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period)
 {
+    std::vector<int> numbers_of_matching_rooms;
+    bool flag = false;
     for(auto& ptr : rooms)
     {
-        if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family)
+        if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family && !ptr->is_reserved_in_period(period))
         {
-            // return ptr->get_number();
-            if(rooms.book_room(ptr->get_number(), period) && guest.get_money() >= (ptr->get_price()*(period.second-period.first+1))) {
-                guest.set_room_number(ptr->get_number());
+            if(guest.get_money() >= (ptr->get_price()*(period.second-period.first+1))) {
+                numbers_of_matching_rooms.push_back(ptr->get_number());
                 guest.set_receipt(ptr->get_price()*(period.second-period.first+1) + guest.get_receipt());
-                return ptr->get_number();
+                flag = true;
             }
         }
     }
-    return 0;
+    if(flag)
+    {
+        std::default_random_engine generator;
+        std::uniform_int_distribution<int> distribution(0,numbers_of_matching_rooms.size()-1);
+        int chosen_room_index = distribution(generator);
+        int room_number = numbers_of_matching_rooms[chosen_room_index];
+        rooms.book_room(room_number, period);
+        guest.set_room_number(room_number);
+        return room_number;
+    }
+    return -1;
+}
+
+void Hotel::check_in(Guest guest)
+{
+    guest.subtract_money(guest.get_receipt());
+    increase_budget(guest.get_receipt());
 }
 
 void Hotel::add_dish(std::string type, std::string name, double price, double prep_cost, double prep_time, std::vector<Ingredient> ingredients, std::vector<std::string> allergens)
@@ -157,7 +175,6 @@ void Hotel::check_out(Guest& guest)
             guests.erase(guests.begin() + i);
             break;
         }
-    increase_budget(guest.get_receipt());
     // zamowic sprzatanie u sprzataczki
 }
 
@@ -165,6 +182,7 @@ void Hotel::check_guests()
 {
     for(Guest& g : guests)
     {
+        if(g.get_first_date() == current_date) check_in(g);
         if(g.get_last_date() == current_date) check_out(g);
     }
 }
@@ -233,7 +251,7 @@ bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
                     while(guest.last_day < new_last_date)
                     {
                         current_checked_date = guest.last_day + 1;
-                        if(room_ptr->is_reserved(current_checked_date)) return false;
+                        if(room_ptr->is_reserved_at_day(current_checked_date)) return false;
                     }
                     while(guest.last_day <= new_last_date)
                     {

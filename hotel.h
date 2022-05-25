@@ -32,6 +32,7 @@ class Hotel
     void remove_employee(std::string, std::string, std::string, std::string, std::string, double);
     void change_employee_rate(std::string, double);
 
+    int book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> periodd);
     void add_room(char type='0', int number=0, bool is_high_standard=true, bool is_family=true);
     void remove_room(int number);
     void change_room_price();
@@ -49,7 +50,7 @@ class Hotel
     void increment_current_date();
     void increase_budget(double income);
     bool decrease_budget(double outgo);
-    int check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period); //gosc i losowanie mu pokoju
+    void check_in(Guest guest); //gosc i losowanie mu pokoju
     void check_out(Guest&);
     bool shortening_the_stay(Guest&, Date);
     double handing_out_salary();

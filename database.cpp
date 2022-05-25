@@ -38,7 +38,7 @@ bool Data_room::book_room(int room_number, std::pair<Date, Date> period)
     {
         if(ptr->get_number() == room_number)
         {
-            if (!is_room_free(room_number, period))
+            if (ptr->is_reserved_in_period(period))
                 return false;
             for(Date d=period.first; d<=period.second; d++)
             {
@@ -50,7 +50,7 @@ bool Data_room::book_room(int room_number, std::pair<Date, Date> period)
     return false;
 }
 
-bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
+/*bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
 {
     for(auto& ptr : rooms)
     {
@@ -58,12 +58,12 @@ bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
         {
            for(Date d=period.first; d<=period.second; d++)
             {
-                if(ptr -> is_reserved(d)) return false;
+                if(ptr -> is_reserved_at_day(d)) return false;
             }
         }
     }
     return true;
-}
+}*/
 
 std::vector<std::unique_ptr<Room>>::iterator Data_room::begin()
 {

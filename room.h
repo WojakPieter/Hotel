@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
-#include "date.cpp"
+#include "date.h"
 
 class Room
 {
@@ -35,7 +35,8 @@ public:
     virtual int get_number_of_beds()=0;
     virtual void set_parameters(double price_multiplier_high, double area_multiplier_high,
                         double price_multiplier_low, double area_multiplier_low);
-    bool is_reserved(Date);
+    bool is_reserved_at_day(Date);
+    bool is_reserved_in_period(std::pair<Date,Date>);
     //
 
     bool operator==(const Room& second_room)
