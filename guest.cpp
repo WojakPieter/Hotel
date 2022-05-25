@@ -97,10 +97,6 @@ bool Guest::subtract_money(double outgo)
     return true;
 }
 
-bool Guest::change_date_of_stay(Date new_last_date){
-    ;
-} //usuniecie z kalendarza pokoju oraz zwrot pewnej kwoty
-
 void Guest::order_dish(std::string dish_name, Menu menu){
     int price = menu.find_price(dish_name);
     if ((price+receipt) > money)

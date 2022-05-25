@@ -1,0 +1,8 @@
+Hotel created a schedule for 3employees
+Hotel paid 85.000000 zl for the bills
+Hotel paid 480.000000 zl for the employees' salaries
+Adam K booked the room nr 0
+Maja Z booked the room nr 224
+Kasia Szymczak was just hired
+Adam K booked the room nr 335
+Guest with PESEL 03301500823 order_dish: cake

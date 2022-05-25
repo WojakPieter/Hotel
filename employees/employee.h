@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../date.cpp"
+#include "../date.h"
 
 class Employee
 {
