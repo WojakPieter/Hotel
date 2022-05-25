@@ -6,12 +6,13 @@
 #include <fstream>
 #include <sstream>
 
-Simulation::Simulation(std::string file_name1, Date start_date1, std::string room_file1, std::string employee_file1)
+Simulation::Simulation(std::string file_name1, Date start_date1, std::string room_file1, std::string employee_file1, std::string simulation_file1)
 {
     file_name = file_name1;
     start_date = start_date1;
     room_file_name = room_file1;
     employee_file_name = employee_file1;
+    simulation_file = simulation_file1;
 }
 
 std::string Simulation::get_file_name() {
@@ -22,6 +23,8 @@ void Simulation::start()
 {
     set_hotel();
 
+    clear_simulation_file();
+    
     std::ifstream outfile;
     outfile.open(file_name);
     if (!outfile) {
@@ -147,40 +150,51 @@ void Simulation::start()
 
 
 void Simulation::print_adding_employee(std::string first_name, std::string last_name) {
-    std::cout << first_name << " " << last_name;
-    std::cout << " was just hired" << std::endl;
+    std::string text = first_name + " " + last_name + " was just hired";
+    write_to_file(text);
+    std::cout << text << std::endl;
 }
 
 void Simulation::print_monthly_action(int nr_of_employees, double cash, double bills){
-    std::cout << "Hotel created a schedule for " << nr_of_employees << " employees." << std::endl;
-    std::cout << "Hotel paid " << bills << " zl for the bills." << std::endl;
-    std::cout << "Hotel paid " << cash << " zl for the employees' salaries." << std::endl;
+    std::string text = "Hotel created a schedule for " + std::to_string(nr_of_employees) + "employees\n";
+    text += "Hotel paid " + std::to_string(bills) + " zl for the bills\n";
+    text += "Hotel paid " + std::to_string(cash) + " zl for the employees' salaries";
+    write_to_file(text);
+    std::cout << text << std::endl;
 }
 
 void Simulation::print_removing_employee(std::string first_name, std::string last_name) {
-    std::cout << first_name << " " << last_name;
-    std::cout << " was just fired" << std::endl;
+    std::string text = first_name + " " + last_name + " was just fired";
+    write_to_file(text);
+    std::cout << text << std::endl;
 }
 
 void Simulation::print_checking_in(std::string first_name, std::string last_name, int room_number) {
-    std::cout << first_name << " " << last_name;
-    std::cout << " booked the room nr " << room_number << std::endl;
+    std::string text = first_name + " " + last_name + " booked the room nr " + std::to_string(room_number);
+    write_to_file(text);
+    std::cout << text << std::endl;
 }
 
 void Simulation::print_choosing_entertainment(std::string PESEL, std::string name, std::string type, int nr) {
-    std::cout << "Guest with PESEL " << PESEL << " " << name;
+    std::string text = "Guest with PESEL " + PESEL + " " + name;
     if (name == "order_dish")
-        std::cout << ": " << type << std::endl;
+       text += ": " + type;
     if (name == "order_waking_up")
-        std::cout << "at " << nr << std::endl;
+        text += "at " + std::to_string(nr);
+    write_to_file(text);
+    std::cout << text << std::endl;
 }
 
 void Simulation::print_removing_dish(std::string name) {
-    std::cout << name << " was removed from menu" << std::endl;
+    std::string text = name + " was removed from menu";
+    write_to_file(text);
+    std::cout << text << std::endl;
 }
 
 void Simulation::print_adding_dish(std::string name) {
-    std::cout << name << " was added to menu" << std::endl;
+    std::string text = name + " was added to menu";
+    write_to_file(text);
+    std::cout << text << std::endl;
 }
 
 int Simulation::change_relay(int relay) {
@@ -254,4 +268,23 @@ void Simulation::set_hotel() {
     load_rooms();
     load_employees();
 
+}
+
+void Simulation::write_to_file(std::string text) {
+    std::ofstream file;
+    file.open(simulation_file, std::ios::app);
+    if (!file) {
+        throw std::logic_error("Couldn't open the file!");
+    }
+    file << text << std::endl;
+    file.close();
+}
+
+void Simulation::clear_simulation_file() {
+    std::ofstream file;
+    file.open(simulation_file);
+    if (!file) {
+        throw std::logic_error("Couldn't open the file!");
+    }
+    file.close();
 }
