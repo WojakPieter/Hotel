@@ -247,6 +247,7 @@ bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
             }
         }
     }
+    return false;
 }
 
 double Hotel::paying_the_bills()
