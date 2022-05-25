@@ -3,15 +3,22 @@
 #include <algorithm>
 
 bool Data_room::add_room(std::unique_ptr<Room> room_ptr)
-{
-    for(auto& i : rooms)
-    {
-        if(i == room_ptr) return false;
+{   
+    try{
+        for(auto& i : rooms)
+        {
+            if(i == room_ptr) 
+                return false;
+        }
+        int nr = room_ptr -> get_number();
+        rooms.push_back(std::move(room_ptr));
+        numbers_of_rooms.push_back(nr);
+        return true;
     }
-    int nr = room_ptr -> get_number();
-    rooms.push_back(std::move(room_ptr));
-    numbers_of_rooms.push_back(nr);
-    return true;
+    catch(...) 
+    { 
+        return false; 
+    }
 }
 
 bool Data_room::remove_room(std::unique_ptr<Room> room_ptr)
@@ -38,7 +45,7 @@ bool Data_room::book_room(int room_number, std::pair<Date, Date> period)
     {
         if(ptr->get_number() == room_number)
         {
-            if (!is_room_free(room_number, period))
+            if (ptr->is_reserved_in_period(period))
                 return false;
             for(Date d=period.first; d<=period.second; d++)
             {
@@ -58,7 +65,7 @@ bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
         {
            for(Date d=period.first; d<=period.second; d++)
             {
-                if(ptr -> is_reserved(d)) return false;
+                if(ptr -> is_reserved_at_day(d)) return false;
             }
         }
     }

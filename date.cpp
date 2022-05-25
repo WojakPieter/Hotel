@@ -1,7 +1,7 @@
 #include <iostream>
 #include "date.h"
 
-Date::Date(int day=1, int month=1, int year=1)
+Date::Date(int day, int month, int year)
 {
     this->day = day;
     this->month = month;

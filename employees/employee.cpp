@@ -179,7 +179,7 @@ void Employee::take_vacation(Date new_date){
     for(unsigned int i = 0; i < free_days.size(); i++)
         if (new_date == free_days[i].first)
             return;
-    std::pair <Date, int> new_free_day;
+    std::pair<Date, int> new_free_day = std::make_pair(Date(1,1,1),1);
     new_free_day.first = new_date;
     if (get_working_days(get_type()) > (30 - free_days.size()))
         for (int i = 1; i <= 3; i++){
@@ -189,7 +189,7 @@ void Employee::take_vacation(Date new_date){
 }
 
 void Employee::remove_vacation(Date date){
-    std::pair <Date, int> free_day;
+        std::pair<Date, int> free_day = std::make_pair(Date(1,1,1),1);
     free_day.first = date;
     for(unsigned int j = 0; j < free_days.size(); j++)
     {

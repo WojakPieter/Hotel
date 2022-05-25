@@ -9,7 +9,7 @@
 
 
 bool Data::add_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
-
+    try{
     std::unique_ptr<Employee> new_employee = std::make_unique<Waiter>(first_name, second_name, email_adress, pesel, hourly_rate);
     
     if (type == "barman") {
@@ -35,7 +35,7 @@ bool Data::add_employee(std::string type, std::string first_name, std::string se
     else if (type == "recepcionist") {
         std::unique_ptr<Employee> new_employee = std::make_unique<Recepcionist>(first_name, second_name, email_adress, pesel, hourly_rate);
     }
-
+    
     else if (type != "waiter") {
         return false;
     }
@@ -46,9 +46,13 @@ bool Data::add_employee(std::string type, std::string first_name, std::string se
     }
     database.push_back(std::move(new_employee));
     return true;
+
+    }
+    catch(...)  { return false; }
 }
 
 bool Data::remove_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate){
+    try{
     std::unique_ptr<Employee> new_employee = std::make_unique<Waiter>(first_name, second_name, email_adress, pesel, hourly_rate);
 
     if (type == "barman") {
@@ -79,10 +83,10 @@ bool Data::remove_employee(std::string type, std::string first_name, std::string
         return false;
     }
 
-    try{
-        database.erase(std::find(database.begin(), database.end(), new_employee));
-        return true;
+    database.erase(std::find(database.begin(), database.end(), new_employee));
+    return true;
     }
+
     catch(...){
         return false;
     }

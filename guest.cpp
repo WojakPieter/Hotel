@@ -47,6 +47,16 @@ int Guest::get_room_number(){
     return room_number;
 }
 
+void Guest::set_first_date(Date date)
+{
+    first_day = date;
+}
+
+void Guest::set_last_date(Date date)
+{
+    last_day = date;
+}
+
 void Guest::set_name(std::string new_first_name, std::string new_last_name){
     first_name = new_first_name;
     last_name = new_last_name;
@@ -77,12 +87,12 @@ void Guest::set_stay_length(int length)
     stay_length = length;
 }
 
-void Guest::order_taxi(){
-    // wczytac z pliku jakis cennik atrakcji
+bool Guest::order_taxi(){
     int price = 100;
     if ((price+receipt) > money)
-        return;
+        return false;
     receipt += price;
+    return true;
 }
 
 void Guest::add_money(double income)
@@ -97,25 +107,28 @@ bool Guest::subtract_money(double outgo)
     return true;
 }
 
-void Guest::order_dish(std::string dish_name, Menu menu){
+bool Guest::order_dish(std::string dish_name, Menu menu){
     int price = menu.find_price(dish_name);
     if ((price+receipt) > money)
-        return;
+        return false;
     receipt += price;
+    return true;
 }
 
-void Guest::order_waking_up(int hour){
+bool Guest::order_waking_up(int hour){
     int price = 10;
     if ((price+receipt) > money)
-        return;
+        return false;
     receipt += price;
-} // godzina podana i sprawdzic na ktorej zmianie
+    return true;
+}
 
-void Guest::order_tidying_room(){
+bool Guest::order_tidying_room(){
     int price = 30;
     if ((price+receipt) > money)
-        return;
+        return false;
     receipt += price;
+    return true;
 }
 
 Date Guest::get_first_date()
@@ -129,16 +142,7 @@ Date Guest::get_last_date()
 }
 
 bool Guest::book_room(std::unique_ptr<Room> room, Date arrival_date, Date leave_date){
-     Date iter;
-     for(iter=arrival_date; iter <= leave_date; iter++)
-     {
-         if(room->is_reserved(iter)) return false;
-     }
-     for(iter=arrival_date; iter <= leave_date; iter++)
-     {
-         room->add_reserved_day(iter);
-     }
-     room_number = room->get_number();
-     receipt += room->get_price();
-     return true;
+    room_number = room->get_number();
+    receipt += room->get_price();
+    return true;
 }

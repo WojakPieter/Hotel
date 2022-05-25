@@ -25,6 +25,9 @@ class Guest
     std::string get_last_name();
     std::string get_email_adress();
     std::string get_PESEL();
+    void set_first_date(Date);
+    void set_last_date(Date);
+
     int get_stay_length();
     double get_money();
     double get_receipt();
@@ -42,11 +45,10 @@ class Guest
 
     void add_money(double);
     bool subtract_money(double);
-    // bool change_date_of_stay(Date); //usuniecie z kalendarza pokoju oraz zwrot pewnej kwoty
-    void order_taxi();
-    void order_dish(std::string, Menu);
-    void order_waking_up(int); // godzina podana i sprawdzic na ktorej zmianie
-    void order_tidying_room();
+    bool order_taxi();
+    bool order_dish(std::string, Menu);
+    bool order_waking_up(int);
+    bool order_tidying_room();
     bool book_room(std::unique_ptr<Room> room, Date arrival_date, Date leave_date);
 
 };

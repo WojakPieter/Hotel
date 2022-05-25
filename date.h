@@ -8,7 +8,7 @@ class Date
 {
     public:
     int day, month, year;
-    Date(int, int, int);
+    Date(int day=1, int month=1, int year=1);
 
     int get_day();
     int get_month();

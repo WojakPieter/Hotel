@@ -28,7 +28,7 @@ void Simulation::start()
     std::ifstream outfile;
     outfile.open(file_name);
     if (!outfile) {
-        throw std::logic_error("Couldn't open the file!");
+        throw std::logic_error("Couldn't open the file with activity in simulation!");
     }
     std::string p="";
     int i = 0;
@@ -64,8 +64,8 @@ void Simulation::start()
                 outfile >> type;
             if (name == "order_waking_up")
                 outfile >> hour;
-            hotel.choose_entertainment(guest_pesel, name, type, hour);
-            print_choosing_entertainment(guest_pesel, name, type, hour);
+            bool flag = hotel.choose_entertainment(guest_pesel, name, type, hour);
+            print_choosing_entertainment(guest_pesel, name, type, hour, flag);
         }
 
         else if (p == "add_employee")
@@ -74,8 +74,8 @@ void Simulation::start()
             double hourlyRate;
             outfile >> type >> firstN >> lastN >> email >> pesel;
             outfile >> hourlyRate;
-            hotel.add_employee(type, firstN, lastN, email, pesel, hourlyRate);
-            print_adding_employee(firstN, lastN);
+            bool flag = hotel.add_employee(type, firstN, lastN, email, pesel, hourlyRate);
+            print_adding_employee(firstN, lastN, flag);
         }
 
         else if (p == "remove_employee")
@@ -83,11 +83,11 @@ void Simulation::start()
             std::string type, firstN, lastN, email, pesel;
             double hourlyRate;
             outfile >> type >> firstN >> lastN >> email >> pesel >> hourlyRate;
-            hotel.remove_employee(type, firstN, lastN, email, pesel, hourlyRate);
-            print_removing_employee(firstN, lastN);
+            bool flag = hotel.remove_employee(type, firstN, lastN, email, pesel, hourlyRate);
+            print_removing_employee(firstN, lastN, flag);
         }
 
-        else if (p == "check_in") 
+        else if (p == "book_room") 
         {
             std::string first_name, last_name, email_adress, PESEL;
             double money;
@@ -105,7 +105,7 @@ void Simulation::start()
             std::pair<Date, Date> period;
             period.first = first_date;
             period.second = last_date;
-            int room_number = hotel.check_in(guest, type, high_standard, family, period);
+            int room_number = hotel.book_room(guest, type, high_standard, family, period);
             print_checking_in(first_name, last_name, room_number);
         }
 
@@ -113,8 +113,8 @@ void Simulation::start()
         {
             std::string type, name;
             outfile >> type >> name;
-            hotel.remove_dish(type, name);
-            print_removing_dish(name);
+            bool flag = hotel.remove_dish(type, name);
+            print_removing_dish(name, flag);
         }
 
         else if (p == "add_dish")
@@ -138,8 +138,8 @@ void Simulation::start()
                 Ingredient ingredient(name_ingredient, mass);
                 ingredients.push_back(ingredient);
             }
-            hotel.add_dish(type, name, price, preparation_cost, preparation_time, ingredients, allergens);
-            print_adding_dish(name);
+            bool flag = hotel.add_dish(type, name, price, preparation_cost, preparation_time, ingredients, allergens);
+            print_adding_dish(name, flag);
         }
 
         hotel.check_guests();
@@ -149,50 +149,62 @@ void Simulation::start()
 }
 
 
-void Simulation::print_adding_employee(std::string first_name, std::string last_name) {
+void Simulation::print_adding_employee(std::string first_name, std::string last_name, bool flag) {
     std::string text = first_name + " " + last_name + " was just hired";
+    if(!flag)
+        text = "Impossible attempt to add a employee named " + first_name + " " + last_name;
     write_to_file(text);
     std::cout << text << std::endl;
 }
 
 void Simulation::print_monthly_action(int nr_of_employees, double cash, double bills){
-    std::string text = "Hotel created a schedule for " + std::to_string(nr_of_employees) + "employees\n";
+    std::string text = "Hotel created a schedule for " + std::to_string(nr_of_employees) + " employees\n";
     text += "Hotel paid " + std::to_string(bills) + " zl for the bills\n";
     text += "Hotel paid " + std::to_string(cash) + " zl for the employees' salaries";
     write_to_file(text);
     std::cout << text << std::endl;
 }
 
-void Simulation::print_removing_employee(std::string first_name, std::string last_name) {
+void Simulation::print_removing_employee(std::string first_name, std::string last_name, bool flag) {
     std::string text = first_name + " " + last_name + " was just fired";
+    if(!flag)
+        text = "Impossible attempt to remove a notexistent employee named " + first_name + " " + last_name;
     write_to_file(text);
     std::cout << text << std::endl;
 }
 
 void Simulation::print_checking_in(std::string first_name, std::string last_name, int room_number) {
     std::string text = first_name + " " + last_name + " booked the room nr " + std::to_string(room_number);
+    if (room_number == -1)
+        text = "It is not possible to book a room for " + first_name + " " + last_name;
     write_to_file(text);
     std::cout << text << std::endl;
 }
 
-void Simulation::print_choosing_entertainment(std::string PESEL, std::string name, std::string type, int nr) {
+void Simulation::print_choosing_entertainment(std::string PESEL, std::string name, std::string type, int nr, bool flag) {
     std::string text = "Guest with PESEL " + PESEL + " " + name;
     if (name == "order_dish")
        text += ": " + type;
     if (name == "order_waking_up")
         text += "at " + std::to_string(nr);
+    if (!flag)
+        text = "Guest with PESEL " + PESEL + " cannot choose this entertainment";
     write_to_file(text);
     std::cout << text << std::endl;
 }
 
-void Simulation::print_removing_dish(std::string name) {
+void Simulation::print_removing_dish(std::string name, bool flag) {
     std::string text = name + " was removed from menu";
+    if (!flag)
+        text = "Impossible attempt to remove a notexistent dish named " + name;
     write_to_file(text);
     std::cout << text << std::endl;
 }
 
-void Simulation::print_adding_dish(std::string name) {
+void Simulation::print_adding_dish(std::string name, bool flag) {
     std::string text = name + " was added to menu";
+    if (!flag)
+        text = "Impossible attempt to add a dish named " + name;
     write_to_file(text);
     std::cout << text << std::endl;
 }
@@ -211,7 +223,7 @@ void Simulation::load_rooms()
     std::fstream room_file;
     room_file.open(room_file_name, std::ios::in);
     if(!room_file.good())
-        throw std::logic_error("Couldn't open the file!");
+        throw std::logic_error("Couldn't open the file with hotel's rooms!");
     std::string line;
     while(std::getline(room_file, line))
     {
@@ -244,7 +256,7 @@ void Simulation::load_employees()
     std::fstream employees_file;
     employees_file.open(employee_file_name, std::ios::in);
     if(!employees_file.good())
-        throw std::logic_error("Couldn't open the file!");
+        throw std::logic_error("Couldn't open the file with hotel's employees!");
     std::string line;
     while(std::getline(employees_file, line))
     {
@@ -274,7 +286,7 @@ void Simulation::write_to_file(std::string text) {
     std::ofstream file;
     file.open(simulation_file, std::ios::app);
     if (!file) {
-        throw std::logic_error("Couldn't open the file!");
+        throw std::logic_error("Couldn't open the file to write a simulation!");
     }
     file << text << std::endl;
     file.close();
@@ -284,7 +296,7 @@ void Simulation::clear_simulation_file() {
     std::ofstream file;
     file.open(simulation_file);
     if (!file) {
-        throw std::logic_error("Couldn't open the file!");
+        throw std::logic_error("Couldn't open the file with simulation!");
     }
     file.close();
 }

@@ -1,6 +1,7 @@
 #include "hotel.h"
 #include <string>
 #include <iostream>
+#include <random>
 
 Hotel::Hotel(std::string name1, int stars1, double budget1)
 {
@@ -49,50 +50,74 @@ bool Hotel::decrease_budget(double outgo)
     return false;
 }
 
-void Hotel::add_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
-    employees.add_employee(type,first_name,second_name,email_adress,pesel,hourly_rate);
+bool Hotel::add_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
+    bool flag = employees.add_employee(type,first_name,second_name,email_adress,pesel,hourly_rate);
+    return flag;
 }
 
-void Hotel::remove_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
-    employees.remove_employee(type,first_name,second_name,email_adress,pesel,hourly_rate);
+bool Hotel::remove_employee(std::string type, std::string first_name, std::string second_name, std::string email_adress, std::string pesel, double hourly_rate) {
+    bool flag = employees.remove_employee(type,first_name,second_name,email_adress,pesel,hourly_rate);
+    return flag;
 }
 
 void Hotel::change_employee_rate(std::string pesel, double new_rate){
     employees.set_employee_rate(pesel, new_rate);
 }
 
-int Hotel::check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date,Date> period)
+int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period)
 {
+    std::vector<int> numbers_of_matching_rooms;
+    bool flag = false;
     for(auto& ptr : rooms)
     {
-        if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family)
+        if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family && !ptr->is_reserved_in_period(period))
         {
-            // return ptr->get_number();
-            if(rooms.book_room(ptr->get_number(), period) && guest.get_money() >= (ptr->get_price()*(period.second-period.first+1))) {
-                guest.set_room_number(ptr->get_number());
+            if(guest.get_money() >= (ptr->get_price()*(period.second-period.first+1))) {
+                numbers_of_matching_rooms.push_back(ptr->get_number());
                 guest.set_receipt(ptr->get_price()*(period.second-period.first+1) + guest.get_receipt());
-                return ptr->get_number();
+                flag = true;
             }
         }
     }
-    return 0;
+    if(flag)
+    {
+        std::default_random_engine generator;
+        std::uniform_int_distribution<int> distribution(0,numbers_of_matching_rooms.size()-1);
+        int chosen_room_index = distribution(generator);
+        int room_number = numbers_of_matching_rooms[chosen_room_index];
+        rooms.book_room(room_number, period);
+        guest.set_room_number(room_number);
+        return room_number;
+    }
+    return -1;
 }
 
-void Hotel::add_dish(std::string type, std::string name, double price, double prep_cost, double prep_time, std::vector<Ingredient> ingredients, std::vector<std::string> allergens)
+void Hotel::check_in(Guest guest)
 {
+    guest.subtract_money(guest.get_receipt());
+    increase_budget(guest.get_receipt());
+}
+
+
+bool Hotel::add_dish(std::string type, std::string name, double price, double prep_cost, double prep_time, std::vector<Ingredient> ingredients, std::vector<std::string> allergens)
+{
+    bool flag = false;
     Dish dish(name, price, prep_cost, prep_time, ingredients, allergens);
     if (type == "drink")
-        menu.add_drink(dish);
+        flag = menu.add_drink(dish);
     else
-        menu.add_food(dish);
+        flag = menu.add_food(dish);
+    return flag;
 }
 
-void Hotel::remove_dish(std::string type, std::string name)
+bool Hotel::remove_dish(std::string type, std::string name)
 {
+    bool flag = false;
     if(type == "drink")
-        menu.remove_drink(name);
+        flag = menu.remove_drink(name);
     else
-        menu.remove_food(name);
+        flag = menu.remove_food(name);
+    return flag;
 }
 
 void Hotel::add_room(char type, int number, bool is_high_standard, bool is_family)
@@ -165,6 +190,7 @@ void Hotel::check_guests()
 {
     for(Guest& g : guests)
     {
+        if(g.get_first_date() == current_date) check_in(g);
         if(g.get_last_date() == current_date) check_out(g);
     }
 }
@@ -233,7 +259,7 @@ bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
                     while(guest.last_day < new_last_date)
                     {
                         current_checked_date = guest.last_day + 1;
-                        if(room_ptr->is_reserved(current_checked_date)) return false;
+                        if(room_ptr->is_reserved_at_day(current_checked_date)) return false;
                     }
                     while(guest.last_day <= new_last_date)
                     {
@@ -261,13 +287,33 @@ double Hotel::paying_the_bills()
     return bill;
 }
 
-void Hotel::choose_entertainment(std::string name, std::string PESEL, std::string type, int hour) {
-    // for(Guest& g : guests)
-    // {
-    //     if(g->get_PESEL() == PESEL)
-    //     {
-    //         if(name == "taxi") g->order_taxi();
-    //         if(name == "tidying") g->order_waking_up(0);
-    //     }
-    // }
+bool Hotel::choose_entertainment(std::string name, std::string PESEL, std::string type, int hour) {
+    for(Guest& g : guests)
+    {
+        if(g.get_PESEL() == PESEL)
+        {
+            if(name == "order_taxi") {
+                bool flag = g.order_taxi();
+                return flag;
+            }
+
+            else if(name == "order_waking_up") {
+                bool flag = g.order_waking_up(hour);
+                return flag;
+            }
+
+            else if(name == "order_tidying_room") {
+                bool flag = g.order_tidying_room();
+                return flag;
+            }
+
+            else if(name == "dish") {
+                bool flag = g.order_dish(type, menu);
+                return flag;
+            }
+            else
+                return false;
+        }
+    }
+    return false;
 }

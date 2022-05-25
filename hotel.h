@@ -28,8 +28,8 @@ class Hotel
     double get_budget();
     Date get_current_date();
 
-    void add_employee(std::string, std::string, std::string, std::string, std::string, double);
-    void remove_employee(std::string, std::string, std::string, std::string, std::string, double);
+    bool add_employee(std::string, std::string, std::string, std::string, std::string, double);
+    bool remove_employee(std::string, std::string, std::string, std::string, std::string, double);
     void change_employee_rate(std::string, double);
 
     void add_room(char type='0', int number=0, bool is_high_standard=true, bool is_family=true);
@@ -37,11 +37,11 @@ class Hotel
     void change_room_price();
 
     void change_current_employees(Date, int);
-    void choose_entertainment(std::string guest_pesel, std::string name, std::string type, int);
+    bool choose_entertainment(std::string guest_pesel, std::string name, std::string type, int);
     void check_guests();
 
-    void add_dish(std::string, std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>);
-    void remove_dish(std::string,std::string);
+    bool add_dish(std::string, std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>);
+    bool remove_dish(std::string,std::string);
 
     //void set_name(std::string new_name);
     //void set_stars(int new_stars);
@@ -49,11 +49,12 @@ class Hotel
     void increment_current_date();
     void increase_budget(double income);
     bool decrease_budget(double outgo);
-    int check_in(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period); //gosc i losowanie mu pokoju
+    void check_in(Guest guest);
+    int book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period);
     void check_out(Guest&);
     bool shortening_the_stay(Guest&, Date);
     double handing_out_salary();
-    int creating_schedule(Date); //odwolanie u kazdego pracownika do funkcji make_roster
+    int creating_schedule(Date);
     double paying_the_bills();
 };
 #endif
