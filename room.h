@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 #ifndef CPP_PROJECT_ROOM_H
 #define CPP_PROJECT_ROOM_H
 #include <iostream>
@@ -99,5 +103,8 @@ public:
 };
 
 #endif
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 03d425d50465d8c17cca53644e35090022b5a05e
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12

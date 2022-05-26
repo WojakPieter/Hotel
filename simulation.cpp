@@ -1,9 +1,18 @@
 <<<<<<< HEAD
+#include <math.h>
+#include "simulation.h"
+#include <windows.h>
+#include <iostream>
+#include <string>
+#include <conio.h>
+=======
+<<<<<<< HEAD
 #include "simulation.h"
 // #include <windows.h>
 #include <iostream>
 #include <string>
 // #include <conio.h>
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 #include <vector>
 #include <cstdlib>
 #include <fstream>
@@ -27,7 +36,11 @@ void Simulation::start()
     set_hotel();
 
     clear_simulation_file();
+<<<<<<< HEAD
+
+=======
     
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     std::ifstream outfile;
     outfile.open(file_name);
     if (!outfile) {
@@ -36,7 +49,11 @@ void Simulation::start()
     std::string p="";
     int i = 0;
     current_date = start_date;
+<<<<<<< HEAD
+    int relay = 1;
+=======
     int relay = 1;   
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     while (!outfile.eof())
     {
         outfile >> p;
@@ -56,7 +73,11 @@ void Simulation::start()
             double cash = hotel.handing_out_salary();
             i = 1;
             print_monthly_action(nr_of_employees, cash, bills);
+<<<<<<< HEAD
+            Sleep(1000);
+=======
             // Sleep(3);
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
         }
 
         if (p == "choose_entertainment")
@@ -68,7 +89,11 @@ void Simulation::start()
                 outfile >> type;
             if (name == "order_waking_up")
                 outfile >> hour;
+<<<<<<< HEAD
+            std::string flag = hotel.choose_entertainment(guest_pesel, name, type, hour);
+=======
             bool flag = hotel.choose_entertainment(guest_pesel, name, type, hour);
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
             print_choosing_entertainment(guest_pesel, name, type, hour, flag);
         }
 
@@ -91,7 +116,11 @@ void Simulation::start()
             print_removing_employee(firstN, lastN, flag);
         }
 
+<<<<<<< HEAD
+        else if (p == "book_room")
+=======
         else if (p == "book_room") 
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
         {
             std::string first_name, last_name, email_adress, PESEL;
             double money;
@@ -113,7 +142,11 @@ void Simulation::start()
             print_checking_in(first_name, last_name, room_number);
         }
 
+<<<<<<< HEAD
+        else if (p == "remove_dish")
+=======
         else if (p == "remove_dish") 
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
         {
             std::string type, name;
             outfile >> type >> name;
@@ -150,7 +183,11 @@ void Simulation::start()
             print_wrong_activity(p);
         }
         hotel.check_guests();
+<<<<<<< HEAD
+        Sleep(1000);
+=======
         // Sleep(3);
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
         p = "";
     }
     outfile.close();
@@ -174,8 +211,13 @@ void Simulation::print_adding_employee(std::string first_name, std::string last_
 
 void Simulation::print_monthly_action(int nr_of_employees, double cash, double bills){
     std::string text = "Hotel created a schedule for " + std::to_string(nr_of_employees) + " employees\n";
+<<<<<<< HEAD
+    text += "Hotel paid " + std::to_string(int(bills)) + "." + std::to_string(int(bills*100) % 100) + " zl for the bills\n";
+    text += "Hotel paid " + std::to_string(int(cash)) + "." + std::to_string(int(cash*100) % 100) + " zl for the employees' salaries";
+=======
     text += "Hotel paid " + std::to_string(bills) + " zl for the bills\n";
     text += "Hotel paid " + std::to_string(cash) + " zl for the employees' salaries";
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     write_to_file(text);
     std::cout << text << std::endl;
 }
@@ -196,6 +238,34 @@ void Simulation::print_checking_in(std::string first_name, std::string last_name
     std::cout << text << std::endl;
 }
 
+<<<<<<< HEAD
+void Simulation::print_choosing_entertainment(std::string PESEL, std::string name, std::string type, int nr, std::string flag) {
+    int room_number = 0;
+    for(Guest guest : hotel.get_guests())
+    {
+        if(guest.get_PESEL() == PESEL) room_number = guest.get_room_number();
+    }
+    std::string text = "Guest with PESEL " + PESEL + " " + name;
+    if(name == "order_tidying_room")
+        text = "Room nr " + std::to_string(room_number) + " has been tidied by " + flag;
+    if (name == "order_waking_up")
+        text += "at " + std::to_string(nr);
+    if (flag == "false")
+        text = "Guest with PESEL " + PESEL + " cannot choose this entertainment";
+    if (name == "order_dish")
+    {
+        if(flag != "false")
+            text += ": " + type;
+        else
+        {
+            text = "Guest with PESEL " + PESEL + " tried to order non-existing dish";
+        }
+    }
+    write_to_file(text);
+    std::cout << text << std::endl;
+    if(name == "order_tidying_room")
+        std::cout << "Room nr " << nr << " has been tidied by " << flag << std::endl;
+=======
 void Simulation::print_choosing_entertainment(std::string PESEL, std::string name, std::string type, int nr, bool flag) {
     std::string text = "Guest with PESEL " + PESEL + " " + name;
     if (name == "order_dish")
@@ -206,6 +276,7 @@ void Simulation::print_choosing_entertainment(std::string PESEL, std::string nam
         text = "Guest with PESEL " + PESEL + " cannot choose this entertainment";
     write_to_file(text);
     std::cout << text << std::endl;
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 }
 
 void Simulation::print_removing_dish(std::string name, bool flag) {
@@ -224,6 +295,14 @@ void Simulation::print_adding_dish(std::string name, bool flag) {
     std::cout << text << std::endl;
 }
 
+<<<<<<< HEAD
+void Simulation::print_tidying_room(Guest guest, std::string PESEL)
+{
+    std::cout << "Room nr " << guest.get_room_number() << " has been tidied by " << PESEL << std::endl;
+}
+
+=======
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 int Simulation::change_relay(int relay) {
     if (relay == 3) {
         current_date += 1;
@@ -315,5 +394,9 @@ void Simulation::clear_simulation_file() {
     }
     file.close();
 }
+<<<<<<< HEAD
+
+=======
 =======
 >>>>>>> 03d425d50465d8c17cca53644e35090022b5a05e
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12

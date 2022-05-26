@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 #include "hotel.h"
 #include <string>
 #include <iostream>
@@ -29,6 +33,11 @@ double Hotel::get_budget()
 Date Hotel::get_current_date()
 {
     return current_date;
+}
+
+std::vector<Guest> Hotel::get_guests()
+{
+    return guests;
 }
 
 void Hotel::increment_current_date()
@@ -65,6 +74,38 @@ void Hotel::change_employee_rate(std::string pesel, double new_rate){
     employees.set_employee_rate(pesel, new_rate);
 }
 
+<<<<<<< HEAD
+std::string Hotel::set_maid_to_tidy_room(int number)
+{
+    int i=0;
+    bool flag=false;
+    std::vector<int> index_of_maids = {};
+    for(auto& ptr : current_employees)
+    {
+        if(ptr->get_type() == "maid")
+        {
+        index_of_maids.push_back(i);
+        i++;
+        flag = true;
+        }
+    }
+    if(flag)
+    {
+        std::default_random_engine generator;
+        std::uniform_int_distribution<int> distribution(0,index_of_maids.size()-1);
+        int chosen_maid_index = distribution(generator);
+        int i = 0;
+        for(auto& ptr : current_employees)
+        {
+            if(i == index_of_maids[chosen_maid_index]) std::cout << ptr -> get_type();
+            i++;
+        }
+        current_employees[index_of_maids[chosen_maid_index]] -> tidy_room();
+        return current_employees[index_of_maids[chosen_maid_index]] -> get_PESEL();
+    }
+    else return "none";
+}
+
 int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period)
 {
     std::vector<int> numbers_of_matching_rooms;
@@ -73,6 +114,16 @@ int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, st
     {
         if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family && !ptr->is_reserved_in_period(period))
         {
+=======
+int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period)
+{
+    std::vector<int> numbers_of_matching_rooms;
+    bool flag = false;
+    for(auto& ptr : rooms)
+    {
+        if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family && !ptr->is_reserved_in_period(period))
+        {
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
             if(guest.get_money() >= (ptr->get_price()*(period.second-period.first+1))) {
                 numbers_of_matching_rooms.push_back(ptr->get_number());
                 guest.set_receipt(ptr->get_price()*(period.second-period.first+1) + guest.get_receipt());
@@ -88,6 +139,12 @@ int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, st
         int room_number = numbers_of_matching_rooms[chosen_room_index];
         rooms.book_room(room_number, period);
         guest.set_room_number(room_number);
+<<<<<<< HEAD
+        guest.set_first_date(period.first);
+        guest.set_last_date(period.second);
+        guests.push_back(guest);
+=======
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
         return room_number;
     }
     return -1;
@@ -95,6 +152,10 @@ int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, st
 
 void Hotel::check_in(Guest guest)
 {
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     guest.subtract_money(guest.get_receipt());
     increase_budget(guest.get_receipt());
 }
@@ -221,7 +282,11 @@ int Hotel::creating_schedule(Date date)
 {
     int nr_of_employees = 0;
     std::vector<std::pair<Date, int>> changes;
+<<<<<<< HEAD
+    for(int i=0; i<current_date.get_month_length(current_date.get_month()); i++)
+=======
     for(int i=0; i<30; i++)
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     {
         changes.push_back(std::make_pair<Date, int>(date+i,1));
         changes.push_back(std::make_pair<Date, int>(date+i,2));
@@ -288,23 +353,56 @@ double Hotel::paying_the_bills()
     return bill;
 }
 
+<<<<<<< HEAD
+std::string Hotel::choose_entertainment(std::string PESEL, std::string name, std::string type, int hour) {
+=======
 bool Hotel::choose_entertainment(std::string name, std::string PESEL, std::string type, int hour) {
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     for(Guest& g : guests)
     {
         if(g.get_PESEL() == PESEL)
         {
+<<<<<<< HEAD
+
+            if(name == "order_taxi") {
+                bool flag = g.order_taxi();
+                if(flag) return "true";
+                else return "false";
+=======
             if(name == "order_taxi") {
                 bool flag = g.order_taxi();
                 return flag;
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
             }
 
             else if(name == "order_waking_up") {
                 bool flag = g.order_waking_up(hour);
+<<<<<<< HEAD
+                if(flag) return "true";
+                else return "false";
+=======
                 return flag;
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
             }
 
             else if(name == "order_tidying_room") {
                 bool flag = g.order_tidying_room();
+<<<<<<< HEAD
+                if(flag)  return set_maid_to_tidy_room(g.get_room_number());
+                else return "false";
+            }
+
+            else if(name == "order_dish") {
+                bool flag = g.order_dish(type, menu);
+                if(flag) return "true";
+                else return "false";
+            }
+            else
+                return "false";
+        }
+    }
+    return "false";
+=======
                 return flag;
             }
 
@@ -317,6 +415,7 @@ bool Hotel::choose_entertainment(std::string name, std::string PESEL, std::strin
         }
     }
     return false;
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 }
 =======
 >>>>>>> 03d425d50465d8c17cca53644e35090022b5a05e
