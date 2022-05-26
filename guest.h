@@ -25,8 +25,6 @@ class Guest
     std::string get_last_name();
     std::string get_email_adress();
     std::string get_PESEL();
-    void set_first_date(Date);
-    void set_last_date(Date);
 
     int get_stay_length();
     double get_money();

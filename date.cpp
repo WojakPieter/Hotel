@@ -118,9 +118,10 @@ Date Date::operator+=(int days)
         day += days;
         do
         {
+            int old_month = month;
             if(month == 12) {month = 1; year++;}
             else month++;
-            day -= get_month_length(month);
+            day -= get_month_length(old_month);
         }
         while(day > get_month_length(month));
     }

@@ -31,6 +31,7 @@ class Simulation
 // gettery i settery
     // void print_change_date_of_stay();  dorobic
 
+    void print_wrong_activity(std::string);
     void print_checking_in(std::string, std::string, int);
     void print_adding_employee(std::string, std::string, bool);
     void print_removing_employee(std::string, std::string, bool);
