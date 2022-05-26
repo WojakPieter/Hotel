@@ -1,4 +1,26 @@
 Hotel created a schedule for 24 employees
+<<<<<<< HEAD
+Hotel paid 575.0 zl for the bills
+Hotel paid 5093.20 zl for the employees' salaries
+It is not possible to book a room for Adam Krol
+Maja Zryk booked the room nr 3
+Kasia Robak booked the room nr 35
+Kasia Szymczak was just hired
+Mariusz Pruszcz was just hired
+Adam K booked the room nr 4
+Guest with PESEL 03301500823 tried to order non-existing dish
+Guest with PESEL 02020202222 tried to order non-existing dish
+Guest with PESEL 02020202222 order_taxi
+Guest with PESEL 02020202222 order_waking_upat 20
+Activity named make_spa does not exist
+Guest with PESEL 02020202222 order_waking_upat 2
+Dominika Wyszynska was just fired
+Grzegorz Grzeg booked the room nr 10
+Guest with PESEL 02301920930 cannot choose this entertainment
+Room nr 35 has been tidied by 03345594345
+Impossible attempt to add a employee named Agnieszka Mazur
+Impossible attempt to remove a notexistent dish named pina_colada
+=======
 Hotel paid 575.000000 zl for the bills
 Hotel paid 3840.000000 zl for the employees' salaries
 It is not possible to book a room for Adam Krol
@@ -19,3 +41,4 @@ Guest with PESEL 02301920930 cannot choose this entertainment
 Impossible attempt to add a employee named Agnieszka Mazur
 Impossible attempt to remove a notexistent dish named pina_colada
 Activity named  does not exist
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12

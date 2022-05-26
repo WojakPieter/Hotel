@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 #include <iostream>
 #include "guest.h"
 #include "menu.h"
@@ -113,7 +117,13 @@ bool Guest::order_dish(std::string dish_name, Menu menu){
     if ((price+receipt) > money)
         return false;
     receipt += price;
+<<<<<<< HEAD
+    if (price != -1)
+        return true;
+    else return false;
+=======
     return true;
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 }
 
 bool Guest::order_waking_up(int hour){
@@ -147,5 +157,9 @@ bool Guest::book_room(std::unique_ptr<Room> room, Date arrival_date, Date leave_
     receipt += room->get_price();
     return true;
 }
+<<<<<<< HEAD
+
+=======
 =======
 >>>>>>> 03d425d50465d8c17cca53644e35090022b5a05e
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12

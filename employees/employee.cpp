@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 #include <iostream>
 #include "employee.h"
 #include "../date.h"
@@ -12,6 +16,10 @@ Employee::Employee(std::string first_name1, std::string last_name1, std::string 
     first_name = first_name1;
     last_name = last_name1;
     email_adress = email_adress1;
+<<<<<<< HEAD
+    x = 0;
+=======
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     if (PESEL1.size() == 11)
         PESEL = PESEL1;
     else
@@ -206,5 +214,9 @@ bool Employee::works_in_a_change(Date date, int change)
     return std::count_if(roster.begin(), roster.end(), [&](std::pair<Date,int> p){return p.first==date && p.second==change;});
 }
 
+<<<<<<< HEAD
+
+=======
 =======
 >>>>>>> 03d425d50465d8c17cca53644e35090022b5a05e
+>>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
