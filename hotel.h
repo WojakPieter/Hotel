@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 #ifndef CPP_PROJECT_HOTEL_H
 #define CPP_PROJECT_HOTEL_H
 #include <iostream>
@@ -43,11 +39,7 @@ class Hotel
     void change_room_price();
 
     void change_current_employees(Date, int);
-<<<<<<< HEAD
     std::string choose_entertainment(std::string guest_pesel, std::string name, std::string type, int);
-=======
-    bool choose_entertainment(std::string guest_pesel, std::string name, std::string type, int);
->>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     void check_guests();
 
     bool add_dish(std::string, std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>);
@@ -59,10 +51,7 @@ class Hotel
     void increment_current_date();
     void increase_budget(double income);
     bool decrease_budget(double outgo);
-<<<<<<< HEAD
     std::string set_maid_to_tidy_room(int);
-=======
->>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
     void check_in(Guest guest);
     int book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period);
     void check_out(Guest&);
@@ -72,8 +61,3 @@ class Hotel
     double paying_the_bills();
 };
 #endif
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 03d425d50465d8c17cca53644e35090022b5a05e
->>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
 book_room Adam Krol man@wp.pl 03301500823 20000 1 0 1 15 10 2020 20 10 2020
 book_room Maja Zryk zrykamaja@wp.pl 02301509084 200090 3 0 1 10 10 2020 11 10 2020
 book_room Kasia Robak robak@wp.pl 02020202222 30000 2 1 1 3 9 2020 4 9 2020
@@ -23,7 +19,6 @@ CHANGE
 remove_employee barman Dominika Wyszynska domkapoziomka@gmail.com 02301500888 30.5
 book_room Grzegorz Grzeg grzeg@wp.pl 20 02301920930 a 1 1 4 9 2020 7 9 2020
 
-<<<<<<< HEAD
 
 CHANGE
 choose_entertainment 02301920930 order_taxi
@@ -32,13 +27,3 @@ add_employee barman Agnieszka Mazur mazurek@kopiec.pl 62121511605 40
 
 CHANGE
 remove_dish drink pina_colada
-=======
-CHANGE
-choose_entertainment 02301920930 order_taxi
-add_employee barman Agnieszka Mazur mazurek@kopiec.pl 62121511605 40
-
-CHANGE
-remove_dish drink pina_colada
-=======
->>>>>>> 03d425d50465d8c17cca53644e35090022b5a05e
->>>>>>> 9b18161f2247526bcb7974c2f5760727eb8a5e12
