@@ -1,0 +1,5 @@
+Hotel created a schedule for 24 employees
+Hotel paid 575.0 zl for the bills
+Hotel paid 5093.20 zl for the employees' salaries
+It is not possible to book a room for Adam Krol
+Maja Zryk booked the room nr 3

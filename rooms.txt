@@ -1,0 +1,35 @@
+1 1 false false
+2 1 false
+3 3 false true
+4 4 true true
+5 s
+6 s
+7 s
+8 s
+9 s
+10 a
+11 a
+12 a
+13 a
+14 a
+15 3 true true
+16 2 true false
+17 2 false false
+18 2 false false
+19 3 false false
+20 4 false false
+21 4 true false
+22 4 true true
+23 4 false true
+24 4 false true
+25 3 false false
+26 2 false false
+27 3 true false
+28 3 true true
+29 2 false true
+30 3 false true
+31 1 true
+32 1 true
+33 1 false
+34 2 true false
+35 2 true true
