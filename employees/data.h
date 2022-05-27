@@ -22,7 +22,6 @@ class Data
     bool add_employee(std::string, std::string, std::string, std::string, std::string, double);
     bool remove_employee(std::string, std::string, std::string, std::string, std::string, double);
     std::unique_ptr<Employee> make_employee_pointer(std::string, std::string, std::string, std::string, std::string, double);
-    std::vector<std::unique_ptr<Employee>> get_employees();
 
     int get_size();
     double working_hours(std::string);
@@ -37,6 +36,8 @@ class Data
     std::vector<std::unique_ptr<Employee>>::iterator begin();
     std::vector<std::unique_ptr<Employee>>::iterator end();
     std::unique_ptr<Employee>& operator[](int);
+
+    std::string print_employees();
 };
 
 #endif

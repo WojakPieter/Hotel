@@ -30,7 +30,7 @@ class Hotel
     Date get_current_date();
     std::vector<Guest> get_guests();
     std::vector<Dish> get_menu();
-    Data get_current_employees();
+    std::string print_current_employees();
 
     bool add_employee(std::string, std::string, std::string, std::string, std::string, double);
     bool remove_employee(std::string, std::string, std::string, std::string, std::string, double);

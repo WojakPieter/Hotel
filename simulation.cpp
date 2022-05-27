@@ -32,14 +32,15 @@ void Simulation::start()
 
     clear_simulation_file();
 
+    int i = 0;
+    current_date = start_date;
+    int relay = 1;
+
     while (days > 0) {
         std::default_random_engine generator;
         std::uniform_int_distribution<int> distribution(0,activity.size()-1);
         int chosen_activity_index = distribution(generator);
         std::string p = activity[chosen_activity_index];
-        int i = 0;
-        current_date = start_date;
-        int relay = 1;
 
         if (p == "CHANGE")
         {
@@ -168,15 +169,8 @@ void Simulation::drawing_the_booking_room()
 
 void Simulation::print_current_employees()
 {
-    Data current_employees = hotel.get_current_employees();
     std::string text = "CHANGE! Employees on change: \n";
-    std::vector<std::unique_ptr<Employee>> database = current_employees.get_employees();
-    for(int i = 0; i <= database.size(); i ++)
-    {
-        text += database[i] -> get_first_name() + " ";
-        text += database[i] -> get_last_name() + " ";
-        text += database[i] -> get_type() + "\n";
-    }
+    text += hotel.print_current_employees();
     write_to_file(text);
     std::cout << text << std::endl;
 }

@@ -31,9 +31,11 @@ Date Hotel::get_current_date()
     return current_date;
 }
 
-Data Hotel::get_current_employees()
+std::string Hotel::print_current_employees()
 {
-    return current_employees;
+    std::string text = "";
+    text += current_employees.print_employees();
+    return text;
 }
 
 std::vector<Guest> Hotel::get_guests()
@@ -234,7 +236,6 @@ void Hotel::check_out(Guest& guest)
             break;
         }
     increase_budget(guest.get_receipt());
-    // zamowic sprzatanie u sprzataczki
 }
 
 void Hotel::check_guests()
