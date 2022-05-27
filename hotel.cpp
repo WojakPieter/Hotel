@@ -31,6 +31,13 @@ Date Hotel::get_current_date()
     return current_date;
 }
 
+std::string Hotel::print_current_employees()
+{
+    std::string text = "";
+    text += current_employees.print_employees();
+    return text;
+}
+
 std::vector<Guest> Hotel::get_guests()
 {
     return guests;
@@ -38,15 +45,7 @@ std::vector<Guest> Hotel::get_guests()
 
 std::vector<Dish> Hotel::get_menu()
 {
-    std::vector<Dish> things;
-    for(Dish d : menu.get_food())
-    {
-        things.push_back(d);
-    }
-    for(Dish d : menu.get_drinks())
-    {
-        things.push_back(d);
-    }
+    return menu.get_dishes();
 }
 
 void Hotel::increment_current_date()
@@ -136,6 +135,7 @@ int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, st
         int chosen_room_index = distribution(generator);
         int room_number = numbers_of_matching_rooms[chosen_room_index];
         rooms.book_room(room_number, period);
+        std::cout << room_number << std::endl;
         guest.set_room_number(room_number);
         guest.set_first_date(period.first);
         guest.set_last_date(period.second);
@@ -237,7 +237,6 @@ void Hotel::check_out(Guest& guest)
             break;
         }
     increase_budget(guest.get_receipt());
-    // zamowic sprzatanie u sprzataczki
 }
 
 void Hotel::check_guests()

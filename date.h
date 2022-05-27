@@ -11,6 +11,8 @@ class Date
     int day, month, year;
     Date(int day=1, int month=1, int year=1);
 
+    std::string print();
+    
     int get_day();
     int get_month();
     int get_year();

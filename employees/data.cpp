@@ -231,3 +231,15 @@ std::vector<std::unique_ptr<Employee>>::iterator Data::end()
 {
     return database.end();
 }
+
+std::string Data::print_employees()
+{
+    std::string text="";
+    for(int i = 0; i <= database.size(); i ++)
+    {
+        text += database[i] -> get_first_name() + " ";
+        text += database[i] -> get_last_name() + " ";
+        text += database[i] -> get_type() + "\n";
+    }
+    return text;
+}

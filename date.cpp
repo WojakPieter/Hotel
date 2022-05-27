@@ -199,4 +199,8 @@ std::ostream& operator<<(std::ostream& os, Date& d)
     return os;
 }
 
-
+std::string Date::print()
+{
+    std::string date = std::to_string(day) + "." + std::to_string(month) + "." + std::to_string(year); 
+    return date;
+}

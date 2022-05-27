@@ -1,17 +1,19 @@
 #include <math.h>
 #include "simulation.h"
-#include <windows.h>
+// #include <windows.h>
 #include <iostream>
+#include <random>
 #include <string>
-#include <conio.h>
+// #include <conio.h>
 #include <vector>
 #include <cstdlib>
 #include <fstream>
 #include <sstream>
+#include <chrono>
 
-Simulation::Simulation(std::string file_name1, Date start_date1, std::string room_file1, std::string employee_file1, std::string simulation_file1, std::string menu_file_name1, std::string guest_file_name1)
+Simulation::Simulation(int days1, Date start_date1, std::string room_file1, std::string employee_file1, std::string simulation_file1, std::string menu_file_name1, std::string guest_file_name1)
 {
-    file_name = file_name1;
+    days = days1;
     start_date = start_date1;
     room_file_name = room_file1;
     employee_file_name = employee_file1;
@@ -20,13 +22,9 @@ Simulation::Simulation(std::string file_name1, Date start_date1, std::string roo
     guest_file_name = guest_file_name1;
 }
 
-std::string Simulation::get_file_name() {
-    return file_name;
-}
-
-std::vector<Guest> Simulation::get_guest_to_add()
+std::vector<Guest> Simulation::get_guests_to_add()
 {
-    return guest_to_add;
+    return guests_to_add;
 }
 
 void Simulation::start()
@@ -35,26 +33,22 @@ void Simulation::start()
 
     clear_simulation_file();
 
-    std::ifstream outfile;
-    outfile.open(file_name);
-    if (!outfile) {
-        throw std::logic_error("Couldn't open the file with activity in simulation!");
-    }
-    std::string p="";
     int i = 0;
     current_date = start_date;
     int relay = 1;
-    while (!outfile.eof())
-    {
-        outfile >> p;
+    for(int j=0; j<10; j++) {
+        std::default_random_engine generator;
+        generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+        std::uniform_int_distribution<int> distribution(0,activity.size()-1);
+        int chosen_activity_index = distribution(generator);
+        std::string p = activity[chosen_activity_index];
+
         if (p == "CHANGE")
         {
             relay = change_relay(relay);
             hotel.change_current_employees(current_date, relay);
-            i = 0;
-            outfile >> p;
+            print_current_employees();
         }
-
 
         if (i == 0 && relay == 1 && start_date.get_day() == current_date.get_day())
         {
@@ -63,104 +57,143 @@ void Simulation::start()
             double cash = hotel.handing_out_salary();
             i = 1;
             print_monthly_action(nr_of_employees, cash, bills);
-            Sleep(1000);
+            // Sleep(1000);
         }
 
         if (p == "choose_entertainment")
-        {
-            std::string name, guest_pesel, type;
-            int hour;
-            outfile >> guest_pesel >> name;
-            if (name == "order_dish")
-                outfile >> type;
-            if (name == "order_waking_up")
-                outfile >> hour;
-            std::string flag = hotel.choose_entertainment(guest_pesel, name, type, hour);
-            print_choosing_entertainment(guest_pesel, name, type, hour, flag);
-        }
-
-        else if (p == "add_employee")
-        {
-            std::string type, firstN, lastN, email, pesel;
-            double hourlyRate;
-            outfile >> type >> firstN >> lastN >> email >> pesel;
-            outfile >> hourlyRate;
-            bool flag = hotel.add_employee(type, firstN, lastN, email, pesel, hourlyRate);
-            print_adding_employee(firstN, lastN, flag);
-        }
-
-        else if (p == "remove_employee")
-        {
-            std::string type, firstN, lastN, email, pesel;
-            double hourlyRate;
-            outfile >> type >> firstN >> lastN >> email >> pesel >> hourlyRate;
-            bool flag = hotel.remove_employee(type, firstN, lastN, email, pesel, hourlyRate);
-            print_removing_employee(firstN, lastN, flag);
-        }
+            drawing_the_choosing_entertainment();
 
         else if (p == "book_room")
-        {
-            std::string first_name, last_name, email_adress, PESEL;
-            double money;
-            char type;
-            bool high_standard, family;
-            int first_date_day, first_date_month, first_date_year, last_date_day, last_date_month, last_date_year;
-            outfile >> first_name >> last_name >> email_adress >> PESEL;
-            outfile >> money;
-            Guest guest(first_name, last_name, email_adress, PESEL, money);
-            outfile >> type;
-            outfile >> high_standard >> family;
-            outfile >> first_date_day >> first_date_month >> first_date_year >> last_date_day >> last_date_month >> last_date_year;
-            Date first_date(first_date_day, first_date_month, first_date_year);
-            Date last_date(last_date_day, last_date_month, last_date_year);
-            std::pair<Date, Date> period;
-            period.first = first_date;
-            period.second = last_date;
-            int room_number = hotel.book_room(guest, type, high_standard, family, period);
-            print_checking_in(first_name, last_name, room_number);
-        }
+            drawing_the_booking_room();
 
-        else if (p == "remove_dish")
-        {
-            std::string type, name;
-            outfile >> type >> name;
-            bool flag = hotel.remove_dish(type, name);
-            print_removing_dish(name, flag);
-        }
+        else if (p == "change_stay")
+            drawing_the_changing_stay();
 
-        else if (p == "add_dish")
-        {
-            std::string type, name, allergen, name_ingredient;
-            double price, preparation_cost, preparation_time;
-            int amount_of_allergens, amount_of_ingredients, mass;
-            std::vector<Ingredient> ingredients;
-            std::vector<std::string> allergens;
-            outfile >> type >> name >> price >> preparation_cost >> preparation_time;
-            outfile >> amount_of_allergens;
-            for (int i = 1; i <= amount_of_allergens; i++)
-            {
-                outfile >> allergen;
-                allergens.push_back(allergen);
-            }
-            outfile >> amount_of_ingredients;
-            for (int i = 1; i <= amount_of_ingredients; i++)
-            {
-                outfile >> name_ingredient >> mass;
-                Ingredient ingredient(name_ingredient, mass);
-                ingredients.push_back(ingredient);
-            }
-            bool flag = hotel.add_dish(type, name, price, preparation_cost, preparation_time, ingredients, allergens);
-            print_adding_dish(name, flag);
-        }
         else
-        {
             print_wrong_activity(p);
-        }
+
         hotel.check_guests();
-        Sleep(1000);
+        // Sleep(1000);
         p = "";
     }
-    outfile.close();
+}
+
+
+void Simulation::drawing_the_changing_stay()
+{
+    std::default_random_engine generator;
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    std::vector<Guest> guests = hotel.get_guests();
+    std::uniform_int_distribution<int> distribution(0,guests.size()-1);
+    int chosen_guest_index = distribution(generator);
+    Guest chosen_guest = guests[chosen_guest_index];
+
+    int minimum_days = current_date - chosen_guest.get_last_date() + 1;
+    std::uniform_int_distribution<int> distribution2(minimum_days,30);
+    int days = distribution2(generator);
+    Date new_stay_date = current_date + days;
+
+    bool flag = hotel.shortening_the_stay(chosen_guest, new_stay_date);
+}
+
+
+void Simulation::drawing_the_choosing_entertainment()
+{
+    std::default_random_engine generator;
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<int> distribution(0,entertainment.size()-1);
+    int chosen_entertainment_index = distribution(generator);
+    std::string name = activity[chosen_entertainment_index];
+
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    std::vector<Guest> guests = hotel.get_guests();
+    std::uniform_int_distribution<int> distribution2(0,guests.size()-1);
+    int chosen_guest_index = distribution2(generator);
+    Guest chosen_guest = guests[chosen_guest_index];
+
+    std::string dish_type;
+    int hour;
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+
+    if (name == "order_dish") {
+        std::vector<Dish> menu = hotel.get_menu();
+        std::uniform_int_distribution<int> distribution3(0,menu.size()-1);
+        int chosen_dish_index = distribution3(generator);
+        dish_type = menu[chosen_dish_index].get_name();
+    }
+
+    if (name == "order_waking_up")
+    {
+        std::uniform_int_distribution<int> distribution4(0,23);
+        hour = distribution4(generator);
+    }
+
+    std::string flag = hotel.choose_entertainment(chosen_guest.get_PESEL(), name, dish_type, hour);
+    print_choosing_entertainment(chosen_guest.get_PESEL(), name, dish_type, hour, flag);
+}
+
+
+void Simulation::drawing_the_booking_room()
+{
+    std::default_random_engine generator;
+    unsigned seed1 = std::chrono::steady_clock::now().time_since_epoch().count();
+    generator.seed(seed1);
+    std::vector<char> types_of_room = {'1', '2', '3', '4', 'a', 's'};
+    std::uniform_int_distribution<int> distribution(0,types_of_room.size()-1);
+    int chosen_type_index = distribution(generator);
+    char type = types_of_room[chosen_type_index];
+
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    std::vector<bool> true_or_false = {true, false};
+    std::uniform_int_distribution<int> distribution2(0,true_or_false.size()-1);
+    int chosen_index = distribution2(generator);
+    bool high_standard = true_or_false[chosen_index];
+
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<int> distribution3(0,true_or_false.size()-1);
+    int chosen_index3 = distribution3(generator);
+    bool family = true_or_false[chosen_index3];
+
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<int> distribution4(0,365);
+    int days_to_book = distribution4(generator);
+
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<int> distribution5(1,30);
+    int length_of_stay = distribution5(generator);
+
+    Date first_date = current_date + days_to_book;
+    Date last_date = first_date + length_of_stay;
+
+    std::pair<Date, Date> period;
+    period.first = first_date;
+    period.second = last_date;
+
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    std::uniform_int_distribution<int> distribution6(0,guests_to_add.size()-1);
+    int chosen_guest_index = distribution6(generator);
+    Guest guest = guests_to_add[chosen_guest_index];
+
+    int room_number = hotel.book_room(guest, type, high_standard, family, period);
+    print_checking_in(guest.get_first_name(), guest.get_last_name(), room_number);
+}
+
+
+void Simulation::print_current_employees()
+{
+    std::string text = "CHANGE! Employees on change: \n";
+    text += hotel.print_current_employees();
+    write_to_file(text);
+    std::cout << text << std::endl;
+}
+
+void Simulation::print_changing_stay(std::string guest_pesel, Date new_date, bool flag)
+{
+    std::string text = "Guest with PESEL " + guest_pesel + " change the stay in hotel to " + new_date.print();
+    if(!flag)
+        text = "Impossible attempt to change stay for guest with PESEL " + guest_pesel;
+    write_to_file(text);
+    std::cout << text << std::endl;
 }
 
 void Simulation::print_wrong_activity(std::string activity)
@@ -169,7 +202,6 @@ void Simulation::print_wrong_activity(std::string activity)
     write_to_file(text);
     std::cout << text << std::endl;
 }
-
 
 void Simulation::print_adding_employee(std::string first_name, std::string last_name, bool flag) {
     std::string text = first_name + " " + last_name + " was just hired";
@@ -256,6 +288,7 @@ int Simulation::change_relay(int relay) {
     if (relay == 3) {
         current_date += 1;
         return 1;
+        days --;
     }
     else
         return relay+1;
@@ -352,7 +385,7 @@ void Simulation::load_guests()
         double budget;
         line_str >> name >> last_name >> email >> PESEL >> budget;
         Guest g(name, last_name, email, PESEL, budget);
-        guest_to_add.push_back(g);
+        guests_to_add.push_back(g);
     }
 
 }

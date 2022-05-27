@@ -36,6 +36,8 @@ class Data
     std::vector<std::unique_ptr<Employee>>::iterator begin();
     std::vector<std::unique_ptr<Employee>>::iterator end();
     std::unique_ptr<Employee>& operator[](int);
+
+    std::string print_employees();
 };
 
 #endif
