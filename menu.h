@@ -33,4 +33,8 @@ class Menu
     double find_preparation_cost(std::string);
     double find_preparation_time(std::string name);
 };
+<<<<<<< HEAD
 #endif
+=======
+#endif
+>>>>>>> 1d79bc9a06b5f03e9152b25058483c8aff88215f

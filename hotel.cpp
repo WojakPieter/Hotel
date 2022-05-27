@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d79bc9a06b5f03e9152b25058483c8aff88215f
 #include "hotel.h"
 #include <string>
 #include <iostream>

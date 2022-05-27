@@ -11,4 +11,8 @@ int main(){
     Simulation play("plik.txt", data, "rooms.txt", "employees.txt", "simulation.txt", "menu.txt");
 	// std::cout << play.get_file_name();
 	play.start();
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1d79bc9a06b5f03e9152b25058483c8aff88215f
