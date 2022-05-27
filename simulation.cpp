@@ -9,7 +9,7 @@
 #include <fstream>
 #include <sstream>
 
-Simulation::Simulation(std::string file_name1, Date start_date1, std::string room_file1, std::string employee_file1, std::string simulation_file1, std::string menu_file_name1)
+Simulation::Simulation(std::string file_name1, Date start_date1, std::string room_file1, std::string employee_file1, std::string simulation_file1, std::string menu_file_name1, std::string guest_file_name1)
 {
     file_name = file_name1;
     start_date = start_date1;
@@ -17,10 +17,16 @@ Simulation::Simulation(std::string file_name1, Date start_date1, std::string roo
     employee_file_name = employee_file1;
     simulation_file = simulation_file1;
     menu_file_name = menu_file_name1;
+    guest_file_name = guest_file_name1;
 }
 
 std::string Simulation::get_file_name() {
     return file_name;
+}
+
+std::vector<Guest> Simulation::get_guest_to_add()
+{
+    return guest_to_add;
 }
 
 void Simulation::start()
@@ -301,13 +307,7 @@ void Simulation::load_employees()
         std::string first_name, last_name, email, pesel, type, rate_str;
         double rate;
         std::string::size_type sz;
-        getline(line_str, first_name, ' ');
-        getline(line_str, last_name, ' ');
-        getline(line_str, email, ' ');
-        getline(line_str, pesel, ' ');
-        getline(line_str, type, ' ');
-        getline(line_str, rate_str, ' ');
-        rate = std::stod(rate_str);
+        line_str >> first_name >> last_name >> email >> pesel >> type >> rate;
         hotel.add_employee(type, first_name, last_name, email, pesel, rate);
     }
     employees_file.close();
@@ -323,33 +323,45 @@ void Simulation::load_menu()
     while(std::getline(menu_file, line))
     {
         std::stringstream line_str(line);
-        std::string type, name, price_str, preparation_cost_str, preparation_time_str, ingredient_name, ingredient_quantity;
-        getline(line_str, type, ' ');
-        getline(line_str, name, ' ');
-        getline(line_str, price_str, ' ');
+        std::string type, name, ingredient_name;
+        double price, preparation_cost, preparation_time;
+        int ingredient_quantity;
+        line_str >> type >> name >> price >> preparation_cost >> preparation_time;
         std::vector<Ingredient> ingredients;
         while(!line_str.eof())
         {
-            try
-            {
-                getline(line_str, ingredient_name, ' ');
-                getline(line_str, ingredient_quantity, ' ');
-                Ingredient i(ingredient_name, std::stod(ingredient_quantity));
+                line_str >> ingredient_name >> ingredient_quantity;
+                Ingredient i(ingredient_name, ingredient_quantity);
                 ingredients.push_back(i);
-            }
-            catch (...)
-            {
-                break;
-            }
         }
-        Dish d(name,std::stod(price_str), std::stod(preparation_cost_str), std::stod(preparation_time_str), ingredients);
-        hotel.add_dish(type, name, std::stod(price_str), std::stod(preparation_cost_str), std::stod(preparation_time_str), ingredients, {});
+        hotel.add_dish(type, name, price, preparation_cost, preparation_time, ingredients, {});
     }
+}
+
+void Simulation::load_guests()
+{
+    std::fstream guest_file;
+    guest_file.open(guest_file_name, std::ios::in);
+    if(!guest_file.good())
+        throw std::logic_error("Could not open guest file");
+    std::string line;
+    while(getline(guest_file, line))
+    {
+        std::stringstream line_str(line);
+        std::string name, last_name, email, PESEL;
+        double budget;
+        line_str >> name >> last_name >> email >> PESEL >> budget;
+        Guest g(name, last_name, email, PESEL, budget);
+        guest_to_add.push_back(g);
+    }
+
 }
 
 void Simulation::set_hotel() {
     load_rooms();
     load_employees();
+    load_guests();
+    load_menu();
 
 }
 

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 1d79bc9a06b5f03e9152b25058483c8aff88215f
 #include "hotel.h"
 #include <string>
 #include <iostream>
@@ -42,11 +39,11 @@ std::vector<Guest> Hotel::get_guests()
 std::vector<Dish> Hotel::get_menu()
 {
     std::vector<Dish> things;
-    for(Dish d : food)
+    for(Dish d : menu.get_food())
     {
         things.push_back(d);
     }
-    for(Dish d : drinks)
+    for(Dish d : menu.get_drinks())
     {
         things.push_back(d);
     }

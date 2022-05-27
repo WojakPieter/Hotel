@@ -12,19 +12,23 @@ class Simulation
     std::string employee_file_name;
     std::string simulation_file;
     std::string menu_file_name;
+    std::string guest_file_name;
     Date start_date;
     Date current_date;
     Hotel hotel = Hotel("",0,0);
+    std::vector<Guest> guest_to_add;
 
     public:
-    Simulation(std::string, Date, std::string, std::string, std::string, std::string);
+    Simulation(std::string, Date, std::string, std::string, std::string, std::string, std::string);
 
+    std::vector<Guest> get_guest_to_add();
     std::string get_file_name();
     void start();
     int change_relay(int);
     void load_rooms();
     void load_employees();
     void load_menu();
+    void load_guests();
     void set_hotel();
     void print_tidying_room(Guest guest, std::string PESEL);
 
