@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <random>
 #include "hotel.h"
 
 class Simulation
@@ -37,7 +38,7 @@ class Simulation
 
     void clear_simulation_file();
     void write_to_file(std::string);
-    
+
     void drawing_the_booking_room();
     void drawing_the_choosing_entertainment();
     void drawing_the_changing_stay();
