@@ -231,3 +231,8 @@ std::vector<std::unique_ptr<Employee>>::iterator Data::end()
 {
     return database.end();
 }
+
+std::vector<std::unique_ptr<Employee>> Data::get_employees()
+{
+    return database;
+}

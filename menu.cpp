@@ -24,6 +24,17 @@ std::vector<Dish> Menu::get_drinks()
     return drinks;
 }
 
+std::vector<Dish> Menu::get_dishes() {
+    std::vector<Dish> dishes;
+    for(unsigned int i = 0; i < food.size(); i++)
+        dishes.push_back(food[i]);
+
+    for(unsigned int i = 0; i < drinks.size(); i++)
+        dishes.push_back(drinks[i]);
+
+    return dishes;
+}
+
 void Menu::set_name(std::string new_name){
     name = new_name;
 }

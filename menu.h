@@ -17,6 +17,8 @@ class Menu
     std::string get_name();
     std::vector<Dish> get_food();
     std::vector<Dish> get_drinks();
+
+    std::vector<Dish> get_dishes();
     void set_name(std::string);
 
     bool add_food(Dish);

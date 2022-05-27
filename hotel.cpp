@@ -31,6 +31,11 @@ Date Hotel::get_current_date()
     return current_date;
 }
 
+Data Hotel::get_current_employees()
+{
+    return current_employees;
+}
+
 std::vector<Guest> Hotel::get_guests()
 {
     return guests;
@@ -38,15 +43,7 @@ std::vector<Guest> Hotel::get_guests()
 
 std::vector<Dish> Hotel::get_menu()
 {
-    std::vector<Dish> things;
-    for(Dish d : menu.get_food())
-    {
-        things.push_back(d);
-    }
-    for(Dish d : menu.get_drinks())
-    {
-        things.push_back(d);
-    }
+    return menu.get_dishes();
 }
 
 void Hotel::increment_current_date()
