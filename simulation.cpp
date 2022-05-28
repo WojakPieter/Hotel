@@ -27,6 +27,11 @@ std::vector<Guest> Simulation::get_guests_to_add()
     return guests_to_add;
 }
 
+std::vector<Guest> Simulation::get_current_guests()
+{
+    return current_guests;
+}
+
 void Simulation::start()
 {
     set_hotel();
@@ -36,21 +41,13 @@ void Simulation::start()
     int i = 0;
     current_date = start_date;
     int relay = 1;
-    for(int j=0; j<10; j++) {
+    while(current_date < start_date + days) {
         std::default_random_engine generator;
         generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
         std::uniform_int_distribution<int> distribution(0,activity.size()-1);
         int chosen_activity_index = distribution(generator);
         std::string p = activity[chosen_activity_index];
-
-        if (p == "CHANGE")
-        {
-            relay = change_relay(relay);
-            hotel.change_current_employees(current_date, relay);
-            print_current_employees();
-        }
-
-        if (i == 0 && relay == 1 && start_date.get_day() == current_date.get_day())
+    if (i == 0 && relay == 1 && start_date.get_day() == current_date.get_day())
         {
             int nr_of_employees = hotel.creating_schedule(current_date);
             double bills = hotel.paying_the_bills();
@@ -59,20 +56,34 @@ void Simulation::start()
             print_monthly_action(nr_of_employees, cash, bills);
             // Sleep(1000);
         }
+        if (p == "CHANGE")
+        {
+            relay = change_relay(relay);
+            hotel.change_current_employees(current_date, relay);
+            print_current_employees();
+            if(relay == 1) hotel.check_guests();
+        }
 
-        if (p == "choose_entertainment")
+
+
+        else if (p == "choose_entertainment")
+        {
+
+            if(current_guests.size() == 0) continue;
             drawing_the_choosing_entertainment();
-
+        }
         else if (p == "book_room")
             drawing_the_booking_room();
 
         else if (p == "change_stay")
+        {
+            if(current_guests.size() == 0) continue;
             drawing_the_changing_stay();
-
+        }
         else
             print_wrong_activity(p);
 
-        hotel.check_guests();
+
         // Sleep(1000);
         p = "";
     }
@@ -84,9 +95,9 @@ void Simulation::drawing_the_changing_stay()
     std::default_random_engine generator;
     generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
     std::vector<Guest> guests = hotel.get_guests();
-    std::uniform_int_distribution<int> distribution(0,guests.size()-1);
+    std::uniform_int_distribution<int> distribution(0,current_guests.size()-1);
     int chosen_guest_index = distribution(generator);
-    Guest chosen_guest = guests[chosen_guest_index];
+    Guest chosen_guest = current_guests[chosen_guest_index];
 
     int minimum_days = current_date - chosen_guest.get_last_date() + 1;
     std::uniform_int_distribution<int> distribution2(minimum_days,30);
@@ -176,6 +187,7 @@ void Simulation::drawing_the_booking_room()
 
     int room_number = hotel.book_room(guest, type, high_standard, family, period);
     print_checking_in(guest.get_first_name(), guest.get_last_name(), room_number);
+    if(room_number != -1) current_guests.push_back(guest);
 }
 
 

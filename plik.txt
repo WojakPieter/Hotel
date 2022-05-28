@@ -1,29 +1,118 @@
-book_room Adam Krol man@wp.pl 03301500823 20000 1 0 1 15 10 2020 20 10 2020
-book_room Maja Zryk zrykamaja@wp.pl 02301509084 200090 3 0 1 10 10 2020 11 10 2020
-book_room Kasia Robak robak@wp.pl 02020202222 30000 2 1 1 3 9 2020 4 9 2020
-add_employee cook Kasia Szymczak ajana@ep.pl 02301500823 17
-add_employee maid Mariusz Pruszcz pruszek@wp.pl 02300200983 9
+Hotel created a schedule for 24 employees
+Hotel paid 575.0 zl for the bills
+Hotel paid 5093.20 zl for the employees' salaries
+It is not possible to book a room for Krzystof Tyniec
+CHANGE! Employees on change: 
+Feliks Uberek cook
+Agata Kostro cook
+Janek Baranek maid
+Magda Beza maid
+Regina Celi maid
+Mateusz Lipniak barman
+Dominika Wyszynska barman
+Renata Barek waiter
+Dawid Malen waiter
+Rafal Wygora waiter
+Natalia Siwiec waiter
 
-CHANGE
-book_room Adam K sks@wp.pl 03301500882 20000 4 1 1 4 10 2020 5 10 2020
-choose_entertainment 03301500823 order_dish cake
-choose_entertainment 02020202222 order_dish fish
-choose_entertainment 02020202222 order_taxi
-choose_entertainment 02020202222 order_waking_up 20
-make_spa
+CHANGE! Employees on change: 
+Kuzyn Prezesa manager
+Karol Kochar manager
+Agnieszka Mazur manager
+Marek Wojcik recepcionist
+Malgosia Lipa bodyguard
 
-CHANGE
-choose_entertainment 02020202222 order_waking_up 2
+CHANGE! Employees on change: 
+Karol Kochar manager
+Agnieszka Mazur manager
+Jan Kowalski cook
+Feliks Uberek cook
+Agata Kostro cook
+Mietek Zul maid
+Janek Baranek maid
+Magda Beza maid
+Regina Celi maid
+Mateusz Lipniak barman
+Dominika Wyszynska barman
+Szymon Spaczynski barman
+Dawid Malen waiter
+Rafal Wygora waiter
+Natalia Siwiec waiter
 
-CHANGE 
-remove_employee barman Dominika Wyszynska domkapoziomka@gmail.com 02301500888 30.5
-book_room Grzegorz Grzeg grzeg@wp.pl 20 02301920930 a 1 1 4 9 2020 7 9 2020
+CHANGE! Employees on change: 
+Jan Kowalski cook
+Agata Kostro cook
+Mietek Zul maid
+Regina Celi maid
+Leyla Lema recepcionist
+Kuba Nowaczyski bodyguard
+Malgosia Lipa bodyguard
+Mateusz Lipniak barman
+Dominika Wyszynska barman
+Szymon Spaczynski barman
+Renata Barek waiter
+Dawid Malen waiter
 
+It is not possible to book a room for Krzystof Tyniec
+Robert Gawlinski booked the room nr 35
+CHANGE! Employees on change: 
+Kuzyn Prezesa manager
+Karol Kochar manager
+Anastazja Nowak recepcionist
+Wojtek Wojak bodyguard
 
-CHANGE
-choose_entertainment 02301920930 order_taxi
-choose_entertainment 02020202222 order_tidying_room
-add_employee barman Agnieszka Mazur mazurek@kopiec.pl 62121511605 40
+Robert Gawlinski booked the room nr 35
+Guest with PESEL 93445812031 cannot choose this entertainment
+Guest with PESEL 93445812031 cannot choose this entertainment
+Guest with PESEL 93445812031 cannot choose this entertainment
+Guest with PESEL 93445812031 cannot choose this entertainment
+CHANGE! Employees on change: 
+Jan Kowalski cook
+Feliks Uberek cook
+Agata Kostro cook
+Mietek Zul maid
+Janek Baranek maid
+Magda Beza maid
+Regina Celi maid
+Karolina Trok recepcionist
+Wojtek Wojak bodyguard
+Mateusz Lipniak barman
+Szymon Spaczynski barman
+Renata Barek waiter
+Dawid Malen waiter
+Rafal Wygora waiter
+Natalia Siwiec waiter
 
-CHANGE
-remove_dish drink pina_colada
+Guest with PESEL 93445812031 cannot choose this entertainment
+CHANGE! Employees on change: 
+Agata Kostro cook
+Mietek Zul maid
+Janek Baranek maid
+Regina Celi maid
+Karolina Trok recepcionist
+Malgosia Lipa bodyguard
+Dominika Wyszynska barman
+Rafal Wygora waiter
+Natalia Siwiec waiter
+
+CHANGE! Employees on change: 
+Agnieszka Mazur manager
+Karolina Trok recepcionist
+Wojtek Wojak bodyguard
+Malgosia Lipa bodyguard
+
+Guest with PESEL 93445812031 cannot choose this entertainment
+CHANGE! Employees on change: 
+Agnieszka Mazur manager
+Feliks Uberek cook
+Mietek Zul maid
+Janek Baranek maid
+Magda Beza maid
+Regina Celi maid
+Marek Wojcik recepcionist
+Mateusz Lipniak barman
+Szymon Spaczynski barman
+Renata Barek waiter
+Rafal Wygora waiter
+Natalia Siwiec waiter
+

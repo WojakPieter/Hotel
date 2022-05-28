@@ -1,5 +1,112 @@
 Hotel created a schedule for 24 employees
 Hotel paid 575.0 zl for the bills
 Hotel paid 5093.20 zl for the employees' salaries
+CHANGE! Employees on change: 
+Feliks Uberek cook
+Agata Kostro cook
+Janek Baranek maid
+Magda Beza maid
+Regina Celi maid
+Mateusz Lipniak barman
+Dominika Wyszynska barman
+Renata Barek waiter
+Dawid Malen waiter
+Rafal Wygora waiter
+Natalia Siwiec waiter
+
+CHANGE! Employees on change: 
+Kuzyn Prezesa manager
+Karol Kochar manager
+Agnieszka Mazur manager
+Marek Wojcik recepcionist
+Malgosia Lipa bodyguard
+
+CHANGE! Employees on change: 
+Karol Kochar manager
+Agnieszka Mazur manager
+Jan Kowalski cook
+Feliks Uberek cook
+Agata Kostro cook
+Mietek Zul maid
+Janek Baranek maid
+Magda Beza maid
+Regina Celi maid
+Mateusz Lipniak barman
+Dominika Wyszynska barman
+Szymon Spaczynski barman
+Dawid Malen waiter
+Rafal Wygora waiter
+Natalia Siwiec waiter
+
+CHANGE! Employees on change: 
+Jan Kowalski cook
+Agata Kostro cook
+Mietek Zul maid
+Regina Celi maid
+Leyla Lema recepcionist
+Kuba Nowaczyski bodyguard
+Malgosia Lipa bodyguard
+Mateusz Lipniak barman
+Dominika Wyszynska barman
+Szymon Spaczynski barman
+Renata Barek waiter
+Dawid Malen waiter
+
+CHANGE! Employees on change: 
+Kuzyn Prezesa manager
+Karol Kochar manager
+Anastazja Nowak recepcionist
+Wojtek Wojak bodyguard
+
+CHANGE! Employees on change: 
+Jan Kowalski cook
+Feliks Uberek cook
+Agata Kostro cook
+Mietek Zul maid
+Janek Baranek maid
+Magda Beza maid
+Regina Celi maid
+Karolina Trok recepcionist
+Wojtek Wojak bodyguard
+Mateusz Lipniak barman
+Szymon Spaczynski barman
+Renata Barek waiter
+Dawid Malen waiter
+Rafal Wygora waiter
+Natalia Siwiec waiter
+
+CHANGE! Employees on change: 
+Agata Kostro cook
+Mietek Zul maid
+Janek Baranek maid
+Regina Celi maid
+Karolina Trok recepcionist
+Malgosia Lipa bodyguard
+Dominika Wyszynska barman
+Rafal Wygora waiter
+Natalia Siwiec waiter
+
 Robert Gawlinski booked the room nr 35
 It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Krzystof Tyniec
+CHANGE! Employees on change: 
+Agnieszka Mazur manager
+Karolina Trok recepcionist
+Wojtek Wojak bodyguard
+Malgosia Lipa bodyguard
+
+Guest with PESEL 93445812031 cannot choose this entertainment
+CHANGE! Employees on change: 
+Agnieszka Mazur manager
+Feliks Uberek cook
+Mietek Zul maid
+Janek Baranek maid
+Magda Beza maid
+Regina Celi maid
+Marek Wojcik recepcionist
+Mateusz Lipniak barman
+Szymon Spaczynski barman
+Renata Barek waiter
+Rafal Wygora waiter
+Natalia Siwiec waiter
+

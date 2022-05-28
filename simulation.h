@@ -18,6 +18,7 @@ class Simulation
     Date current_date;
     Hotel hotel = Hotel("",0,0);
     std::vector<Guest> guests_to_add;
+    std::vector<Guest> current_guests;
     std::vector<std::string> activity = {"book_room", "change_stay", "choose_entertainment", "CHANGE"};
     std::vector<std::string> entertainment = {"order_taxi", "order_dish", "order_tidying_room", "order_waking_up"};
 
@@ -25,6 +26,7 @@ class Simulation
     Simulation(int, Date, std::string, std::string, std::string, std::string, std::string);
 
     std::vector<Guest> get_guests_to_add();
+    std::vector<Guest> get_current_guests();
     std::string get_file_name();
 
     void start();

@@ -135,7 +135,6 @@ int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, st
         int chosen_room_index = distribution(generator);
         int room_number = numbers_of_matching_rooms[chosen_room_index];
         rooms.book_room(room_number, period);
-        std::cout << room_number << std::endl;
         guest.set_room_number(room_number);
         guest.set_first_date(period.first);
         guest.set_last_date(period.second);
