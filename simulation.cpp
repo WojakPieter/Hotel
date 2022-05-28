@@ -41,11 +41,7 @@ void Simulation::start()
     int i = 0;
     current_date = start_date;
     int relay = 1;
-<<<<<<< HEAD
     while(current_date < start_date + days) {
-=======
-    for(int j=0; j<10; j++) {
->>>>>>> 5c595f4631d34bbad567bd5ed209cb3f0729061f
         std::default_random_engine generator;
         generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
         std::uniform_int_distribution<int> distribution(0,activity.size()-1);
@@ -118,17 +114,16 @@ void Simulation::drawing_the_choosing_entertainment()
     generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
     std::uniform_int_distribution<int> distribution(0,entertainment.size()-1);
     int chosen_entertainment_index = distribution(generator);
-    std::string name = activity[chosen_entertainment_index];
-
+    std::string name = entertainment[chosen_entertainment_index];
     generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
-    std::vector<Guest> guests = hotel.get_guests();
-    std::uniform_int_distribution<int> distribution2(0,guests.size()-1);
+    //std::vector<Guest> guests = hotel.get_guests();
+    std::uniform_int_distribution<int> distribution2(0,current_guests.size()-1);
     int chosen_guest_index = distribution2(generator);
-    Guest chosen_guest = guests[chosen_guest_index];
+    Guest chosen_guest = current_guests[chosen_guest_index];
 
     std::string dish_type;
     int hour;
-    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count()-3);
 
     if (name == "order_dish") {
         std::vector<Dish> menu = hotel.get_menu();
@@ -144,6 +139,7 @@ void Simulation::drawing_the_choosing_entertainment()
     }
 
     std::string flag = hotel.choose_entertainment(chosen_guest.get_PESEL(), name, dish_type, hour);
+    std::cout << name << std::endl;
     print_choosing_entertainment(chosen_guest.get_PESEL(), name, dish_type, hour, flag);
 }
 
@@ -252,14 +248,14 @@ void Simulation::print_checking_in(std::string first_name, std::string last_name
 }
 
 void Simulation::print_choosing_entertainment(std::string PESEL, std::string name, std::string type, int nr, std::string flag) {
-    int room_number = 0;
+    int room_number = -1;
     for(Guest guest : hotel.get_guests())
     {
         if(guest.get_PESEL() == PESEL) room_number = guest.get_room_number();
     }
-    std::string text = "Guest with PESEL " + PESEL + " " + name;
+    std::string text = "Guest with PESEL " + PESEL + " " + name + "\n";
     if(name == "order_tidying_room")
-        text = "Room nr " + std::to_string(room_number) + " has been tidied by " + flag;
+        text += "Room nr " + std::to_string(room_number) + " has been tidied by " + flag;
     if (name == "order_waking_up")
         text += "at " + std::to_string(nr);
     if (flag == "false")
@@ -275,8 +271,6 @@ void Simulation::print_choosing_entertainment(std::string PESEL, std::string nam
     }
     write_to_file(text);
     std::cout << text << std::endl;
-    if(name == "order_tidying_room")
-        std::cout << "Room nr " << nr << " has been tidied by " << flag << std::endl;
 }
 
 void Simulation::print_removing_dish(std::string name, bool flag) {

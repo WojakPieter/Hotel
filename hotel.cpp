@@ -1,4 +1,4 @@
-
+#include <chrono>
 #include "hotel.h"
 #include <string>
 #include <iostream>
@@ -99,6 +99,7 @@ std::string Hotel::set_maid_to_tidy_room(int number)
     if(flag)
     {
         std::default_random_engine generator;
+        generator.seed(std::chrono::steady_clock::now().time_since_epoch().count()-3);
         std::uniform_int_distribution<int> distribution(0,index_of_maids.size()-1);
         int chosen_maid_index = distribution(generator);
         int i = 0;
@@ -135,7 +136,6 @@ int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, st
         int chosen_room_index = distribution(generator);
         int room_number = numbers_of_matching_rooms[chosen_room_index];
         rooms.book_room(room_number, period);
-        std::cout << room_number << std::endl;
         guest.set_room_number(room_number);
         guest.set_first_date(period.first);
         guest.set_last_date(period.second);

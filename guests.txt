@@ -1,8 +1,8 @@
-Jan Mazur jan.mazur@wp.pl 02232123357 20000
-Krzystof Tyniec kt@interia.pl 09923454312 3000
-Robert Gawlinski rg@onet.pl 93445812031 3030
-Marek Gawlinski rg@onet.pl 93445812131 3030
-Janusz Gawlinski rg@onet.pl 93445852031 3030
-Dawid Gawlinski rg@onet.pl 73445812031 3030
-Szymon Gawlinski rg@onet.pl 93945812031 3030
-Piotr Gawlinski rg@onet.pl 93445844441 3030
+Jan Mazur jan.mazur@wp.pl 02232123357 20000000
+Krzystof Tyniec kt@interia.pl 09923454312 300000
+Robert Gawlinski rg@onet.pl 93445812031 303000
+Marek Gawlinski rg@onet.pl 93445812131 303000
+Janusz Gawlinski rg@onet.pl 93445852031 303000
+Dawid Gawlinski rg@onet.pl 73445812031 303000
+Szymon Gawlinski rg@onet.pl 93945812031 303000
+Piotr Gawlinski rg@onet.pl 93445844441 303000

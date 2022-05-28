@@ -1,7 +1,6 @@
 Hotel created a schedule for 24 employees
 Hotel paid 575.0 zl for the bills
 Hotel paid 5093.20 zl for the employees' salaries
-<<<<<<< HEAD
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Agata Kostro cook
@@ -111,7 +110,3 @@ Renata Barek waiter
 Rafal Wygora waiter
 Natalia Siwiec waiter
 
-=======
-Robert Gawlinski booked the room nr 35
-It is not possible to book a room for Jan Mazur
->>>>>>> 5c595f4631d34bbad567bd5ed209cb3f0729061f

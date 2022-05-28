@@ -12,10 +12,6 @@ Employee(first_name, last_name, email_adress, PESEL, hourly_rate)
 void Maid::make_roster(std::vector<std::pair<Date, int>> schedule){
     roster = {};
     std::vector<std::pair<Date, int>> new_schedule = schedule;
-    for(auto& parr : new_schedule)
-    {
-        if(parr.second == 3) new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), parr));
-    }
     for(unsigned int i = 0; i < free_days.size(); i++)
         new_schedule.erase(std::find(new_schedule.begin(), new_schedule.end(), free_days[i]));
 
