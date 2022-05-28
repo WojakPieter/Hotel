@@ -41,7 +41,11 @@ void Simulation::start()
     int i = 0;
     current_date = start_date;
     int relay = 1;
+<<<<<<< HEAD
     while(current_date < start_date + days) {
+=======
+    for(int j=0; j<10; j++) {
+>>>>>>> 5c595f4631d34bbad567bd5ed209cb3f0729061f
         std::default_random_engine generator;
         generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
         std::uniform_int_distribution<int> distribution(0,activity.size()-1);
