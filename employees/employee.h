@@ -33,6 +33,7 @@ class Employee
     double get_Hourly_rate() const;
     void set_Hourly_rate(double);
     void print_roster();
+    void add_relay_to_roster(std::pair<Date,int> relay);
     double get_hourly_rate(std::string) const;
     int get_working_days(std::string) const;
     int get_working_hours(std::string) const;

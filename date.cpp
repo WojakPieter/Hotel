@@ -185,22 +185,8 @@ Date Date::operator-(int days)
     return (*this) + (-1) * days;
 }
 
-std::ostream& operator<<(std::ostream& os, Date& d)
-{
-    if(d.day<10) os<<'0'<<d.day;
-    else os<<d.day;
-    os<<'.';
-    if(d.month<10) os<<'0'<<d.month;
-    else os<<d.month;
-    os<<'.';
-    if(d.year<10) os<<'0'<<d.year;
-    else os<<d.year;
-
-    return os;
-}
-
 std::string Date::print()
 {
-    std::string date = std::to_string(day) + "." + std::to_string(month) + "." + std::to_string(year); 
+    std::string date = std::to_string(day) + "." + std::to_string(month) + "." + std::to_string(year);
     return date;
 }

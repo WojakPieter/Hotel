@@ -1,149 +1,96 @@
-Hotel created a schedule for 24 employees
+Hotel created a schedule for 1 employees
 Hotel paid 575.0 zl for the bills
 Hotel paid 5093.20 zl for the employees' salaries
 CHANGE! Employees on change: 
 Feliks Uberek cook
-Agata Kostro cook
-Magda Beza maid
-Regina Celi maid
-Leyla Lema recepcionist
-Marek Wojcik recepcionist
-Dominika Wyszynska barman
-Szymon Spaczynski barman
-Renata Barek waiter
-Dawid Malen waiter
-Rafal Wygora waiter
-Natalia Siwiec waiter
-
-CHANGE! Employees on change: 
-Kuzyn Prezesa manager
-Karol Kochar manager
-Agnieszka Mazur manager
-Mietek Zul maid
 Janek Baranek maid
-Regina Celi maid
+Karolina Trok recepcionist
 Wojtek Wojak bodyguard
-Malgosia Lipa bodyguard
-
-Robert Gawlinski booked the room nr 35
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 62121511605
-CHANGE! Employees on change: 
-Karol Kochar manager
-Agnieszka Mazur manager
-Jan Kowalski cook
-Feliks Uberek cook
-Agata Kostro cook
-Janek Baranek maid
-Malgosia Lipa bodyguard
-Mateusz Lipniak barman
 Dominika Wyszynska barman
-Szymon Spaczynski barman
-Renata Barek waiter
 Dawid Malen waiter
-Rafal Wygora waiter
-Natalia Siwiec waiter
 
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 02312000833
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 02312000833
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 02312000833
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 02312000833
 Krzystof Tyniec booked the room nr 35
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 02312000833
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 02312000833
-It is not possible to book a room for Jan Mazur
-CHANGE! Employees on change: 
-Jan Kowalski cook
-Agata Kostro cook
-Anastazja Nowak recepcionist
-Leyla Lema recepcionist
-Marek Wojcik recepcionist
-Wojtek Wojak bodyguard
-Mateusz Lipniak barman
-Dominika Wyszynska barman
-Szymon Spaczynski barman
-Rafal Wygora waiter
-Natalia Siwiec waiter
-
-It is not possible to book a room for Krzystof Tyniec
-CHANGE! Employees on change: 
-Kuzyn Prezesa manager
-Karol Kochar manager
-Janek Baranek maid
-Leyla Lema recepcionist
-Kuba Nowaczyski bodyguard
-Malgosia Lipa bodyguard
-
-CHANGE! Employees on change: 
-Jan Kowalski cook
-Feliks Uberek cook
-Agata Kostro cook
-Mietek Zul maid
-Janek Baranek maid
-Mateusz Lipniak barman
-Dominika Wyszynska barman
-Szymon Spaczynski barman
-Dawid Malen waiter
-Rafal Wygora waiter
-Natalia Siwiec waiter
-
-CHANGE! Employees on change: 
-Agata Kostro cook
-Magda Beza maid
-Kuba Nowaczyski bodyguard
-Mateusz Lipniak barman
-Dominika Wyszynska barman
-Szymon Spaczynski barman
-Renata Barek waiter
-Rafal Wygora waiter
-Natalia Siwiec waiter
-
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 02301900889
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 02301900889
 Guest with PESEL 09923454312 order_waking_up
 at 18
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 02301900889
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 02301900889
 CHANGE! Employees on change: 
-Agnieszka Mazur manager
-Janek Baranek maid
+Magda Beza maid
+Leyla Lema recepcionist
+Malgosia Lipa bodyguard
 
-It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 62121511605
-It is not possible to book a room for Krzystof Tyniec
+Room nr 35 has been tidied by 93101010000
 Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 62121511605
+Room nr 35 has been tidied by 93101010000
 Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 62121511605
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 62121511605
+Room nr 35 has been tidied by 93101010000
+Robert Gawlinski booked the room nr 35
+Krzystof Tyniec booked the room nr 35
+CHANGE! Employees on change: 
+Karol Kochar manager
+Agata Kostro cook
+Regina Celi maid
+Marek Wojcik recepcionist
+Kuba Nowaczyski bodyguard
+Szymon Spaczynski barman
+Rafal Wygora waiter
+
+CHANGE! Employees on change: 
+Jan Kowalski cook
+Mietek Zul maid
+Anastazja Nowak recepcionist
+Wojtek Wojak bodyguard
+Mateusz Lipniak barman
+Natalia Siwiec waiter
+
+Guest with PESEL 93445812031 order_tidying_room
+Room nr 35 has been tidied by 03345594345
+CHANGE! Employees on change: 
+Janek Baranek maid
+Karolina Trok recepcionist
+Malgosia Lipa bodyguard
+
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
 Feliks Uberek cook
 Magda Beza maid
-Regina Celi maid
-Anastazja Nowak recepcionist
 Leyla Lema recepcionist
+Kuba Nowaczyski bodyguard
+Dominika Wyszynska barman
+Renata Barek waiter
+
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Krzystof Tyniec
+CHANGE! Employees on change: 
+Agata Kostro cook
+Regina Celi maid
+Marek Wojcik recepcionist
+Wojtek Wojak bodyguard
 Szymon Spaczynski barman
 Dawid Malen waiter
+
+It is not possible to book a room for Krzystof Tyniec
+CHANGE! Employees on change: 
+Mietek Zul maid
+Anastazja Nowak recepcionist
+Malgosia Lipa bodyguard
+
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445812031 order_tidying_room
+Room nr 35 has been tidied by 97031577266
+Guest with PESEL 93445812031 order_tidying_room
+Room nr 35 has been tidied by 97031577266
+Guest with PESEL 93445812031 order_tidying_room
+Room nr 35 has been tidied by 97031577266
+Guest with PESEL 93445812031 order_tidying_room
+Room nr 35 has been tidied by 97031577266
+CHANGE! Employees on change: 
+Kuzyn Prezesa manager
+Jan Kowalski cook
+Janek Baranek maid
+Karolina Trok recepcionist
+Kuba Nowaczyski bodyguard
+Mateusz Lipniak barman
 Rafal Wygora waiter
-Natalia Siwiec waiter
 

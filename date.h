@@ -12,7 +12,7 @@ class Date
     Date(int day=1, int month=1, int year=1);
 
     std::string print();
-    
+
     int get_day();
     int get_month();
     int get_year();
@@ -37,7 +37,19 @@ class Date
     int operator-(const Date&);
     Date operator-(int);
 
-    friend std::ostream& operator<<(std::ostream& os, Date& d);
+    friend std::ostream& operator<<(std::ostream& os, Date d)
+    {
+        if(d.day<10) os<<'0'<<d.day;
+    else os<<d.day;
+    os<<'.';
+    if(d.month<10) os<<'0'<<d.month;
+    else os<<d.month;
+    os<<'.';
+    if(d.year<10) os<<'0'<<d.year;
+    else os<<d.year;
+
+    return os;
+    }
 
 };
 #endif

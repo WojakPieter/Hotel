@@ -38,6 +38,11 @@ void Employee::start_day(){
     set_worked_hours(0);
 }
 
+void Employee::add_relay_to_roster(std::pair<Date,int> relay)
+{
+    roster.push_back(relay);
+}
+
 double Employee::get_Hourly_rate() const{
     return hourly_rate;
 }
@@ -169,13 +174,13 @@ void Employee::set_PESEL(std::string new_PESEL) {
         throw std::range_error("PESEL musi miec 11 cyfr");
 }
 
-/*void Employee::print_roster() {
+void Employee::print_roster() {
     std::cout << "Roster for month: date and part of day \n";
     for(long unsigned int i = 0; i < roster.size(); i++){
-        roster[i].first.get_date();
+        roster[i].first.get_day();
         std::cout << " " << roster[i].second << std::endl;
     }
-}*/
+}
 
 void Employee::take_vacation(Date new_date){
     for(unsigned int i = 0; i < free_days.size(); i++)

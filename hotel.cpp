@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include <random>
+#include <algorithm>
 
 Hotel::Hotel(std::string name1, int stars1, double budget1)
 {
@@ -271,6 +272,7 @@ double Hotel::handing_out_salary()
 
 int Hotel::creating_schedule(Date date)
 {
+    int tries = 0;
     int nr_of_employees = 0;
     std::vector<std::pair<Date, int>> changes;
     for(int i=0; i<current_date.get_month_length(current_date.get_month()); i++)
@@ -279,11 +281,64 @@ int Hotel::creating_schedule(Date date)
         changes.push_back(std::make_pair<Date, int>(date+i,2));
         changes.push_back(std::make_pair<Date, int>(date+i,3));
     }
-    for(auto& ptr : employees)
+    int barman_x=0,bodyguard_x=0,cook_x=0,maid_x=0,manager_x=0,recepcionist_x=0,waiter_x=0;
+    int barman_y=1,bodyguard_y=1,cook_y=1,maid_y=1,manager_y=1,recepcionist_y=1,waiter_y=1;
+    while(recepcionist_x < 90)
     {
-        ptr->make_roster(changes);
-        nr_of_employees += 1;
+        for(auto& ptr : employees)
+    {
+        nr_of_employees = 0;
+        if(ptr->get_type() == "barman")
+        {
+            ptr->add_relay_to_roster(std::make_pair(date + barman_x, barman_y));
+            if(barman_y == 2) { barman_y = 1; barman_x++; }
+            else barman_y++;
+        }
+
+        if(ptr->get_type() == "bodyguard")
+        {
+            ptr->add_relay_to_roster(std::make_pair(date + bodyguard_x, bodyguard_y));
+            if(bodyguard_y == 3) { bodyguard_y = 1; bodyguard_x++; }
+            else bodyguard_y++;
+        }
+
+        if(ptr->get_type() == "cook")
+        {
+            ptr->add_relay_to_roster(std::make_pair(date + cook_x, cook_y));
+            if(cook_y == 2) { cook_y = 1; cook_x++; }
+            else cook_y++;
+        }
+
+        if(ptr->get_type() == "maid")
+        {
+            ptr->add_relay_to_roster(std::make_pair(date + maid_x, maid_y));
+            if(maid_y == 3) { maid_y = 1; maid_x++; }
+            else maid_y++;
+        }
+
+        if(ptr->get_type() == "manager")
+        {
+            ptr->add_relay_to_roster(std::make_pair(date + manager_x, 1));
+            manager_x++;
+        }
+
+        if(ptr->get_type() == "recepcionist")
+        {
+            ptr->add_relay_to_roster(std::make_pair(date + recepcionist_x, recepcionist_y));
+            if(recepcionist_y == 3) { recepcionist_y = 1; recepcionist_x++; }
+            else recepcionist_y++;
+        }
+
+        if(ptr->get_type() == "waiter")
+        {
+            ptr->add_relay_to_roster(std::make_pair(date + waiter_x, waiter_y));
+            if(waiter_y == 2) { waiter_y = 1; waiter_x++; }
+            else waiter_y++;
+        }
+        nr_of_employees++;
     }
+    }
+
     return nr_of_employees;
 }
 
