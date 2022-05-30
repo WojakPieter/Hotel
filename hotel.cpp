@@ -12,6 +12,11 @@ Hotel::Hotel(std::string name1, int stars1, double budget1)
     budget = budget1;
 }
 
+void Hotel::set_date(Date new_date)
+{
+    current_date = new_date;
+}
+
 std::string Hotel::get_name()
 {
     return name;
@@ -229,7 +234,7 @@ void Hotel::remove_room(int number)
     }
 }
 
-void Hotel::check_out(Guest& guest)
+double Hotel::check_out(Guest& guest)
 {
     for(unsigned int i = 0; i < guests.size(); i++)
         if (guest.get_PESEL() == guests[i].get_PESEL())
@@ -238,15 +243,29 @@ void Hotel::check_out(Guest& guest)
             break;
         }
     increase_budget(guest.get_receipt());
+    return guest.get_receipt();
 }
 
-void Hotel::check_guests()
+int Hotel::get_number_of_employees()
 {
+    return employees.get_size();
+}
+
+int Hotel::get_number_of_guests()
+{
+    return guests.size();
+}
+
+double Hotel::check_guests()
+{
+    double gained_money = 0;
     for(Guest& g : guests)
     {
         if(g.get_first_date() == current_date) check_in(g);
-        if(g.get_last_date() == current_date) check_out(g);
+        if(g.get_last_date() == current_date) 
+            gained_money += check_out(g);
     }
+    return gained_money;
 }
 
 void Hotel::change_current_employees(Date date, int change)

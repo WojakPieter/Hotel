@@ -24,6 +24,7 @@ class Hotel
     public:
     Hotel(std::string, int, double);
 
+    void set_date(Date);
     std::string get_name();
     int get_stars();
     double get_budget();
@@ -31,6 +32,8 @@ class Hotel
     std::vector<Guest> get_guests();
     std::vector<Dish> get_menu();
     std::string print_current_employees();
+    int get_number_of_employees();
+    int get_number_of_guests();
 
     bool add_employee(std::string, std::string, std::string, std::string, std::string, double);
     bool remove_employee(std::string, std::string, std::string, std::string, std::string, double);
@@ -42,7 +45,7 @@ class Hotel
 
     void change_current_employees(Date, int);
     std::string choose_entertainment(std::string guest_pesel, std::string name, std::string type, int);
-    void check_guests();
+    double check_guests();
 
     bool add_dish(std::string, std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>);
     bool remove_dish(std::string,std::string);
@@ -56,7 +59,7 @@ class Hotel
     std::string set_maid_to_tidy_room(int);
     void check_in(Guest guest);
     int book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period);
-    void check_out(Guest&);
+    double check_out(Guest&);
     bool shortening_the_stay(Guest&, Date);
     double handing_out_salary();
     int creating_schedule(Date);

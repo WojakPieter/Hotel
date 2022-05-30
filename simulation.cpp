@@ -37,8 +37,10 @@ void Simulation::start()
     set_hotel();
 
     clear_simulation_file();
-
+    double spent_money = 0;
+    double gained_money = 0;
     int i = 0;
+    int nr_of_guests = 0;
     current_date = start_date;
     int relay = 1;
     while(current_date < start_date + days) {
@@ -47,11 +49,12 @@ void Simulation::start()
         std::uniform_int_distribution<int> distribution(0,activity.size()-1);
         int chosen_activity_index = distribution(generator);
         std::string p = activity[chosen_activity_index];
-    if (i == 0 && relay == 1 && start_date.get_day() == current_date.get_day())
+        if (i == 0 && relay == 1 && start_date.get_day() == current_date.get_day())
         {
             int nr_of_employees = hotel.creating_schedule(current_date);
             double bills = hotel.paying_the_bills();
             double cash = hotel.handing_out_salary();
+            spent_money += bills + cash;
             i = 1;
             print_monthly_action(nr_of_employees, cash, bills);
             // Sleep(1000);
@@ -61,11 +64,9 @@ void Simulation::start()
             relay = change_relay(relay);
             hotel.change_current_employees(current_date, relay);
             print_current_employees();
-            if(relay == 1) hotel.check_guests();
+            if(relay == 1) 
+                gained_money += hotel.check_guests();
         }
-
-
-
         else if (p == "choose_entertainment")
         {
 
@@ -73,7 +74,7 @@ void Simulation::start()
             drawing_the_choosing_entertainment();
         }
         else if (p == "book_room")
-            drawing_the_booking_room();
+            nr_of_guests = drawing_the_booking_room(nr_of_guests);
 
         else if (p == "change_stay")
         {
@@ -87,8 +88,20 @@ void Simulation::start()
         // Sleep(1000);
         p = "";
     }
+    end(spent_money, gained_money, nr_of_guests);
 }
 
+void Simulation::end(double spent_money, double gained_money, int number_of_guests)
+{
+    gained_money += take_receipts();
+    std::string text = "Summary: \n";
+    text += "Hotel have " + std::to_string(hotel.get_number_of_employees()) + " employees\n";
+    text += "Hotel had " + std::to_string(number_of_guests) + " guests\n";
+    text += "Hotel spent " + std::to_string(int(spent_money)) + "." + std::to_string(int(spent_money*100) % 100) + "zl for monthly bills and salaries\n";
+    text += "Hotel gained " + std::to_string(int(gained_money)) + "." + std::to_string(int(gained_money*100) % 100) + "zl\n";
+    write_to_file(text);
+    std::cout << text << std::endl;
+}
 
 void Simulation::drawing_the_changing_stay()
 {
@@ -144,7 +157,7 @@ void Simulation::drawing_the_choosing_entertainment()
 }
 
 
-void Simulation::drawing_the_booking_room()
+int Simulation::drawing_the_booking_room(int nr_of_guests)
 {
     std::default_random_engine generator;
     unsigned seed1 = std::chrono::steady_clock::now().time_since_epoch().count();
@@ -187,7 +200,12 @@ void Simulation::drawing_the_booking_room()
 
     int room_number = hotel.book_room(guest, type, high_standard, family, period);
     print_checking_in(guest.get_first_name(), guest.get_last_name(), room_number);
-    if(room_number != -1) current_guests.push_back(guest);
+    if(room_number != -1) 
+    {
+        current_guests.push_back(guest);
+        nr_of_guests++;
+    }
+    return nr_of_guests;
 }
 
 
@@ -253,9 +271,9 @@ void Simulation::print_choosing_entertainment(std::string PESEL, std::string nam
     {
         if(guest.get_PESEL() == PESEL) room_number = guest.get_room_number();
     }
-    std::string text = "Guest with PESEL " + PESEL + " " + name + "\n";
+    std::string text = "Guest with PESEL " + PESEL + " " + name + " ";
     if(name == "order_tidying_room")
-        text += "Room nr " + std::to_string(room_number) + " has been tidied by " + flag;
+        text = "Room nr " + std::to_string(room_number) + " has been tidied by " + flag;
     if (name == "order_waking_up")
         text += "at " + std::to_string(nr);
     if (flag == "false")
@@ -263,7 +281,7 @@ void Simulation::print_choosing_entertainment(std::string PESEL, std::string nam
     if (name == "order_dish")
     {
         if(flag != "false")
-            text += ": " + type;
+            text += type;
         else
         {
             text = "Guest with PESEL " + PESEL + " tried to order non-existing dish";
@@ -294,14 +312,29 @@ void Simulation::print_tidying_room(Guest guest, std::string PESEL)
     std::cout << "Room nr " << guest.get_room_number() << " has been tidied by " << PESEL << std::endl;
 }
 
+double Simulation::take_receipts()
+{
+    double receipts;
+    std::vector<Guest> guests = hotel.get_guests();
+    for(unsigned int i = 0; i < guests.size(); i++)
+       receipts += hotel.check_out(guests[i]);
+    return receipts;
+}
+
 int Simulation::change_relay(int relay) {
-    if (relay == 3) {
+    if (relay == 3) 
+    {
         current_date += 1;
-        return 1;
+        hotel.set_date(current_date);
         days --;
+        std::string text = "Next day: " + current_date.print();
+        write_to_file(text);
+        std::cout << text << std::endl;
+        return 1;
     }
-    else
-        return relay+1;
+
+    hotel.set_date(current_date);
+    return relay+1;
 }
 
 void Simulation::load_rooms()
