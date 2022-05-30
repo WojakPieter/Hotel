@@ -449,3 +449,20 @@ std::string Hotel::choose_entertainment(std::string PESEL, std::string name, std
     }
     return "false";
 }
+
+void Hotel::set_budget(double new_budget)
+{
+    if (new_budget >= 0)
+        budget = new_budget;
+}
+
+void Hotel::set_name(std::string new_name)
+{
+    name = new_name;
+}
+
+void Hotel::set_stars(int new_stars)
+{
+    if (new_stars >= 0)
+        stars = new_stars;
+}

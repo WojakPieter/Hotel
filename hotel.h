@@ -25,6 +25,9 @@ class Hotel
     Hotel(std::string, int, double);
 
     void set_date(Date);
+    void set_name(std::string new_name);
+    void set_stars(int new_stars);
+    void set_budget(double new_budget);
     std::string get_name();
     int get_stars();
     double get_budget();
@@ -50,9 +53,6 @@ class Hotel
     bool add_dish(std::string, std::string, double, double, double, std::vector<Ingredient>, std::vector<std::string>);
     bool remove_dish(std::string,std::string);
 
-    //void set_name(std::string new_name);
-    //void set_stars(int new_stars);
-    //void set_budget(double new_budget);
     void increment_current_date();
     void increase_budget(double income);
     bool decrease_budget(double outgo);
