@@ -10,6 +10,7 @@
 #include <fstream>
 #include <sstream>
 #include <chrono>
+#include <thread>
 
 Simulation::Simulation(int days1, Date start_date1, std::string room_file1, std::string employee_file1, std::string simulation_file1, std::string menu_file_name1, std::string guest_file_name1)
 {
@@ -35,7 +36,7 @@ std::vector<Guest> Simulation::get_current_guests()
 void Simulation::start()
 {
     set_hotel();
-
+    using namespace std::chrono_literals;
     clear_simulation_file();
     double spent_money = 0;
     double gained_money = 0;
@@ -57,7 +58,7 @@ void Simulation::start()
             spent_money += bills + cash;
             i = 1;
             print_monthly_action(nr_of_employees, cash, bills);
-            // Sleep(1000);
+            std::this_thread::sleep_for(2000ms);
         }
         if (p == "CHANGE")
         {
@@ -85,7 +86,7 @@ void Simulation::start()
             print_wrong_activity(p);
 
 
-        // Sleep(1000);
+        std::this_thread::sleep_for(2000ms);
         p = "";
     }
     end(spent_money, gained_money, nr_of_guests);
@@ -113,7 +114,7 @@ void Simulation::drawing_the_changing_stay()
     Guest chosen_guest = current_guests[chosen_guest_index];
 
     int minimum_days = current_date - chosen_guest.get_last_date() + 1;
-    std::uniform_int_distribution<int> distribution2(minimum_days,30);
+    std::uniform_int_distribution<int> distribution2(minimum_days,14);
     int days = distribution2(generator);
     Date new_stay_date = current_date + days;
 
@@ -179,11 +180,11 @@ int Simulation::drawing_the_booking_room(int nr_of_guests)
     bool family = true_or_false[chosen_index3];
 
     generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
-    std::uniform_int_distribution<int> distribution4(0,365);
+    std::uniform_int_distribution<int> distribution4(0,60);
     int days_to_book = distribution4(generator);
 
     generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
-    std::uniform_int_distribution<int> distribution5(1,30);
+    std::uniform_int_distribution<int> distribution5(1,14);
     int length_of_stay = distribution5(generator);
 
     Date first_date = current_date + days_to_book;

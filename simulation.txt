@@ -1,13 +1,6 @@
 Hotel created a schedule for 1 employees
 Hotel paid 575.0 zl for the bills
 Hotel paid 5093.20 zl for the employees' salaries
-It is not possible to book a room for Jan Mazur
-Dawid Gawlinski booked the room nr 20
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_waking_up at 23
-Guest with PESEL 73445812031 order_waking_up at 23
-It is not possible to book a room for Szymon Gawlinski
-It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Janek Baranek maid
@@ -16,16 +9,14 @@ Wojtek Wojak bodyguard
 Dominika Wyszynska barman
 Dawid Malen waiter
 
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
+Dawid Gawlinski booked the room nr 20
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
 It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 73445812031 order_waking_up at 23
+It is not possible to book a room for Szymon Gawlinski
 Next day: 4.9.2020
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -36,15 +27,8 @@ Kuba Nowaczyski bodyguard
 Szymon Spaczynski barman
 Rafal Wygora waiter
 
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Dawid Gawlinski
-Guest with PESEL 73445812031 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 73445812031 order_waking_up at 22
-It is not possible to book a room for Szymon Gawlinski
-It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
 Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
@@ -54,22 +38,17 @@ Wojtek Wojak bodyguard
 Mateusz Lipniak barman
 Natalia Siwiec waiter
 
-Guest with PESEL 73445812031 order_waking_up at 23
-Robert Gawlinski booked the room nr 35
-It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Szymon Gawlinski
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445812031 order_waking_up at 22
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
 It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_taxi 
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Szymon Gawlinski
+It is not possible to book a room for Szymon Gawlinski
 Next day: 5.9.2020
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -80,120 +59,9 @@ Kuba Nowaczyski bodyguard
 Dominika Wyszynska barman
 Renata Barek waiter
 
-Guest with PESEL 93445812031 order_waking_up at 22
-It is not possible to book a room for Szymon Gawlinski
-Guest with PESEL 93445812031 order_waking_up at 22
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445812031 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445812031 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 73445812031 order_taxi 
-It is not possible to book a room for Krzystof Tyniec
-Dawid Gawlinski booked the room nr 23
-Guest with PESEL 73445812031 order_waking_up at 21
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Dawid Gawlinski
-CHANGE! Employees on change: 
-Agata Kostro cook
-Regina Celi maid
-Marek Wojcik recepcionist
-Wojtek Wojak bodyguard
-Szymon Spaczynski barman
-Dawid Malen waiter
-
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Szymon Gawlinski
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_waking_up at 22
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_waking_up at 23
-Guest with PESEL 93445812031 order_dish Pizza_Quatro_Formaggi
-CHANGE! Employees on change: 
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Malgosia Lipa bodyguard
-
-Next day: 6.9.2020
-CHANGE! Employees on change: 
-Kuzyn Prezesa manager
-Jan Kowalski cook
-Janek Baranek maid
-Karolina Trok recepcionist
-Kuba Nowaczyski bodyguard
-Mateusz Lipniak barman
-Rafal Wygora waiter
-
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Szymon Gawlinski
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_waking_up at 22
-CHANGE! Employees on change: 
-Feliks Uberek cook
-Magda Beza maid
-Leyla Lema recepcionist
-Wojtek Wojak bodyguard
-Dominika Wyszynska barman
-Natalia Siwiec waiter
-
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Szymon Gawlinski
-Guest with PESEL 73445812031 order_taxi 
-It is not possible to book a room for Krzystof Tyniec
-CHANGE! Employees on change: 
-Regina Celi maid
-Marek Wojcik recepcionist
-Malgosia Lipa bodyguard
-
-Next day: 7.9.2020
-CHANGE! Employees on change: 
-Karol Kochar manager
-Agata Kostro cook
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Kuba Nowaczyski bodyguard
-Szymon Spaczynski barman
-Renata Barek waiter
-
-It is not possible to book a room for Krzystof Tyniec
-Dawid Gawlinski booked the room nr 24
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_taxi 
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_waking_up at 22
-Guest with PESEL 93445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-CHANGE! Employees on change: 
-Jan Kowalski cook
-Janek Baranek maid
-Karolina Trok recepcionist
-Wojtek Wojak bodyguard
-Mateusz Lipniak barman
-Dawid Malen waiter
-
-CHANGE! Employees on change: 
-Magda Beza maid
-Leyla Lema recepcionist
-Malgosia Lipa bodyguard
-
-It is not possible to book a room for Dawid Gawlinski
-Next day: 8.9.2020
-CHANGE! Employees on change: 
-Agnieszka Mazur manager
-Feliks Uberek cook
-Regina Celi maid
-Marek Wojcik recepcionist
-Kuba Nowaczyski bodyguard
-Dominika Wyszynska barman
-Rafal Wygora waiter
-
 Summary: 
 Hotel have 24 employees
-Hotel had 4 guests
+Hotel had 1 guests
 Hotel spent 5668.20zl for monthly bills and salaries
-Hotel gained 2012.0zl
+Hotel gained 431.0zl
 
