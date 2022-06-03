@@ -262,7 +262,11 @@ double Hotel::check_guests()
     for(Guest& g : guests)
     {
         if(g.get_first_date() == current_date) check_in(g);
+<<<<<<< HEAD
         if(g.get_last_date() == current_date)
+=======
+        if(g.get_last_date() == current_date) 
+>>>>>>> 83fd4d4fc8d2f002e0ab9ad446d19128a714d419
             gained_money += check_out(g);
     }
     return gained_money;
@@ -465,4 +469,8 @@ void Hotel::set_stars(int new_stars)
 {
     if (new_stars >= 0)
         stars = new_stars;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 83fd4d4fc8d2f002e0ab9ad446d19128a714d419
