@@ -56,7 +56,26 @@ TEST_CASE("class data simple tests", "[data]")
         data.make_employee_roster("92309019006", changes);
         data.make_employee_roster("08302000645", changes);
 
-        CHECK(data.working_hours("02302019023") == 216);
-        CHECK(data.working_hours("08302000645") == 216);
+        CHECK(data.working_hours("02302019023") == 252);
+        CHECK(data.working_hours("08302000645") == 252);
+    }
+
+    SECTION("checking method clear")
+    {
+        CHECK(data.get_size() == 3);
+        data.clear();
+        CHECK(data.get_size() == 0);
+    }
+
+    SECTION("checking edit employees")
+    {
+        data.edit_employee("02302019023", "Kasia", "Mieka", "kasiulka@wp.pl");
+        CHECK(data.remove_employee("maid", "Kasia", "Mieka", "kasiulka@wp.pl", "02302019023", 19.7) == true);
+    }
+
+    SECTION("checking printing employee")
+    {
+        CHECK(data.print_employee("02302019023") == true);
+        CHECK(data.print_employee("02020200202") == false);
     }
 }

@@ -24,6 +24,7 @@ class Data
     std::unique_ptr<Employee> make_employee_pointer(std::string, std::string, std::string, std::string, std::string, double);
 
     int get_size();
+    int get_number_of_workers_with_type(std::string type);
     double working_hours(std::string);
     double salary(std::string);
     bool print_employee(std::string);

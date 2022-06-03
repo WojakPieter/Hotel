@@ -19,7 +19,7 @@ class Simulation
     Hotel hotel = Hotel("",0,0);
     std::vector<Guest> guests_to_add;
     std::vector<Guest> current_guests;
-    std::vector<std::string> activity = {"book_room", "change_stay", "choose_entertainment", "CHANGE"};
+    std::vector<std::string> activity = {"book_room", "change_stay", "choose_entertainment", "CHANGE", "book_room", "change_stay", "choose_entertainment"};
     std::vector<std::string> entertainment = {"order_taxi", "order_dish", "order_tidying_room", "order_waking_up"};
 
     public:
@@ -36,14 +36,18 @@ class Simulation
     void load_menu();
     void load_guests();
     void set_hotel();
-    void print_tidying_room(Guest guest, std::string PESEL);
+    void print_tidying_room(Guest, std::string);
 
     void clear_simulation_file();
     void write_to_file(std::string);
 
-    void drawing_the_booking_room();
+    int drawing_the_booking_room(int);
     void drawing_the_choosing_entertainment();
     void drawing_the_changing_stay();
+
+    double take_receipts();
+
+    void end(double, double, int);
 
 // gettery i settery
     // void print_change_date_of_stay();  dorobic

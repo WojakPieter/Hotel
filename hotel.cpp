@@ -12,6 +12,11 @@ Hotel::Hotel(std::string name1, int stars1, double budget1)
     budget = budget1;
 }
 
+void Hotel::set_date(Date new_date)
+{
+    current_date = new_date;
+}
+
 std::string Hotel::get_name()
 {
     return name;
@@ -229,7 +234,7 @@ void Hotel::remove_room(int number)
     }
 }
 
-void Hotel::check_out(Guest& guest)
+double Hotel::check_out(Guest& guest)
 {
     for(unsigned int i = 0; i < guests.size(); i++)
         if (guest.get_PESEL() == guests[i].get_PESEL())
@@ -238,15 +243,29 @@ void Hotel::check_out(Guest& guest)
             break;
         }
     increase_budget(guest.get_receipt());
+    return guest.get_receipt();
 }
 
-void Hotel::check_guests()
+int Hotel::get_number_of_employees()
 {
+    return employees.get_size();
+}
+
+int Hotel::get_number_of_guests()
+{
+    return guests.size();
+}
+
+double Hotel::check_guests()
+{
+    double gained_money = 0;
     for(Guest& g : guests)
     {
         if(g.get_first_date() == current_date) check_in(g);
-        if(g.get_last_date() == current_date) check_out(g);
+        if(g.get_last_date() == current_date)
+            gained_money += check_out(g);
     }
+    return gained_money;
 }
 
 void Hotel::change_current_employees(Date date, int change)
@@ -290,28 +309,28 @@ int Hotel::creating_schedule(Date date)
         nr_of_employees = 0;
         if(ptr->get_type() == "barman")
         {
-            ptr->add_relay_to_roster(std::make_pair(date + barman_x, barman_y));
+            ptr->add_relay_to_roster(std::make_pair(date + int(barman_x / (employees.get_number_of_workers_with_type("barman") / 3.0)), barman_y));
             if(barman_y == 2) { barman_y = 1; barman_x++; }
             else barman_y++;
         }
 
         if(ptr->get_type() == "bodyguard")
         {
-            ptr->add_relay_to_roster(std::make_pair(date + bodyguard_x, bodyguard_y));
+            ptr->add_relay_to_roster(std::make_pair(date + int(bodyguard_x / (employees.get_number_of_workers_with_type("bodyguard") / 4.0)), bodyguard_y));
             if(bodyguard_y == 3) { bodyguard_y = 1; bodyguard_x++; }
             else bodyguard_y++;
         }
 
         if(ptr->get_type() == "cook")
         {
-            ptr->add_relay_to_roster(std::make_pair(date + cook_x, cook_y));
+            ptr->add_relay_to_roster(std::make_pair(date + int(cook_x / (employees.get_number_of_workers_with_type("cook") / 3.0)), cook_y));
             if(cook_y == 2) { cook_y = 1; cook_x++; }
             else cook_y++;
         }
 
         if(ptr->get_type() == "maid")
         {
-            ptr->add_relay_to_roster(std::make_pair(date + maid_x, maid_y));
+            ptr->add_relay_to_roster(std::make_pair(date + int(maid_x / (employees.get_number_of_workers_with_type("maid") / 4.0)), maid_y));
             if(maid_y == 3) { maid_y = 1; maid_x++; }
             else maid_y++;
         }
@@ -331,7 +350,7 @@ int Hotel::creating_schedule(Date date)
 
         if(ptr->get_type() == "waiter")
         {
-            ptr->add_relay_to_roster(std::make_pair(date + waiter_x, waiter_y));
+            ptr->add_relay_to_roster(std::make_pair(date + int(waiter_x / (employees.get_number_of_workers_with_type("waiter") / 3.0)), waiter_y));
             if(waiter_y == 2) { waiter_y = 1; waiter_x++; }
             else waiter_y++;
         }
@@ -429,4 +448,21 @@ std::string Hotel::choose_entertainment(std::string PESEL, std::string name, std
         }
     }
     return "false";
+}
+
+void Hotel::set_budget(double new_budget)
+{
+    if (new_budget >= 0)
+        budget = new_budget;
+}
+
+void Hotel::set_name(std::string new_name)
+{
+    name = new_name;
+}
+
+void Hotel::set_stars(int new_stars)
+{
+    if (new_stars >= 0)
+        stars = new_stars;
 }

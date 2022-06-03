@@ -1,96 +1,83 @@
 Hotel created a schedule for 1 employees
 Hotel paid 575.0 zl for the bills
-Hotel paid 5093.20 zl for the employees' salaries
+Hotel paid 7139.20 zl for the employees' salaries
+Piotr Gawlinski booked the room nr 5
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844441 order_taxi 
+It is not possible to book a room for Szymon Gawlinski
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+It is not possible to book a room for Szymon Gawlinski
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844441 order_taxi 
 CHANGE! Employees on change: 
 Feliks Uberek cook
+Robert Mazurek cook
 Janek Baranek maid
 Karolina Trok recepcionist
 Wojtek Wojak bodyguard
 Dominika Wyszynska barman
+Zbigniew Stonoga barman
+Ozyrys K barman
 Dawid Malen waiter
+Natalia Siwiec waiter
+Ula Siwiec waiter
 
-It is not possible to book a room for Krzystof Tyniec
-Krzystof Tyniec booked the room nr 35
-Guest with PESEL 09923454312 order_waking_up
-at 18
+Szymon Gawlinski booked the room nr 20
+Guest with PESEL 93945812031 order_waking_up at 23
+Guest with PESEL 93945812031 order_waking_up at 0
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 93101010000
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 93101010000
-Guest with PESEL 09923454312 order_tidying_room
-Room nr 35 has been tidied by 93101010000
-Robert Gawlinski booked the room nr 35
-Krzystof Tyniec booked the room nr 35
+Next day: 4.9.2020
 CHANGE! Employees on change: 
 Karol Kochar manager
-Agata Kostro cook
+Feliks Uberek cook
+Dawid Podsiadlo cook
 Regina Celi maid
 Marek Wojcik recepcionist
 Kuba Nowaczyski bodyguard
-Szymon Spaczynski barman
+Dominika Wyszynska barman
+Karim Benzema barman
+Renata Barek waiter
 Rafal Wygora waiter
+Ela Siwiec waiter
 
 CHANGE! Employees on change: 
 Jan Kowalski cook
+Agata Kostro cook
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Wojtek Wojak bodyguard
 Mateusz Lipniak barman
+Szymon Spaczynski barman
+Dawid Malen waiter
 Natalia Siwiec waiter
+Ala Siwiec waiter
 
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 03345594345
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93945812031 order_waking_up at 23
+Next day: 5.9.2020
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
-Feliks Uberek cook
+Robert Mazurek cook
 Magda Beza maid
 Leyla Lema recepcionist
 Kuba Nowaczyski bodyguard
-Dominika Wyszynska barman
-Renata Barek waiter
+Zbigniew Stonoga barman
+Ozyrys K barman
+Ola Siwiec waiter
+Ela Siwiec waiter
 
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-CHANGE! Employees on change: 
-Agata Kostro cook
-Regina Celi maid
-Marek Wojcik recepcionist
-Wojtek Wojak bodyguard
-Szymon Spaczynski barman
-Dawid Malen waiter
-
-It is not possible to book a room for Krzystof Tyniec
-CHANGE! Employees on change: 
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Malgosia Lipa bodyguard
-
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 97031577266
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 97031577266
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 97031577266
-Guest with PESEL 93445812031 order_tidying_room
-Room nr 35 has been tidied by 97031577266
-CHANGE! Employees on change: 
-Kuzyn Prezesa manager
-Jan Kowalski cook
-Janek Baranek maid
-Karolina Trok recepcionist
-Kuba Nowaczyski bodyguard
-Mateusz Lipniak barman
-Rafal Wygora waiter
+Summary: 
+Hotel have 34 employees
+Hotel had 2 guests
+Hotel spent 7714.20zl for monthly bills and salaries
+Hotel gained 1007.0zl
 

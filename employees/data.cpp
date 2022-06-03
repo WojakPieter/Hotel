@@ -217,6 +217,11 @@ bool Data::make_employee_roster(std::string pesel, std::vector<std::pair<Date, i
     return false;
 }
 
+int Data::get_number_of_workers_with_type(std::string type)
+{
+    return std::count_if(database.begin(), database.end(), [&](std::unique_ptr<Employee>& ptr) {return ptr->get_type() == type;});
+}
+
 void Data::clear()
 {
     database.clear();
