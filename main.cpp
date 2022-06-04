@@ -8,7 +8,7 @@
 #include <fstream>
 #include <sstream>
 
-int main(int argc, char* argv[]){
+int main(int argc, char* argv[]) {
      if(argc != 7)
      {
          std::cout << "Improper program agruments";
@@ -23,4 +23,4 @@ int main(int argc, char* argv[]){
      Simulation play(days, data, argv[2], argv[3], argv[4], argv[5], argv[6]);
 	// std::cout << play.get_file_name();
 	play.start();
- }
+}

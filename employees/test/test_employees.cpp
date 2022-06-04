@@ -84,14 +84,14 @@ TEST_CASE("class manager simple tests", "[manager]")
     {
         Date date(15,11,2020);
         std::vector<std::pair<Date, int>> changes;
-        for(int i=0; i<39; i++)
+        for(int i=0; i<30; i++)
         {
             changes.push_back(std::make_pair<Date, int>(date+i,1));
             changes.push_back(std::make_pair<Date, int>(date+i,2));
             changes.push_back(std::make_pair<Date, int>(date+i,3));
         }
         manager.make_roster(changes);
-        CHECK(manager.salary() == 300);
+        CHECK(manager.salary() == 7200);
         CHECK(manager.working_hours() == 144);
     }
 }

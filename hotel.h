@@ -15,11 +15,11 @@ class Hotel
     int stars;
     double budget;
     std::vector <Guest> guests;
-    Data employees;
+    Data_employee employees;
     Data_room rooms;
     Menu menu = Menu("",{},{});
     Date current_date;
-    Data current_employees;
+    Data_employee current_employees;
 
     public:
     Hotel(std::string, int, double);
