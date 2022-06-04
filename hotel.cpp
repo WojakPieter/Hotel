@@ -192,31 +192,31 @@ void Hotel::add_room(char type, int number, bool is_high_standard, bool is_famil
             }
         case '2':
             {
-                std::unique_ptr<Room> room_ptr = std::make_unique<TwoPersonRoom>(number, is_high_standard, is_family);
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<TwoPersonRoom>(number, is_high_standard, is_family);
                 rooms.add_room(std::move(room_ptr));
                 break;
             }
         case '3':
             {
-                std::unique_ptr<Room> room_ptr = std::make_unique<ThreePersonRoom>(number, is_high_standard, is_family);
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<ThreePersonRoom>(number, is_high_standard, is_family);
                 rooms.add_room(std::move(room_ptr));
                 break;
             }
         case '4':
             {
-                std::unique_ptr<Room> room_ptr = std::make_unique<FourPersonRoom>(number, is_high_standard, is_family);
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<FourPersonRoom>(number, is_high_standard, is_family);
                 rooms.add_room(std::move(room_ptr));
                 break;
             }
         case 's':
             {
-                std::unique_ptr<Room> room_ptr = std::make_unique<Studio>(number);
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<Studio>(number);
                 rooms.add_room(std::move(room_ptr));
                 break;
             }
         case 'a':
             {
-                std::unique_ptr<Room> room_ptr = std::make_unique<Apartment>(number);
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<Apartment>(number);
                 rooms.add_room(std::move(room_ptr));
                 break;
             }
@@ -262,11 +262,7 @@ double Hotel::check_guests()
     for(Guest& g : guests)
     {
         if(g.get_first_date() == current_date) check_in(g);
-<<<<<<< HEAD
         if(g.get_last_date() == current_date)
-=======
-        if(g.get_last_date() == current_date) 
->>>>>>> 83fd4d4fc8d2f002e0ab9ad446d19128a714d419
             gained_money += check_out(g);
     }
     return gained_money;
@@ -469,8 +465,4 @@ void Hotel::set_stars(int new_stars)
 {
     if (new_stars >= 0)
         stars = new_stars;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 83fd4d4fc8d2f002e0ab9ad446d19128a714d419

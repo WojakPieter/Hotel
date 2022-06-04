@@ -2,12 +2,12 @@
 #include <iostream>
 #include <algorithm>
 
-bool Data_room::add_room(std::unique_ptr<Room> room_ptr)
-{   
+bool Data_room::add_room(std::unique_ptr<Room_Interface> room_ptr)
+{
     try{
         for(auto& i : rooms)
         {
-            if(i == room_ptr) 
+            if(i == room_ptr)
                 return false;
         }
         int nr = room_ptr -> get_number();
@@ -15,13 +15,13 @@ bool Data_room::add_room(std::unique_ptr<Room> room_ptr)
         numbers_of_rooms.push_back(nr);
         return true;
     }
-    catch(...) 
-    { 
-        return false; 
+    catch(...)
+    {
+        return false;
     }
 }
 
-bool Data_room::remove_room(std::unique_ptr<Room> room_ptr)
+bool Data_room::remove_room(std::unique_ptr<Room_Interface> room_ptr)
 {
     try
     {
@@ -72,12 +72,12 @@ bool Data_room::book_room(int room_number, std::pair<Date, Date> period)
     return true;
 }*/
 
-std::vector<std::unique_ptr<Room>>::iterator Data_room::begin()
+std::vector<std::unique_ptr<Room_Interface>>::iterator Data_room::begin()
 {
     return rooms.begin();
 }
 
-std::vector<std::unique_ptr<Room>>::iterator Data_room::end()
+std::vector<std::unique_ptr<Room_Interface>>::iterator Data_room::end()
 {
     return rooms.end();
 }

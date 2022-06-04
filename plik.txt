@@ -1,15 +1,9 @@
 Hotel created a schedule for 1 employees
 Hotel paid 575.0 zl for the bills
 Hotel paid 7139.20 zl for the employees' salaries
-Piotr Gawlinski booked the room nr 5
+Janusz Gawlinski booked the room nr 27
+Guest with PESEL 93445852031 order_dish Pizza_Capriciosa
 It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844441 order_taxi 
-It is not possible to book a room for Szymon Gawlinski
-Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
-It is not possible to book a room for Szymon Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844441 order_taxi 
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -23,9 +17,6 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Szymon Gawlinski booked the room nr 20
-Guest with PESEL 93945812031 order_waking_up at 23
-Guest with PESEL 93945812031 order_waking_up at 0
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
@@ -45,6 +36,8 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
+Room nr 27 has been tidied by 02312000833
+Guest with PESEL 93445852031 order_taxi 
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -57,12 +50,14 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
+Room nr 27 has been tidied by 03345594345
+Guest with PESEL 93445852031 order_waking_up at 22
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93945812031 order_waking_up at 23
+It is not possible to book a room for Szymon Gawlinski
 Next day: 5.9.2020
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -77,7 +72,7 @@ Ela Siwiec waiter
 
 Summary: 
 Hotel have 34 employees
-Hotel had 2 guests
+Hotel had 1 guests
 Hotel spent 7714.20zl for monthly bills and salaries
-Hotel gained 1007.0zl
+Hotel gained 337.0zl
 

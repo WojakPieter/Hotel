@@ -65,11 +65,7 @@ void Simulation::start()
             relay = change_relay(relay);
             hotel.change_current_employees(current_date, relay);
             print_current_employees();
-<<<<<<< HEAD
             if(relay == 1)
-=======
-            if(relay == 1) 
->>>>>>> 83fd4d4fc8d2f002e0ab9ad446d19128a714d419
                 gained_money += hotel.check_guests();
         }
         else if (p == "choose_entertainment")
@@ -90,11 +86,7 @@ void Simulation::start()
             print_wrong_activity(p);
 
 
-<<<<<<< HEAD
         std::this_thread::sleep_for(200ms);
-=======
-        std::this_thread::sleep_for(2000ms);
->>>>>>> 83fd4d4fc8d2f002e0ab9ad446d19128a714d419
         p = "";
     }
     end(spent_money, gained_money, nr_of_guests);
@@ -161,7 +153,6 @@ void Simulation::drawing_the_choosing_entertainment()
     }
 
     std::string flag = hotel.choose_entertainment(chosen_guest.get_PESEL(), name, dish_type, hour);
-    std::cout << name << std::endl;
     print_choosing_entertainment(chosen_guest.get_PESEL(), name, dish_type, hour, flag);
 }
 
@@ -209,11 +200,7 @@ int Simulation::drawing_the_booking_room(int nr_of_guests)
 
     int room_number = hotel.book_room(guest, type, high_standard, family, period);
     print_checking_in(guest.get_first_name(), guest.get_last_name(), room_number);
-<<<<<<< HEAD
     if(room_number != -1)
-=======
-    if(room_number != -1) 
->>>>>>> 83fd4d4fc8d2f002e0ab9ad446d19128a714d419
     {
         current_guests.push_back(guest);
         nr_of_guests++;
@@ -335,11 +322,7 @@ double Simulation::take_receipts()
 }
 
 int Simulation::change_relay(int relay) {
-<<<<<<< HEAD
     if (relay == 3)
-=======
-    if (relay == 3) 
->>>>>>> 83fd4d4fc8d2f002e0ab9ad446d19128a714d419
     {
         current_date += 1;
         hotel.set_date(current_date);

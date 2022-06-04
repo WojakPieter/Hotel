@@ -139,11 +139,6 @@ int OnePersonRoom::get_number_of_beds()
     return 1;
 }
 
-int OnePersonRoom::get_number_of_required_workers()
-{
-    if(high_standard) return 2;
-    else return 1;
-}
 
 
 int TwoPersonRoom::get_number_of_beds()
@@ -152,11 +147,6 @@ int TwoPersonRoom::get_number_of_beds()
     else return 2;
 }
 
-int TwoPersonRoom::get_number_of_required_workers()
-{
-    if(high_standard) return 3;
-    else return 1;
-}
 
 
 int ThreePersonRoom::get_number_of_beds()
@@ -165,11 +155,6 @@ int ThreePersonRoom::get_number_of_beds()
     else return 3;
 }
 
-int ThreePersonRoom::get_number_of_required_workers()
-{
-    if(high_standard) return 4;
-    else return 1;
-}
 
 
 int FourPersonRoom::get_number_of_beds()
@@ -178,11 +163,6 @@ int FourPersonRoom::get_number_of_beds()
     else return 4;
 }
 
-int FourPersonRoom::get_number_of_required_workers()
-{
-    if(high_standard) return 4;
-    else return 2;
-}
 
 
 int Studio::get_number_of_beds()
@@ -190,10 +170,6 @@ int Studio::get_number_of_beds()
     return 4;
 }
 
-int Studio::get_number_of_required_workers()
-{
-    return 5;
-}
 
 
 int Apartment::get_number_of_beds()
@@ -201,7 +177,3 @@ int Apartment::get_number_of_beds()
     return 1;
 }
 
-int Apartment::get_number_of_required_workers()
-{
-    return 7;
-}
