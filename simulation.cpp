@@ -1,6 +1,6 @@
 #include <math.h>
 #include "simulation.h"
-#include <windows.h>
+// #include <windows.h>
 #include <iostream>
 #include <random>
 #include <string>
@@ -62,8 +62,8 @@ void Simulation::start()
             double cash = hotel.handing_out_salary();
             spent_money += bills + cash;
             i = 1;
-            print_monthly_action(nr_of_employees, cash, bills);
-            //std::this_thread::sleep_for(2000ms);
+            print_monthly_action(hotel.get_number_of_employees(), cash, bills);
+            std::this_thread::sleep_for(2000ms);
         }
         if (p == "CHANGE")
         {
@@ -92,7 +92,7 @@ void Simulation::start()
             print_wrong_activity(p);
 
 
-        //std::this_thread::sleep_for(200ms);
+        std::this_thread::sleep_for(2000ms);
         p = "";
     }
     end(spent_money, gained_money, nr_of_guests);
