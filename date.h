@@ -35,7 +35,7 @@ class Date
     Date operator+(int) const;
     Date operator-=(int);
     int operator-(const Date&);
-    Date operator-(int) const;
+    Date operator-(int)const;
 
     friend std::ostream& operator<<(std::ostream& os, Date d)
     {

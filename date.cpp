@@ -6,7 +6,6 @@ Date::Date(int day, int month, int year)
     this->day = day;
     this->month = month;
     this->year = year;
-    this->control_inputs();
 }
 
 int Date::get_day()
@@ -55,32 +54,19 @@ int Date::get_month_length(int month)
     return 30;
 }
 
-void Date::control_inputs()
-{
-    if(day < 1 || day > get_month_length(month));
-        // std::cout << "Day out of range" << std::endl;
-    if(month < 1 || month > 12);
-        // std::cout << "Month out of range" << std::endl;
-    if(year < 1);
-        // std::cout << "Year cannot be negative" << std::endl;
-}
-
 void Date::set_day(int new_day)
 {
     day = new_day;
-    this->control_inputs();
 }
 
 void Date::set_month(int new_month)
 {
     month = new_month;
-    this->control_inputs();
 }
 
 void Date::set_year(int new_year)
 {
     year = new_year;
-    this->control_inputs();
 }
 
 bool Date::operator<(const Date& second_date)

@@ -45,5 +45,4 @@ void Barman::remove_drink(std::string name, Menu menu){
 void Barman::do_drink(std::string name, Menu menu){
     double time = menu.find_preparation_time(name);
     x += time;
-    // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana
 }
