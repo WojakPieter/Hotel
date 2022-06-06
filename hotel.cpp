@@ -1,7 +1,7 @@
 #include <chrono>
 #include "hotel.h"
 #include <string>
-#include <windows.h>
+// #include <windows.h>
 #include <iostream>
 #include <random>
 #include <algorithm>
@@ -378,8 +378,9 @@ double Hotel::paying_the_bills()
     double bill = 0;
     for(auto& room_ptr : rooms)
     {
+        Date new_date = current_date - current_date.get_month_length(current_date.get_month());
         std::pair<double,double> func = room_ptr->get_maintain_costs_function();
-        bill += (func.first * room_ptr->quantity_of_reserved_days(current_date - current_date.get_month_length(current_date.get_month()), current_date) + func.second);
+        bill += (func.first * room_ptr->quantity_of_reserved_days(new_date, current_date) + func.second);
     }
     return bill;
 }

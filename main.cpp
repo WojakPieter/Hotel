@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 // #include "hotel.h"
 #include "simulation.h"
@@ -9,11 +10,19 @@
 #include <sstream>
 
 int main(int argc, char* argv[]) {
+<<<<<<< HEAD
      if(argc != 8)
      {
         std::cout << "Improper program agruments";
         exit(-1);
      }
+=======
+	if(argc != 8)
+	{
+		std::cout << "Improper program agruments";
+		exit(-1);
+	}
+>>>>>>> 2d5154118cc9f01ead1fd71f66b653ea98bed7b2
 
  	std::string date_string = argv[1], day_str, month_str, year_str;
  	std::stringstream date_stream(date_string);
@@ -35,8 +44,10 @@ int main(int argc, char* argv[]) {
  	stream >> days;
 
      Simulation play(days, date, argv[3], argv[4], argv[5], argv[6], argv[7]);
-	// std::cout << play.get_file_name();
 	play.start();
+<<<<<<< HEAD
 	Date data2(1,10,2020);
 	//std::cout << data2 - 3 << std::endl;
+=======
+>>>>>>> 2d5154118cc9f01ead1fd71f66b653ea98bed7b2
 }
