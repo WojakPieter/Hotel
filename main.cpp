@@ -9,11 +9,19 @@
 #include <sstream>
 
 int main(int argc, char* argv[]) {
+<<<<<<< HEAD
      if(argc != 8)
      {
         std::cout << "Improper program agruments";
         exit(-1);
      }
+=======
+	if(argc != 8)
+	{
+	std::cout << "Improper program agruments";
+	exit(-1);
+	}
+>>>>>>> 75478d4a709170b564359d95000157e113588d03
 
  	std::string date_string = argv[1], day_str, month_str, year_str;
  	std::stringstream date_stream(date_string);
@@ -38,4 +46,8 @@ int main(int argc, char* argv[]) {
 
     Simulation play(days, date, argv[3], argv[4], argv[5], argv[6], argv[7]);
 	play.start();
+<<<<<<< HEAD
+=======
+	Date data2(1,10,2020);
+>>>>>>> 75478d4a709170b564359d95000157e113588d03
 }
