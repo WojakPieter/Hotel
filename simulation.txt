@@ -1,6 +1,7 @@
 Hotel created a schedule for 34 employees
 Hotel paid 2230.0 zl for the bills
 Hotel paid 177250.59 zl for the employees' salaries
+Ola Uzda booked the room nr 20
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -14,355 +15,29 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-It is not possible to book a room for Piotr Ga
-CHANGE! Employees on change: 
-Magda Beza maid
-Leyla Lema recepcionist
-Malgosia Lipa bodyguard
-
-It is not possible to book a room for Jan Mazur
-Next day: 11.10.2020
-CHANGE! Employees on change: 
-Karol Kochar manager
-Feliks Uberek cook
-Dawid Podsiadlo cook
-Regina Celi maid
-Marek Wojcik recepcionist
-Kuba Nowaczyski bodyguard
-Dominika Wyszynska barman
-Karim Benzema barman
-Renata Barek waiter
-Rafal Wygora waiter
-Ela Siwiec waiter
-
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Robert Gawlinski
-CHANGE! Employees on change: 
-Jan Kowalski cook
-Agata Kostro cook
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Wojtek Wojak bodyguard
-Mateusz Lipniak barman
-Szymon Spaczynski barman
-Dawid Malen waiter
-Natalia Siwiec waiter
-Ala Siwiec waiter
-
-CHANGE! Employees on change: 
-Janek Baranek maid
-Karolina Trok recepcionist
-Malgosia Lipa bodyguard
-
-Next day: 12.10.2020
-CHANGE! Employees on change: 
-Agnieszka Mazur manager
-Robert Mazurek cook
-Magda Beza maid
-Leyla Lema recepcionist
-Kuba Nowaczyski bodyguard
-Zbigniew Stonoga barman
-Ozyrys K barman
-Ola Siwiec waiter
-Ela Siwiec waiter
-
-CHANGE! Employees on change: 
-Dawid Podsiadlo cook
-Regina Celi maid
-Marek Wojcik recepcionist
-Wojtek Wojak bodyguard
-Renata Wojak barman
-Karim Benzema barman
-Ula Siwiec waiter
-Ala Siwiec waiter
-
-It is not possible to book a room for Robert Gawlinski
-CHANGE! Employees on change: 
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Malgosia Lipa bodyguard
-
-Next day: 13.10.2020
-CHANGE! Employees on change: 
-Kuzyn Prezesa manager
-Jan Kowalski cook
-Agata Kostro cook
-Janek Baranek maid
-Karolina Trok recepcionist
-Mateusz Lipniak barman
-Szymon Spaczynski barman
-Renata Wojak barman
-Renata Barek waiter
-Rafal Wygora waiter
-Ola Siwiec waiter
-
-It is not possible to book a room for Jan Mazur
-CHANGE! Employees on change: 
-Feliks Uberek cook
-Robert Mazurek cook
-Magda Beza maid
-Leyla Lema recepcionist
-Dominika Wyszynska barman
-Zbigniew Stonoga barman
-Ozyrys K barman
-Dawid Malen waiter
-Natalia Siwiec waiter
-Ula Siwiec waiter
-
-CHANGE! Employees on change: 
-Regina Celi maid
-Marek Wojcik recepcionist
-
-Next day: 14.10.2020
-CHANGE! Employees on change: 
-Karol Kochar manager
-Feliks Uberek cook
-Dawid Podsiadlo cook
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Kuba Nowaczyski bodyguard
-Dominika Wyszynska barman
-Karim Benzema barman
-Renata Barek waiter
-Rafal Wygora waiter
-Ela Siwiec waiter
-
-It is not possible to book a room for Piotr Gawl
-CHANGE! Employees on change: 
-Jan Kowalski cook
-Agata Kostro cook
-Janek Baranek maid
-Karolina Trok recepcionist
-Wojtek Wojak bodyguard
-Mateusz Lipniak barman
-Szymon Spaczynski barman
-Dawid Malen waiter
-Natalia Siwiec waiter
-Ala Siwiec waiter
-
-CHANGE! Employees on change: 
-Magda Beza maid
-Leyla Lema recepcionist
-Malgosia Lipa bodyguard
-
-It is not possible to book a room for Piotr Gawl
-Next day: 15.10.2020
-CHANGE! Employees on change: 
-Agnieszka Mazur manager
-Robert Mazurek cook
-Regina Celi maid
-Marek Wojcik recepcionist
-Kuba Nowaczyski bodyguard
-Zbigniew Stonoga barman
-Ozyrys K barman
-Ola Siwiec waiter
-Ela Siwiec waiter
-
-CHANGE! Employees on change: 
-Dawid Podsiadlo cook
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Wojtek Wojak bodyguard
-Renata Wojak barman
-Karim Benzema barman
-Ula Siwiec waiter
-Ala Siwiec waiter
-
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Jan Mazur
-CHANGE! Employees on change: 
-Janek Baranek maid
-Karolina Trok recepcionist
-Malgosia Lipa bodyguard
-
-Next day: 16.10.2020
-CHANGE! Employees on change: 
-Kuzyn Prezesa manager
-Jan Kowalski cook
-Agata Kostro cook
-Magda Beza maid
-Leyla Lema recepcionist
-Kuba Nowaczyski bodyguard
-Mateusz Lipniak barman
-Szymon Spaczynski barman
-Renata Wojak barman
-Renata Barek waiter
-Rafal Wygora waiter
-Ola Siwiec waiter
-
-Piotr Gawli booked the room nr 20
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-CHANGE! Employees on change: 
-Feliks Uberek cook
-Robert Mazurek cook
-Regina Celi maid
-Marek Wojcik recepcionist
-Wojtek Wojak bodyguard
-Dominika Wyszynska barman
-Zbigniew Stonoga barman
-Ozyrys K barman
-Dawid Malen waiter
-Natalia Siwiec waiter
-Ula Siwiec waiter
-
-It is not possible to book a room for Robert Gawlinski
-CHANGE! Employees on change: 
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Malgosia Lipa bodyguard
-
-Guest with PESEL 93445844431 order_waking_up at 22
-Piotr Gawlinski booked the room nr 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawlinski booked the room nr 24
-Next day: 17.10.2020
-CHANGE! Employees on change: 
-Karol Kochar manager
-Feliks Uberek cook
-Dawid Podsiadlo cook
-Janek Baranek maid
-Karolina Trok recepcionist
-Dominika Wyszynska barman
-Karim Benzema barman
-Renata Barek waiter
-Rafal Wygora waiter
-Ela Siwiec waiter
-
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Piotr Gawl
-Piotr Gawlinski booked the room nr 127
-Piotr Gawlinski booked the room nr 128
-Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 0
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 0
-CHANGE! Employees on change: 
-Jan Kowalski cook
-Agata Kostro cook
-Magda Beza maid
-Leyla Lema recepcionist
-Mateusz Lipniak barman
-Szymon Spaczynski barman
-Dawid Malen waiter
-Natalia Siwiec waiter
-Ala Siwiec waiter
-
-It is not possible to book a room for Robert Gawlinski
-Piotr Gawli booked the room nr 129
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 0
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_waking_up at 23
-Piotr Gawlinski booked the room nr 130
-CHANGE! Employees on change: 
-Regina Celi maid
-Marek Wojcik recepcionist
-
-Guest with PESEL 93445844451 order_waking_up at 22
-Piotr Gawlinski booked the room nr 131
-It is not possible to book a room for Piotr Gawlinski
-Next day: 18.10.2020
-CHANGE! Employees on change: 
-Agnieszka Mazur manager
-Robert Mazurek cook
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Kuba Nowaczyski bodyguard
-Zbigniew Stonoga barman
-Ozyrys K barman
-Ola Siwiec waiter
-Ela Siwiec waiter
-
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-CHANGE! Employees on change: 
-Dawid Podsiadlo cook
-Janek Baranek maid
-Karolina Trok recepcionist
-Wojtek Wojak bodyguard
-Renata Wojak barman
-Karim Benzema barman
-Ula Siwiec waiter
-Ala Siwiec waiter
-
-It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Piotr Gawli booked the room nr 132
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawl
+Ola Uzda booked the room nr 23
+Guest with PESEL 93445844431 order_taxi 
+Ola Uzda booked the room nr 24
 It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Marek Gawlinski
-Piotr Gawli booked the room nr 133
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 134
-Guest with PESEL 93445844431 order_taxi 
-Next day: 19.10.2020
-CHANGE! Employees on change: 
-Kuzyn Prezesa manager
-Jan Kowalski cook
-Agata Kostro cook
-Regina Celi maid
-Marek Wojcik recepcionist
-Kuba Nowaczyski bodyguard
-Mateusz Lipniak barman
-Szymon Spaczynski barman
-Renata Wojak barman
-Renata Barek waiter
-Rafal Wygora waiter
-Ola Siwiec waiter
-
-CHANGE! Employees on change: 
-Feliks Uberek cook
-Robert Mazurek cook
-Mietek Zul maid
-Anastazja Nowak recepcionist
-Wojtek Wojak bodyguard
-Dominika Wyszynska barman
-Zbigniew Stonoga barman
-Ozyrys K barman
-Dawid Malen waiter
-Natalia Siwiec waiter
-Ula Siwiec waiter
-
-Guest with PESEL 93445844431 order_taxi 
-CHANGE! Employees on change: 
-Janek Baranek maid
-Karolina Trok recepcionist
-Malgosia Lipa bodyguard
-
-Piotr Gawli booked the room nr 135
-It is not possible to book a room for Robert Gawlinski
+Ola Uzda booked the room nr 127
+It is not possible to book a room for Bartek Brzozko
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawl
-Next day: 20.10.2020
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Next day: -9.10.2020
 CHANGE! Employees on change: 
 Karol Kochar manager
 Feliks Uberek cook
 Dawid Podsiadlo cook
-Magda Beza maid
-Leyla Lema recepcionist
+Regina Celi maid
+Marek Wojcik recepcionist
 Kuba Nowaczyski bodyguard
 Dominika Wyszynska barman
 Karim Benzema barman
@@ -370,7 +45,22 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Summary: 
-Hotel have 34 employees
-Hotel had 12 guests
-Hotel's final budget 39835.0
+CHANGE! Employees on change: 
+Jan Kowalski cook
+Agata Kostro cook
+Mietek Zul maid
+Anastazja Nowak recepcionist
+Wojtek Wojak bodyguard
+Mateusz Lipniak barman
+Szymon Spaczynski barman
+Dawid Malen waiter
+Natalia Siwiec waiter
+Ala Siwiec waiter
+
+It is not possible to book a room for Robert Kopiec
+It is not possible to book a room for Robert Kopiec
+CHANGE! Employees on change: 
+Janek Baranek maid
+Karolina Trok recepcionist
+Malgosia Lipa bodyguard
+

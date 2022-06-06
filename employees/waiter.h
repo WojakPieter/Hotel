@@ -13,6 +13,5 @@ class Waiter : public Employee
     virtual void make_roster(std::vector<std::pair<Date, int>>);
 
     void bring_the_dish();
-    // double receipt();
 };
 #endif

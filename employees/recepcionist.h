@@ -13,7 +13,5 @@ class Recepcionist : public Employee
     Recepcionist(std::string, std::string, std::string, std::string, double);
 
     virtual void make_roster(std::vector<std::pair<Date, int>>);
-
-    void book_room(int, Date, Date, Guest);
 };
 #endif

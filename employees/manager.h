@@ -11,12 +11,7 @@ class Manager : public Employee
 {
     public:
     Manager(std::string, std::string, std::string, std::string, double);
-
-    // void dismissEmployee(std::string, std::string, std::string, std::string, std::string, double, Data);
-    // // data - przekazac
-    // void hireEmployee(std::string, std::string, std::string, std::string, std::string, double, Data);
-    // void setEmployeeRate(std::string, double, Data);
-
+    
     virtual void make_roster(std::vector<std::pair<Date, int>>);
 
 };

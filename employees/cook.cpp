@@ -45,6 +45,5 @@ void Cook::remove_dish(std::string name, Menu menu){
 void Cook::do_dish(std::string name, Menu menu){
     double time = menu.find_preparation_time(name);
     x += time;
-    // trzeba sprawdzic w Hotelu czy jest mniejsza niz zmiana
 }
 

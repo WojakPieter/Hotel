@@ -35,6 +35,6 @@ void Waiter::make_roster(std::vector<std::pair<Date, int>> schedule){
 }
 
 void Waiter::bring_the_dish(){
-    x += 0.4; //kwadrans na rozdanie dania do pokoju
+    x += 0.4;
 }
 

@@ -29,7 +29,4 @@ void Recepcionist::make_roster(std::vector<std::pair<Date, int>> schedule){
     }
 }
 
-void Recepcionist::book_room(int room_number, Date first_date, Date last_date, Guest guest){
-    ;
-}
 
