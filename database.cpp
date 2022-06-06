@@ -2,17 +2,60 @@
 #include <iostream>
 #include <algorithm>
 
-bool Data_room::add_room(std::unique_ptr<Room_Interface> room_ptr)
+bool Data_room::add_room(char type, int number, bool family, bool high_standard)
 {
     try{
         for(auto& i : rooms)
         {
-            if(i == room_ptr)
+            if(i->get_number() == number)
                 return false;
         }
-        int nr = room_ptr -> get_number();
-        rooms.push_back(std::move(room_ptr));
-        numbers_of_rooms.push_back(nr);
+        switch(type)
+        {
+        case '1':
+            {
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<OnePersonRoom>(number, high_standard);
+                rooms.push_back(std::move(room_ptr));
+                numbers_of_rooms.push_back(number);
+                break;
+            }
+        case '2':
+            {
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<TwoPersonRoom>(number, high_standard, family);
+                rooms.push_back(std::move(room_ptr));
+                numbers_of_rooms.push_back(number);
+                break;
+            }
+        case '3':
+            {
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<ThreePersonRoom>(number, high_standard, family);
+                rooms.push_back(std::move(room_ptr));
+                numbers_of_rooms.push_back(number);
+                break;
+            }
+        case '4':
+            {
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<FourPersonRoom>(number, high_standard, family);
+                rooms.push_back(std::move(room_ptr));
+                numbers_of_rooms.push_back(number);
+                break;
+            }
+        case 's':
+            {
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<Studio>(number);
+                rooms.push_back(std::move(room_ptr));
+                numbers_of_rooms.push_back(number);
+                break;
+            }
+        case 'a':
+            {
+                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<Apartment>(number);
+                rooms.push_back(std::move(room_ptr));
+                numbers_of_rooms.push_back(number);
+                break;
+            }
+        }
+
         return true;
     }
     catch(...)
@@ -21,12 +64,20 @@ bool Data_room::add_room(std::unique_ptr<Room_Interface> room_ptr)
     }
 }
 
-bool Data_room::remove_room(std::unique_ptr<Room_Interface> room_ptr)
+bool Data_room::remove_room(int number)
 {
     try
     {
-       rooms.erase(std::find(rooms.begin(), rooms.end(), room_ptr));
-       return true;
+       for(auto& ptr : rooms)
+       {
+           if(ptr->get_number() == number)
+           {
+               rooms.erase(std::find(rooms.begin(), rooms.end(), ptr));
+               numbers_of_rooms.erase(std::find(numbers_of_rooms.begin(), numbers_of_rooms.end(), number));
+               return true;
+           }
+       }
+       return false;
     }
     catch (...)
     {
@@ -57,7 +108,7 @@ bool Data_room::book_room(int room_number, std::pair<Date, Date> period)
     return false;
 }
 
-/*bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
+bool Data_room::is_room_free(int room_number, std::pair<Date, Date> period)
 {
     for(auto& ptr : rooms)
     {
@@ -70,7 +121,7 @@ bool Data_room::book_room(int room_number, std::pair<Date, Date> period)
         }
     }
     return true;
-}*/
+}
 
 std::vector<std::unique_ptr<Room_Interface>>::iterator Data_room::begin()
 {

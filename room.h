@@ -23,6 +23,7 @@ protected:
 
 public:
     Room(int number, bool high_standard, bool family);
+    std::vector<Date> get_reserved_days();
     virtual void add_reserved_day(Date);
     virtual void remove_reserved_day(Date);
     virtual int quantity_of_reserved_days(Date first_date, Date second_date);

@@ -1,6 +1,9 @@
 Hotel created a schedule for 1 employees
 Hotel paid 2230.0 zl for the bills
 Hotel paid 177250.59 zl for the employees' salaries
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -14,13 +17,28 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
+It is not possible to book a room for Jan Mazur
+Piotr Gawlinski booked the room nr 20
+Guest with PESEL 93445844451 order_waking_up at 20
+It is not possible to book a room for Dawid Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 23
+Piotr Gawli booked the room nr 127
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 0
+Guest with PESEL 93445844431 order_waking_up at 22
 Next day: 31.1.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -35,6 +53,23 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -47,16 +82,13 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Marek Gawlinski
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 1.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -79,32 +111,13 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Jan Mazur
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Piotr Gawlinski booked the room nr 20
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_waking_up at 20
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gaw
-Guest with PESEL 93445844451 order_waking_up at 20
+It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 2.2.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -119,28 +132,7 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_waking_up at 21
 Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 20
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Piotr Gawlin booked the room nr 127
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Dawid Gawlinski booked the room nr 35
-Guest with PESEL 73445812031 order_waking_up at 21
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -153,25 +145,13 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 128
-Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
-Piotr Gawlinski booked the room nr 129
-Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 3.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -186,14 +166,17 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_taxi 
-Piotr Gawli booked the room nr 130
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 131
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Marek Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -206,16 +189,25 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Krzystof Tyniec
+Room nr 127 has been tidied by 93101010000
+Guest with PESEL 93445844431 order_waking_up at 0
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_waking_up at 21
+Piotr Gawlinski booked the room nr 128
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 4.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -228,11 +220,9 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Room nr 131 has been tidied by 62121511605
-Piotr Gawlinski booked the room nr 132
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
+It is not possible to book a room for Janusz Gawlinski
 It is not possible to book a room for Robert Gawlinski
+Piotr Gawli booked the room nr 129
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
@@ -244,25 +234,31 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Janusz Gawlinski
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Jan Mazur
+Piotr Ga booked the room nr 1
+Piotr Gawli booked the room nr 130
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gaw
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Piotr Gawl
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
+It is not possible to book a room for Janusz Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_waking_up at 21
 Next day: 5.2.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -278,9 +274,8 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_waking_up at 22
+Piotr Gawlinsk booked the room nr 35
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -299,8 +294,6 @@ Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
 Next day: 6.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -314,7 +307,9 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844401 order_waking_up at 23
+Guest with PESEL 93445844401 order_waking_up at 22
+Guest with PESEL 93445844451 order_taxi 
 It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Jan Kowalski cook
@@ -327,19 +322,19 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844451 order_waking_up at 21
+It is not possible to book a room for Robert Gawlinski
+Piotr Gawlin booked the room nr 131
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844421 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 21
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
 Next day: 7.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -362,15 +357,25 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_waking_up at 20
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_taxi 
 Next day: 8.2.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -386,11 +391,10 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-Szymon Gawlinski booked the room nr 35
-Guest with PESEL 93945812031 order_waking_up at 21
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Piotr Gawli
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 22
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -404,22 +408,28 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93945812031 order_waking_up at 23
-Guest with PESEL 93945812031 order_waking_up at 22
-Guest with PESEL 93945812031 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93945812031 order_waking_up at 22
+Guest with PESEL 93445844421 order_waking_up at 0
+Guest with PESEL 93445844421 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 23
+It is not possible to book a room for Piotr Gawl
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93945812031 order_waking_up at 21
+Guest with PESEL 93445844421 order_waking_up at 21
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 22
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Janusz Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 21
+Guest with PESEL 93445844421 order_waking_up at 21
 Next day: 9.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -434,28 +444,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93945812031 order_waking_up at 0
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93945812031 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93945812031 order_waking_up at 22
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -468,13 +456,21 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Piotr Gawlinski booked the room nr 127
-Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844421 order_waking_up at 22
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 23
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 22
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844421 order_waking_up at 21
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 10.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -486,7 +482,8 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Dawid Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Magda Beza maid
@@ -496,28 +493,16 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_waking_up at 20
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_waking_up at 21
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 11.2.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -533,6 +518,7 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
+It is not possible to book a room for Piotr Ga
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -546,22 +532,14 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 21
+It is not possible to book a room for Robert Gawlinski
+Piotr Gawli booked the room nr 127
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 73445812031 order_dish Pizza_Capriciosa
 Next day: 12.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -576,18 +554,8 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_waking_up at 22
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -600,12 +568,15 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Marek Gawlinski
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 22
 Next day: 13.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -619,6 +590,14 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Piotr Gawli booked the room nr 132
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Regina Celi maid
@@ -635,10 +614,8 @@ Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 14.2.2019
 CHANGE! Employees on change: 
@@ -653,10 +630,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_waking_up at 21
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -668,17 +641,11 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawl
 Next day: 15.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -693,8 +660,8 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gaw
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -707,32 +674,19 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 128
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_waking_up at 21
-It is not possible to book a room for Robert Gawlinski
-Piotr Gawli booked the room nr 131
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Piotr Gawlin
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Krzystof Tyniec
+Piotr Gawli booked the room nr 20
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Krzystof Tyniec
 Next day: 16.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -745,17 +699,21 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Piotr Gawlinski booked the room nr 20
-Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 20
+Guest with PESEL 93445844451 order_waking_up at 0
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
+Piotr Gawli booked the room nr 129
 It is not possible to book a room for Robert Gawlinski
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Mietek Zul maid
@@ -766,13 +724,12 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_taxi 
 Next day: 17.2.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -788,9 +745,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -804,20 +758,23 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Piotr Gawli booked the room nr 130
+It is not possible to book a room for Piotr Gawlin
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Piotr Gawli booked the room nr 129
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 130
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_waking_up at 20
 Next day: 18.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -831,11 +788,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -847,16 +799,13 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Piotr Gawli
 It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
 Next day: 19.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -869,9 +818,10 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Janek Baranek maid
@@ -882,32 +832,12 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
 It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 20.2.2019
 CHANGE! Employees on change: 
@@ -924,19 +854,24 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-Piotr Gawli booked the room nr 132
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Piotr Gawl
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
+Piotr Gawlin booked the room nr 131
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -950,17 +885,14 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
+Piotr Gawlinski booked the room nr 35
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 0
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
 Next day: 21.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -975,11 +907,21 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Janusz Gawlinski
+Guest with PESEL 93445844441 order_waking_up at 23
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844441 order_waking_up at 23
+Guest with PESEL 93445844441 order_waking_up at 23
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844421 order_waking_up at 21
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844441 order_waking_up at 23
+Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_taxi 
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -993,20 +935,37 @@ Natalia Siwiec waiter
 Ala Siwiec waiter
 
 It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844441 order_waking_up at 23
+Guest with PESEL 93445844421 order_waking_up at 21
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844441 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844481 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_waking_up at 21
+Guest with PESEL 93445844441 order_waking_up at 23
+It is not possible to book a room for Krzystof Tyniec
+Piotr Gawli booked the room nr 128
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 127
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844441 order_waking_up at 21
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
 It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 22.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -1018,13 +977,8 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Marek Gawlinski
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Magda Beza maid
@@ -1034,20 +988,21 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 20
 Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 23.2.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -1063,11 +1018,10 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
+Piotr Gaw booked the room nr 20
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Jan Mazur
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -1081,22 +1035,34 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawl
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 21
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_taxi 
 Next day: 24.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -1111,18 +1077,14 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_taxi 
 It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Piotr Gawlin
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 20
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Jan Kowalski cook
@@ -1136,30 +1098,15 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Robert Gawlinski
-Piotr Gawli booked the room nr 127
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 0
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 25.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -1172,8 +1119,6 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Regina Celi maid
@@ -1184,34 +1129,15 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 0
-It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 22
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
 Next day: 26.2.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -1226,9 +1152,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_taxi 
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -1241,42 +1164,14 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 131
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 20
-Guest with PESEL 93445844451 order_waking_up at 0
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Piotr Gawlinski
 Next day: 27.2.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -1291,12 +1186,14 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
-Piotr Gawli booked the room nr 128
+Szymon Gawlinski booked the room nr 80
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Piotr Gawli booked the room nr 132
+Guest with PESEL 93945812031 order_waking_up at 22
+Guest with PESEL 93945812031 order_waking_up at 22
+Guest with PESEL 93945812031 order_waking_up at 22
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -1309,27 +1206,13 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawli
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 21
 Next day: 28.2.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -1343,7 +1226,10 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844471 order_waking_up at 21
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Mietek Zul maid
@@ -1355,14 +1241,26 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844471 order_waking_up at 21
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93945812031 order_waking_up at 22
+Guest with PESEL 93945812031 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
 Next day: 1.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -1377,10 +1275,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Jan Mazur
-Piotr Gawli booked the room nr 129
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -1393,22 +1287,17 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Janusz Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 0
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 129
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 2.3.2019
 CHANGE! Employees on change: 
@@ -1423,16 +1312,12 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 130
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93945812031 order_waking_up at 20
+Guest with PESEL 93945812031 order_waking_up at 21
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -1444,19 +1329,13 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Piotr Gawli booked the room nr 20
-It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
 Next day: 3.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -1469,7 +1348,17 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93945812031 order_waking_up at 21
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93945812031 order_waking_up at 20
+Guest with PESEL 93945812031 order_waking_up at 21
+Guest with PESEL 93945812031 order_waking_up at 21
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Janek Baranek maid
@@ -1480,27 +1369,24 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 0
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_waking_up at 0
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Piotr Gawli booked the room nr 130
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 128
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlin
 Next day: 4.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -1516,8 +1402,12 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -1531,19 +1421,13 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Piotr Gaw booked the room nr 127
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 0
 Next day: 5.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -1558,7 +1442,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -1571,21 +1454,30 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844471 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 21
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844471 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 23
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844401 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Piotr Gawli booked the room nr 131
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844451 order_waking_up at 22
 Next day: 6.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -1597,6 +1489,9 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Magda Beza maid
@@ -1606,42 +1501,28 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844471 order_waking_up at 23
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844471 order_waking_up at 23
 Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Piotr Gaw
 It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844471 order_waking_up at 23
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawl
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
 Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 20
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844471 order_waking_up at 23
-Guest with PESEL 93445844471 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 Next day: 7.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -1657,8 +1538,7 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 35
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -1677,12 +1557,12 @@ Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Piotr Gawlin booked the room nr 132
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 127
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 8.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -1697,10 +1577,8 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844471 order_waking_up at 22
-Guest with PESEL 93945812031 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844451 order_waking_up at 23
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -1713,20 +1591,15 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844471 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Marek Gawlinski
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844421 order_waking_up at 23
-Guest with PESEL 93445844471 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 20
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 9.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -1739,23 +1612,12 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Marek Gawlinski
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlinski
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlin
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Regina Celi maid
@@ -1766,24 +1628,18 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 0
+It is not possible to book a room for Piotr Gawl
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844421 order_waking_up at 0
+Guest with PESEL 93445844441 order_waking_up at 22
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844421 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844421 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844471 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawl
+It is not possible to book a room for Robert Gawlinski
 Next day: 10.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -1798,6 +1654,10 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
+It is not possible to book a room for Piotr Gawl
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -1810,30 +1670,26 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Guest with PESEL 93445844421 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 0
+It is not possible to book a room for Marek Gawlinski
 It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844421 order_waking_up at 23
-Guest with PESEL 93945812031 tried to order non-existing dish
-Piotr Gawli booked the room nr 128
-Guest with PESEL 93445844471 order_waking_up at 21
-Guest with PESEL 93445844421 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844471 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawli
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlin
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 11.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -1848,6 +1704,9 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -1860,18 +1719,24 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Piotr Gawli booked the room nr 131
-It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844441 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844441 order_waking_up at 22
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
 Next day: 12.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -1894,14 +1759,31 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Piotr Gawli
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawl
+Piotr Gawlinski booked the room nr 132
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Piotr Gawli
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 130
+Marek Gawlinski booked the room nr 81
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844451 order_waking_up at 22
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445812131 order_waking_up at 23
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
+Piotr Gawl booked the room nr 128
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 22
 Next day: 13.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -1917,8 +1799,14 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-It is not possible to book a room for Janusz Gawlinski
-It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844461 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445812131 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445812131 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844461 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -1932,11 +1820,20 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445812131 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_taxi 
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 14.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -1950,8 +1847,8 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -1967,7 +1864,11 @@ CHANGE! Employees on change:
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
 Next day: 15.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -1980,6 +1881,11 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Piotr Gawl booked the room nr 20
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844451 order_waking_up at 20
+Guest with PESEL 93445844461 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 20
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Janek Baranek maid
@@ -1990,36 +1896,17 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-Piotr Gawli booked the room nr 129
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844421 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_waking_up at 21
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 0
-Piotr Gawlinski booked the room nr 20
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 130
-Guest with PESEL 93945812031 tried to order non-existing dish
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Krzystof Tyniec
 It is not possible to book a room for Piotr Gawlinski
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445812131 order_waking_up at 21
 Next day: 16.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -2035,6 +1922,8 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844461 order_waking_up at 22
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -2053,15 +1942,7 @@ Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 21
-Piotr Gawli booked the room nr 132
-It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Piotr Gawli
 Next day: 17.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -2076,13 +1957,13 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844461 order_waking_up at 23
+Guest with PESEL 93445844461 order_waking_up at 0
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -2095,19 +1976,29 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844461 order_waking_up at 23
+It is not possible to book a room for Piotr Gawl
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 21
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445812131 order_waking_up at 22
+Piotr Gawli booked the room nr 129
 It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
+Piotr Gawli booked the room nr 131
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_taxi 
 Next day: 18.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -2119,10 +2010,7 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Magda Beza maid
@@ -2132,24 +2020,16 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844461 order_waking_up at 22
+Guest with PESEL 93445844451 order_taxi 
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Piotr Gawlinski
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
 Next day: 19.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -2165,6 +2045,31 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844461 order_waking_up at 23
+It is not possible to book a room for Piotr Gawl
+It is not possible to book a room for Piotr Gawlin
+Guest with PESEL 93445812131 order_waking_up at 21
+Guest with PESEL 93445844461 order_waking_up at 21
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844461 order_waking_up at 21
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844461 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844461 order_waking_up at 22
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -2178,21 +2083,16 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gaw
 It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 20.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -2207,9 +2107,7 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -2222,13 +2120,19 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Jan Mazur
 Next day: 21.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -2241,10 +2145,6 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Regina Celi maid
@@ -2255,20 +2155,19 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 20
+It is not possible to book a room for Piotr Gawl
 It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawlinski
 Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlin
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 22.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -2283,7 +2182,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -2296,18 +2194,14 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844451 order_taxi 
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 73445812031 cannot choose this entertainment
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 Next day: 23.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -2322,10 +2216,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 0
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -2338,22 +2228,16 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844461 order_waking_up at 22
+Piotr Gawlinski booked the room nr 127
+It is not possible to book a room for Piotr Gawli
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 22
 Next day: 24.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -2366,12 +2250,10 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+It is not possible to book a room for Piotr Gawlinski
 It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawli
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
 Mietek Zul maid
@@ -2382,21 +2264,14 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844451 order_taxi 
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 128
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 Next day: 25.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -2412,6 +2287,13 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844461 order_waking_up at 21
+Guest with PESEL 93445844461 order_waking_up at 20
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -2425,18 +2307,34 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Piotr Gawli booked the room nr 131
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844461 order_waking_up at 21
+It is not possible to book a room for Piotr Gawli
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844461 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844461 order_waking_up at 21
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 26.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -2450,17 +2348,6 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -2472,24 +2359,28 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844461 order_waking_up at 21
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Piotr Gawlinski
 It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_taxi 
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Regina Celi maid
 Marek Wojcik recepcionist
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
 It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Piotr Gawlinski booked the room nr 127
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Krzystof Tyniec
+Piotr Gawlinski booked the room nr 132
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 23
 Next day: 27.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -2503,19 +2394,9 @@ Ozyrys K barman
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawlinski
 Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Dawid Podsiadlo cook
@@ -2528,33 +2409,20 @@ Karim Benzema barman
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Magda Beza maid
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844431 order_waking_up at 21
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 28.3.2019
@@ -2571,9 +2439,7 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ola Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -2586,22 +2452,35 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ula Siwiec waiter
 
-Piotr Gawli booked the room nr 129
+Guest with PESEL 93445844431 order_waking_up at 0
+It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Robert Gawlinski
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844451 order_waking_up at 0
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 130
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Piotr Gaw
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Krzystof Tyniec
 Next day: 29.3.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -2616,20 +2495,9 @@ Renata Barek waiter
 Rafal Wygora waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Krzystof Tyniec
-Piotr Gawli booked the room nr 130
-It is not possible to book a room for Krzystof Tyniec
-Piotr Gawli booked the room nr 132
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Piotr Gawlinski
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -2642,25 +2510,16 @@ Dawid Malen waiter
 Natalia Siwiec waiter
 Ala Siwiec waiter
 
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Mietek Zul maid
 Anastazja Nowak recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 20
-Guest with PESEL 93445844431 order_waking_up at 23
-Piotr Gawli booked the room nr 20
-Guest with PESEL 93445844431 order_waking_up at 22
 Next day: 30.3.2019
 CHANGE! Employees on change: 
 Agnieszka Mazur manager
@@ -2674,10 +2533,9 @@ Ola Siwiec waiter
 Ela Siwiec waiter
 
 Hotel created a schedule for 1 employees
-Hotel paid 2541.0 zl for the bills
+Hotel paid 2538.0 zl for the bills
 Hotel paid 177250.59 zl for the employees' salaries
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -2697,6 +2555,15 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 22
+Piotr Gawli booked the room nr 131
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 0
+It is not possible to book a room for Janusz Gawlinski
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -2704,19 +2571,8 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gaw
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
 Next day: 31.3.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -2739,18 +2595,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_waking_up at 0
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -2770,8 +2615,19 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844431 order_waking_up at 0
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 129
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+It is not possible to book a room for Piotr Gawlinski
 It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
@@ -2780,6 +2636,7 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
+It is not possible to book a room for Robert Gawlinski
 Next day: 1.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -2801,8 +2658,13 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Szymon Gawlinski
 It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844451 order_waking_up at 0
+Guest with PESEL 93445844451 order_waking_up at 0
+It is not possible to book a room for Marek Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -2821,8 +2683,12 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_waking_up at 21
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -2830,7 +2696,7 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 2.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -2853,8 +2719,6 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -2874,8 +2738,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Mietek Zul maid
 Regina Celi maid
@@ -2883,9 +2746,8 @@ Anastazja Nowak recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-Piotr Gawlinski booked the room nr 128
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844431 order_waking_up at 23
 Next day: 3.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -2908,11 +2770,9 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Piotr Ga booked the room nr 20
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 21
 It is not possible to book a room for Piotr Gawli
+Piotr Gawli booked the room nr 20
+It is not possible to book a room for Marek Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -2932,6 +2792,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+It is not possible to book a room for Janusz Gawlinski
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -2961,6 +2822,11 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -2979,12 +2845,12 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_waking_up at 21
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844451 order_waking_up at 21
+Piotr Gawli booked the room nr 128
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -2992,8 +2858,15 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844441 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
 Next day: 5.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3016,25 +2889,12 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844481 order_waking_up at 0
-It is not possible to book a room for Piotr Gawl
+It is not possible to book a room for Piotr Gawli
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844481 order_waking_up at 23
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Janusz Gawlinski
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawli
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -3054,8 +2914,6 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844481 order_waking_up at 23
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -3063,6 +2921,14 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawli
 Next day: 6.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3086,9 +2952,8 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -3109,14 +2974,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 20
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_waking_up at 21
 CHANGE! Employees on change: 
 Mietek Zul maid
 Regina Celi maid
@@ -3124,7 +2982,6 @@ Anastazja Nowak recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawlinski
 Next day: 7.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -3146,9 +3003,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Janusz Gawlinski booked the room nr 35
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -3167,8 +3022,6 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 131
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -3176,12 +3029,6 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawlinski booked the room nr 129
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
 Next day: 8.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3204,15 +3051,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Ga
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -3232,12 +3071,8 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844481 order_waking_up at 22
 Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -3245,6 +3080,8 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 9.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3268,17 +3105,12 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+It is not possible to book a room for Jan Mazur
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gaw
+Piotr Gawlinski booked the room nr 127
 Guest with PESEL 93445844451 order_waking_up at 21
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Janusz Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 22
+Piotr Gawli booked the room nr 132
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -3299,14 +3131,15 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844421 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Piotr Gawli
 It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844421 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawl
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -3314,9 +3147,9 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844481 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Piotr Gawlin
 Next day: 10.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -3338,8 +3171,10 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Piotr Gawlinsk booked the room nr 35
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_taxi 
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -3358,6 +3193,11 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844451 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93945812031 tried to order non-existing dish
+Guest with PESEL 93445844421 tried to order non-existing dish
+Piotr Gawlinski booked the room nr 130
 CHANGE! Employees on change: 
 Mietek Zul maid
 Regina Celi maid
@@ -3365,18 +3205,15 @@ Anastazja Nowak recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844481 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844481 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlin
-Piotr Gawlinski booked the room nr 127
+Guest with PESEL 93945812031 tried to order non-existing dish
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844451 order_waking_up at 22
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 11.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3399,14 +3236,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844481 order_waking_up at 21
-Guest with PESEL 93445852031 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -3426,7 +3256,15 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlin
+It is not possible to book a room for Szymon Gawlinski
+It is not possible to book a room for Piotr Gawl
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 20
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93945812031 tried to order non-existing dish
+Guest with PESEL 93445844401 order_waking_up at 23
+Piotr Gawlinski booked the room nr 131
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -3434,9 +3272,6 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Marek Gawlinski
 Next day: 12.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3460,9 +3295,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445852031 order_waking_up at 21
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -3483,13 +3316,18 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Piotr Gawli booked the room nr 130
+Guest with PESEL 93445844431 order_taxi 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844401 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844401 order_waking_up at 22
 Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844451 order_waking_up at 22
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -3497,7 +3335,12 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 0
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
 Next day: 13.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -3520,20 +3363,6 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 0
-Piotr Gawli booked the room nr 132
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -3553,7 +3382,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844451 order_waking_up at 22
+It is not possible to book a room for Piotr Gawl
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -3561,11 +3390,12 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93945812031 tried to order non-existing dish
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844401 order_waking_up at 22
+Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844451 order_waking_up at 0
 Next day: 14.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3587,9 +3417,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -3608,15 +3436,6 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445852031 order_waking_up at 21
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844451 order_waking_up at 22
 CHANGE! Employees on change: 
 Mietek Zul maid
 Regina Celi maid
@@ -3624,13 +3443,6 @@ Anastazja Nowak recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Marek Gawlinski
 Next day: 15.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3654,13 +3466,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawli
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -3681,16 +3487,12 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawl
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_waking_up at 0
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844441 tried to order non-existing dish
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -3698,10 +3500,6 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Robert Gawlinski
 Next day: 16.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -3723,9 +3521,9 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844441 tried to order non-existing dish
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -3744,6 +3542,8 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -3751,14 +3551,12 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844401 order_waking_up at 22
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
 Next day: 17.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3781,7 +3579,13 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_taxi 
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844401 order_waking_up at 22
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -3801,6 +3605,9 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93945812031 tried to order non-existing dish
+Guest with PESEL 93445844441 tried to order non-existing dish
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -3808,9 +3615,27 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_waking_up at 22
+Piotr Gawl booked the room nr 20
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+Piotr Gawli booked the room nr 129
+Piotr Gawlinski booked the room nr 128
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844461 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844451 order_taxi 
 Next day: 18.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3834,11 +3659,22 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93945812031 tried to order non-existing dish
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Janusz Gawlinski booked the room nr 80
+Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -3859,14 +3695,6 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844451 order_taxi 
-Piotr Gawlinski booked the room nr 128
 CHANGE! Employees on change: 
 Mietek Zul maid
 Regina Celi maid
@@ -3874,6 +3702,8 @@ Anastazja Nowak recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445852031 order_waking_up at 0
 Next day: 19.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -3895,7 +3725,31 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 132
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844451 order_waking_up at 20
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 0
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844451 order_waking_up at 20
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -3914,6 +3768,9 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Dawid Gawlinski
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -3921,13 +3778,6 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawli
 Next day: 20.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -3950,8 +3800,8 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -3971,8 +3821,9 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844451 order_waking_up at 0
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -3980,17 +3831,10 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Marek Gawlinski
 Next day: 21.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4014,8 +3858,14 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawlin
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844461 order_waking_up at 21
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844461 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -4036,14 +3886,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 0
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlin
+Guest with PESEL 93445844461 order_waking_up at 22
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -4051,6 +3894,12 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
+Guest with PESEL 93945812031 tried to order non-existing dish
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844451 order_waking_up at 21
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
 Next day: 22.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -4072,9 +3921,8 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
@@ -4094,7 +3942,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Mietek Zul maid
 Regina Celi maid
@@ -4102,16 +3950,9 @@ Anastazja Nowak recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawlinski booked the room nr 129
 It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 23.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4134,7 +3975,9 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93945812031 tried to order non-existing dish
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -4154,7 +3997,13 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Piotr Gawli booked the room nr 130
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 20
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844451 order_waking_up at 21
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -4162,11 +4011,7 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 0
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
 Next day: 24.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4190,27 +4035,8 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Piotr Gawli booked the room nr 131
-Piotr Gawlinski booked the room nr 127
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 0
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 21
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -4231,13 +4057,15 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93945812031 tried to order non-existing dish
+It is not possible to book a room for Marek Gawlinski
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 21
 Guest with PESEL 93445844431 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 0
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Piotr Gawlinski booked the room nr 127
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -4245,9 +4073,6 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 21
 Next day: 25.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -4269,13 +4094,11 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -4294,14 +4117,6 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
-It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Jan Mazur
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 21
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -4331,13 +4146,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
 Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Robert Gawlinski
-Piotr Gawli booked the room nr 132
-It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -4364,14 +4173,10 @@ Anastazja Nowak recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93945812031 tried to order non-existing dish
 Next day: 27.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4395,13 +4200,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Dawid Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawlinski booked the room nr 15
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844441 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawl
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -4422,6 +4221,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844431 order_waking_up at 21
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -4429,23 +4229,7 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_taxi 
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 23
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 21
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 28.4.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -4468,7 +4252,6 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -4488,6 +4271,11 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -4495,9 +4283,6 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 21
 Next day: 29.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4519,6 +4304,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93945812031 tried to order non-existing dish
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -4537,12 +4323,17 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Janusz Gawlinski
+Piotr Gawlinski booked the room nr 128
+Guest with PESEL 93445844451 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 0
-It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Piotr Gawli booked the room nr 129
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_taxi 
+Guest with PESEL 93445844451 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Krzystof Tyniec
-Piotr Gawlinski booked the room nr 20
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -4550,9 +4341,11 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
+Janusz Gawlinski booked the room nr 80
+Guest with PESEL 93445844451 order_waking_up at 21
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445852031 order_waking_up at 21
+Guest with PESEL 93445844451 order_waking_up at 22
 Next day: 30.4.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4576,10 +4369,13 @@ Ola Siwiec waiter
 Ela Siwiec waiter
 
 Hotel created a schedule for 1 employees
-Hotel paid 2832.0 zl for the bills
+Hotel paid 2798.0 zl for the bills
 Hotel paid 177250.59 zl for the employees' salaries
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844421 tried to order non-existing dish
+It is not possible to book a room for Marek Gawlinski
+Piotr Gawli booked the room nr 130
+Guest with PESEL 93445844451 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -4602,6 +4398,10 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445852031 order_waking_up at 21
+Guest with PESEL 93945812031 tried to order non-existing dish
+Guest with PESEL 93445852031 order_waking_up at 21
+Piotr Gawli booked the room nr 131
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -4609,20 +4409,8 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844441 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gaw
-Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 0
-Guest with PESEL 93445844451 order_waking_up at 21
+It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844451 order_waking_up at 22
 Next day: 1.5.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -4644,7 +4432,6 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 22
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -4663,10 +4450,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -4674,10 +4458,8 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 0
+Guest with PESEL 93445844431 order_waking_up at 22
 Next day: 2.5.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4700,10 +4482,6 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 21
-Piotr Gawlinski booked the room nr 128
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -4723,6 +4501,17 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445844451 order_waking_up at 21
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawli
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93945812031 tried to order non-existing dish
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Krzystof Tyniec
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -4730,12 +4519,7 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844441 order_waking_up at 23
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
 Next day: 3.5.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4759,6 +4543,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -4779,9 +4564,11 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
+Guest with PESEL 93445844441 tried to order non-existing dish
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Mietek Zul maid
 Regina Celi maid
@@ -4828,10 +4615,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Janusz Gawlinski
+It is not possible to book a room for Piotr Gawlinski
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -4839,10 +4623,12 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
+It is not possible to book a room for Piotr Ga
+Guest with PESEL 93445844451 order_waking_up at 22
+It is not possible to book a room for Marek Gawlinski
+Piotr Gawli booked the room nr 132
 It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844421 tried to order non-existing dish
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
 Next day: 5.5.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4865,9 +4651,11 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
+It is not possible to book a room for Janusz Gawlinski
+It is not possible to book a room for Piotr Gawlin
+Guest with PESEL 93445852031 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 23
+Guest with PESEL 93445844471 tried to order non-existing dish
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -4887,18 +4675,6 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 22
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844441 order_waking_up at 22
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -4906,14 +4682,7 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844471 order_dish Pizza_Capriciosa
+Guest with PESEL 93945812031 tried to order non-existing dish
 Next day: 6.5.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -4937,10 +4706,10 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Marek Gawlinski
 It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844451 order_waking_up at 21
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -4961,20 +4730,13 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Dawid Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 23
-Guest with PESEL 93445844451 order_waking_up at 23
+It is not possible to book a room for Piotr Gaw
+It is not possible to book a room for Piotr Gawl
+Piotr Gawli booked the room nr 20
 It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844441 tried to order non-existing dish
+It is not possible to book a room for Piotr Gawli
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Piotr Gawli booked the room nr 130
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844451 order_waking_up at 22
 CHANGE! Employees on change: 
 Mietek Zul maid
 Janek Baranek maid
@@ -4982,14 +4744,11 @@ Anastazja Nowak recepcionist
 Karolina Trok recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 21
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
 It is not possible to book a room for Jan Mazur
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 22
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawl
+Guest with PESEL 93445844431 order_taxi 
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Marek Gawlinski
+Guest with PESEL 93445844431 order_waking_up at 21
 Next day: 7.5.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -5011,8 +4770,18 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Robert Gawlinski
+Guest with PESEL 93445852031 order_waking_up at 22
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445852031 order_waking_up at 22
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Robert Gawlinski
 It is not possible to book a room for Jan Mazur
+Guest with PESEL 93445844431 order_waking_up at 21
+It is not possible to book a room for Jan Mazur
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Agata Kostro cook
@@ -5031,16 +4800,7 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Piotr Gawlinski
-It is not possible to book a room for Piotr Gawl
-Guest with PESEL 93445844471 tried to order non-existing dish
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlin
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Robert Gawlinski
-Piotr Gawli booked the room nr 131
-Piotr Gawli booked the room nr 129
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Mietek Zul maid
 Regina Celi maid
@@ -5048,28 +4808,9 @@ Anastazja Nowak recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844451 order_waking_up at 20
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
 Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 22
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Piotr Gawlin
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844421 cannot choose this entertainment
-Guest with PESEL 93445844451 order_waking_up at 0
-Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 Next day: 8.5.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -5092,7 +4833,7 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
 CHANGE! Employees on change: 
 Feliks Uberek cook
 Robert Mazurek cook
@@ -5112,9 +4853,26 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
-Piotr Gawli booked the room nr 127
-Guest with PESEL 93445844431 order_waking_up at 22
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Krzystof Tyniec
+It is not possible to book a room for Piotr Gawlinski
+Guest with PESEL 93445844431 order_taxi 
+Guest with PESEL 93445844451 order_taxi 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
+It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Jan Mazur
+Guest with PESEL 93945812031 tried to order non-existing dish
+Guest with PESEL 93445844431 order_waking_up at 23
+It is not possible to book a room for Krzystof Tyniec
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 21
+Guest with PESEL 93445844431 order_waking_up at 23
 CHANGE! Employees on change: 
 Magda Beza maid
 Regina Celi maid
@@ -5122,20 +4880,10 @@ Leyla Lema recepcionist
 Marek Wojcik recepcionist
 Malgosia Lipa bodyguard
 
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Marek Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 23
-It is not possible to book a room for Piotr Gawlinski
 It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844431 order_waking_up at 22
+It is not possible to book a room for Piotr Gawli
 Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Krzystof Tyniec
-It is not possible to book a room for Robert Gawlinski
-Guest with PESEL 93445844471 tried to order non-existing dish
-Piotr Gawli booked the room nr 132
+It is not possible to book a room for Marek Gawlinski
 Next day: 9.5.2019
 CHANGE! Employees on change: 
 Kuzyn Prezesa manager
@@ -5159,6 +4907,14 @@ Rafal Wygora waiter
 Ola Siwiec waiter
 Ela Siwiec waiter
 
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+It is not possible to book a room for Janusz Gawlinski
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Piotr Gawli booked the room nr 127
+Guest with PESEL 93445844451 order_dish Pizza_Capriciosa
+Guest with PESEL 93445844451 order_waking_up at 21
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Jan Kowalski cook
 Feliks Uberek cook
@@ -5179,8 +4935,9 @@ Natalia Siwiec waiter
 Ula Siwiec waiter
 Ala Siwiec waiter
 
-It is not possible to book a room for Marek Gawlinski
-It is not possible to book a room for Piotr Gawli
+Guest with PESEL 93445844431 order_waking_up at 23
+Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
+It is not possible to book a room for Robert Gawlinski
 CHANGE! Employees on change: 
 Janek Baranek maid
 Magda Beza maid
@@ -5188,22 +4945,7 @@ Karolina Trok recepcionist
 Leyla Lema recepcionist
 Malgosia Lipa bodyguard
 
-Guest with PESEL 93445844431 order_waking_up at 23
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Piotr Gawlinski
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844431 order_waking_up at 22
-Guest with PESEL 93445844441 order_waking_up at 20
-Guest with PESEL 93445844451 order_waking_up at 21
-Guest with PESEL 93445844451 order_waking_up at 21
 Guest with PESEL 93445844451 order_taxi 
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
-It is not possible to book a room for Robert Gawlinski
-It is not possible to book a room for Piotr Gawli
-Guest with PESEL 93445844431 order_dish Pizza_Capriciosa
 Next day: 10.5.2019
 CHANGE! Employees on change: 
 Karol Kochar manager
@@ -5228,4 +4970,4 @@ Ela Siwiec waiter
 Summary: 
 Hotel have 34 employees
 Hotel had 59 guests
-Hotel's final budget 255390.0
+Hotel's final budget 247775.0

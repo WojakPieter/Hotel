@@ -21,6 +21,11 @@ char Room::get_type()
     return type;
 }
 
+std::vector<Date> Room::get_reserved_days()
+{
+    return reserved_days;
+}
+
 Room::Room(int number, bool high_standard, bool family)
 {
     this->number = number;

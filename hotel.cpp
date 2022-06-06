@@ -188,58 +188,14 @@ bool Hotel::remove_dish(std::string type, std::string name)
     return flag;
 }
 
-void Hotel::add_room(char type, int number, bool is_high_standard, bool is_family)
+void Hotel::add_room(char type, int number, bool is_family, bool is_high_standard)
 {
-    switch(type)
-    {
-        case '1':
-            {
-                std::unique_ptr<Room> room_ptr = std::make_unique<OnePersonRoom>(number, is_high_standard);
-                rooms.add_room(std::move(room_ptr));
-                break;
-            }
-        case '2':
-            {
-                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<TwoPersonRoom>(number, is_high_standard, is_family);
-                rooms.add_room(std::move(room_ptr));
-                break;
-            }
-        case '3':
-            {
-                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<ThreePersonRoom>(number, is_high_standard, is_family);
-                rooms.add_room(std::move(room_ptr));
-                break;
-            }
-        case '4':
-            {
-                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<FourPersonRoom>(number, is_high_standard, is_family);
-                rooms.add_room(std::move(room_ptr));
-                break;
-            }
-        case 's':
-            {
-                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<Studio>(number);
-                rooms.add_room(std::move(room_ptr));
-                break;
-            }
-        case 'a':
-            {
-                std::unique_ptr<Room_Interface> room_ptr = std::make_unique<Apartment>(number);
-                rooms.add_room(std::move(room_ptr));
-                break;
-            }
-    }
+    rooms.add_room(type, number, is_family, is_high_standard);
 }
 
 void Hotel::remove_room(int number)
 {
-    for(auto& ptr : rooms)
-    {
-        if(ptr->get_number() == number)
-        {
-            rooms.remove_room(std::move(ptr));
-        }
-    }
+    rooms.remove_room(number);
 }
 
 double Hotel::check_out(Guest& guest)

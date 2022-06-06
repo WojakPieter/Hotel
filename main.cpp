@@ -9,11 +9,7 @@
 #include <sstream>
 
 int main(int argc, char* argv[]) {
-<<<<<<< HEAD
      if(argc != 8)
-=======
-     if(argc != 7)
->>>>>>> refs/remotes/origin/main
      {
         std::cout << "Improper program agruments";
         exit(-1);
@@ -41,9 +37,6 @@ int main(int argc, char* argv[]) {
      Simulation play(days, date, argv[3], argv[4], argv[5], argv[6], argv[7]);
 	// std::cout << play.get_file_name();
 	play.start();
-<<<<<<< HEAD
 	Date data2(1,10,2020);
 	//std::cout << data2 - 3 << std::endl;
-=======
->>>>>>> refs/remotes/origin/main
 }
