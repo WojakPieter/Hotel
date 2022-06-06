@@ -3,9 +3,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../date.h"
+#include "employee_interface.cpp"
 
-class Employee
+class Employee : public Employee_Interface
 {
     protected:
     std::string first_name;

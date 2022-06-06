@@ -1,6 +1,6 @@
 #include <math.h>
 #include "simulation.h"
-// #include <windows.h>
+#include <windows.h>
 #include <iostream>
 #include <random>
 #include <string>
@@ -12,7 +12,7 @@
 #include <chrono>
 #include <thread>
 
-Simulation::Simulation(int days1, Date start_date1, std::string room_file1, std::string employee_file1, std::string simulation_file1, std::string menu_file_name1, std::string guest_file_name1)
+Simulation::Simulation(int days1, Date start_date1, std::string room_file1, std::string employee_file1, std::string menu_file_name1, std::string guest_file_name1, std::string simulation_file1)
 {
     days = days1;
     start_date = start_date1;
@@ -45,6 +45,11 @@ void Simulation::start()
     current_date = start_date;
     int relay = 1;
     while(current_date < start_date + days) {
+        if(hotel.get_budget() < 0)
+        {
+            std::cout << "Hotel is run out of money" << std::endl;
+            exit(-1);
+        }
         std::default_random_engine generator;
         generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
         std::uniform_int_distribution<int> distribution(0,activity.size()-1);
@@ -58,7 +63,7 @@ void Simulation::start()
             spent_money += bills + cash;
             i = 1;
             print_monthly_action(nr_of_employees, cash, bills);
-            std::this_thread::sleep_for(2000ms);
+            //std::this_thread::sleep_for(2000ms);
         }
         if (p == "CHANGE")
         {
@@ -67,6 +72,7 @@ void Simulation::start()
             print_current_employees();
             if(relay == 1)
                 gained_money += hotel.check_guests();
+            i = 0;
         }
         else if (p == "choose_entertainment")
         {
@@ -86,7 +92,7 @@ void Simulation::start()
             print_wrong_activity(p);
 
 
-        std::this_thread::sleep_for(200ms);
+        //std::this_thread::sleep_for(200ms);
         p = "";
     }
     end(spent_money, gained_money, nr_of_guests);
@@ -98,8 +104,7 @@ void Simulation::end(double spent_money, double gained_money, int number_of_gues
     std::string text = "Summary: \n";
     text += "Hotel have " + std::to_string(hotel.get_number_of_employees()) + " employees\n";
     text += "Hotel had " + std::to_string(number_of_guests) + " guests\n";
-    text += "Hotel spent " + std::to_string(int(spent_money)) + "." + std::to_string(int(spent_money*100) % 100) + "zl for monthly bills and salaries\n";
-    text += "Hotel gained " + std::to_string(int(gained_money)) + "." + std::to_string(int(gained_money*100) % 100) + "zl\n";
+    text += "Hotel's final budget " + std::to_string(int(hotel.get_budget())) + "." + std::to_string(int(hotel.get_budget()*100) % 100);
     write_to_file(text);
     std::cout << text << std::endl;
 }
@@ -112,12 +117,10 @@ void Simulation::drawing_the_changing_stay()
     std::uniform_int_distribution<int> distribution(0,current_guests.size()-1);
     int chosen_guest_index = distribution(generator);
     Guest chosen_guest = current_guests[chosen_guest_index];
-
-    int minimum_days = current_date - chosen_guest.get_last_date() + 1;
-    std::uniform_int_distribution<int> distribution2(minimum_days,14);
+    std::uniform_int_distribution<int> distribution2(1,14);
     int days = distribution2(generator);
-    Date new_stay_date = current_date + days;
 
+    Date new_stay_date = chosen_guest.get_last_date() + days;
     bool flag = hotel.shortening_the_stay(chosen_guest, new_stay_date);
 }
 
@@ -183,7 +186,7 @@ int Simulation::drawing_the_booking_room(int nr_of_guests)
     int days_to_book = distribution4(generator);
 
     generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
-    std::uniform_int_distribution<int> distribution5(1,14);
+    std::uniform_int_distribution<int> distribution5(5,14);
     int length_of_stay = distribution5(generator);
 
     Date first_date = current_date + days_to_book;

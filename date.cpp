@@ -156,6 +156,7 @@ Date Date::operator-=(int days)
         day -= days;
         do
         {
+            int old_month = month;
             if(month == 1) {month = 12; year--;}
             else month--;
             day += get_month_length(month);
@@ -169,20 +170,22 @@ Date Date::operator-=(int days)
 int Date::operator-(const Date& date)
 {
     int i=0;
-    if(*this < date)
+    if(*this > date)
     {
-        while(*this + i < date) i++;
+        while(date + i < *this) i++;
     }
     else
     {
-        while(*this - i < date) i--;
+        while(date - i > *this) i++;
     }
     return i;
 }
 
-Date Date::operator-(int days)
+Date Date::operator-(int days) const
 {
-    return (*this) + (-1) * days;
+    Date old_date = *this;
+    old_date -= days;
+    return old_date;
 }
 
 std::string Date::print()

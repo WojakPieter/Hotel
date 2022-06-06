@@ -14,12 +14,13 @@ class Hotel
     std::string name;
     int stars;
     double budget;
+    double total_income;
     std::vector <Guest> guests;
-    Data employees;
+    Data_employee employees;
     Data_room rooms;
     Menu menu = Menu("",{},{});
     Date current_date;
-    Data current_employees;
+    Data_employee current_employees;
 
     public:
     Hotel(std::string, int, double);
@@ -31,6 +32,7 @@ class Hotel
     std::string get_name();
     int get_stars();
     double get_budget();
+    double get_total_income();
     Date get_current_date();
     std::vector<Guest> get_guests();
     std::vector<Dish> get_menu();
@@ -57,8 +59,8 @@ class Hotel
     void increase_budget(double income);
     bool decrease_budget(double outgo);
     std::string set_maid_to_tidy_room(int);
-    void check_in(Guest guest);
-    int book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period);
+    void check_in(Guest& guest);
+    int book_room(Guest& guest, char type, bool high_standard, bool family, std::pair<Date, Date> period);
     double check_out(Guest&);
     bool shortening_the_stay(Guest&, Date);
     double handing_out_salary();

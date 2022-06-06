@@ -54,8 +54,7 @@ TEST_CASE("class hotel simple tests", "[hotel]")
     {
         hotel.add_employee("maid", "Magda", "Mada", "eg@wp.pl", "98071800001", 41);
         hotel.add_employee("waiter", "Eryk", "Gol", "eg@wp.pl", "88071800001", 41);
-        // hotel.creating_schedule(Date(1,1,2020));
-        CHECK(int(hotel.handing_out_salary()) == 337);
+        CHECK(int(hotel.handing_out_salary()) == 9284);
         CHECK(hotel.paying_the_bills() == 0);
     }
 }

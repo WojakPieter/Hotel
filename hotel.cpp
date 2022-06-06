@@ -1,6 +1,7 @@
 #include <chrono>
 #include "hotel.h"
 #include <string>
+#include <windows.h>
 #include <iostream>
 #include <random>
 #include <algorithm>
@@ -10,11 +11,17 @@ Hotel::Hotel(std::string name1, int stars1, double budget1)
     name = name1;
     stars = stars1;
     budget = budget1;
+    total_income = 0;
 }
 
 void Hotel::set_date(Date new_date)
 {
     current_date = new_date;
+}
+
+double Hotel::get_total_income()
+{
+    return total_income;
 }
 
 std::string Hotel::get_name()
@@ -111,7 +118,6 @@ std::string Hotel::set_maid_to_tidy_room(int number)
         int i = 0;
         for(auto& ptr : current_employees)
         {
-            if(i == index_of_maids[chosen_maid_index]) std::cout << ptr -> get_type();
             i++;
         }
         current_employees[index_of_maids[chosen_maid_index]] -> tidy_room();
@@ -120,17 +126,18 @@ std::string Hotel::set_maid_to_tidy_room(int number)
     else return "none";
 }
 
-int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, std::pair<Date, Date> period)
+int Hotel::book_room(Guest& guest, char type, bool high_standard, bool family, std::pair<Date, Date> period)
 {
     std::vector<int> numbers_of_matching_rooms;
     bool flag = false;
+    double receipt;
     for(auto& ptr : rooms)
     {
         if(ptr->get_type() == type && ptr->is_high_standard() == high_standard && ptr->is_family() == family && !ptr->is_reserved_in_period(period))
         {
             if(guest.get_money() >= (ptr->get_price()*(period.second-period.first+1))) {
                 numbers_of_matching_rooms.push_back(ptr->get_number());
-                guest.set_receipt(ptr->get_price()*(period.second-period.first+1) + guest.get_receipt());
+                receipt = ptr->get_price()*(period.second-period.first+1);
                 flag = true;
             }
         }
@@ -143,6 +150,7 @@ int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, st
         int room_number = numbers_of_matching_rooms[chosen_room_index];
         rooms.book_room(room_number, period);
         guest.set_room_number(room_number);
+        guest.set_receipt(receipt);
         guest.set_first_date(period.first);
         guest.set_last_date(period.second);
         guests.push_back(guest);
@@ -151,7 +159,7 @@ int Hotel::book_room(Guest guest, char type, bool high_standard, bool family, st
     return -1;
 }
 
-void Hotel::check_in(Guest guest)
+void Hotel::check_in(Guest& guest)
 {
 
     guest.subtract_money(guest.get_receipt());
@@ -243,6 +251,7 @@ double Hotel::check_out(Guest& guest)
             break;
         }
     increase_budget(guest.get_receipt());
+    total_income += guest.get_receipt();
     return guest.get_receipt();
 }
 
@@ -373,30 +382,35 @@ bool Hotel::shortening_the_stay(Guest& guest, Date new_last_date)
                 receipt = receipt - days*room_ptr->get_price();
                 while(guest.last_day > new_last_date)
                 {
+
                     room_ptr->remove_reserved_day(new_last_date);
                     new_last_date++;
                 }
             }
             else {
-                double days = guest.last_day - new_last_date;
+                int days = guest.get_last_date() - new_last_date;
+
                 if(days*room_ptr->get_price()+receipt >= guest.get_money())
                 {
+
                     Date current_checked_date;
                     receipt += days*room_ptr->get_price();
                     while(guest.last_day < new_last_date)
                     {
+
                         current_checked_date = guest.last_day + 1;
                         if(room_ptr->is_reserved_at_day(current_checked_date)) return false;
                     }
                     while(guest.last_day <= new_last_date)
                     {
+
                         room_ptr->add_reserved_day(guest.last_day);
                         guest.last_day++;
                     }
                     decrease_budget(receipt);
                     return true;
                 }
-                else return false;
+                else { return false; }
             }
         }
     }

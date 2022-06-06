@@ -15,10 +15,10 @@
 TEST_CASE("class data simple tests", "[data]") 
 {
     Date date(15, 10, 2021);
-    Data data;
-    std::unique_ptr<Employee> maid_ptr = std::make_unique<Maid>("Ola", "Nowa", "wp@wp.pl", "02302019023", 19.7);
-    std::unique_ptr<Employee> maid_ptr1 = std::make_unique<Maid>("Magda", "Kosar", "op@wp.pl", "08302000645", 20);
-    std::unique_ptr<Employee> maid_ptr2 = std::make_unique<Maid>("Maciej", "Wnuk", "up@wp.pl", "92309019006", 19.8);
+    Data_employee data;
+    std::unique_ptr<Employee_Interface> maid_ptr = std::make_unique<Maid>("Ola", "Nowa", "wp@wp.pl", "02302019023", 19.7);
+    std::unique_ptr<Employee_Interface> maid_ptr1 = std::make_unique<Maid>("Magda", "Kosar", "op@wp.pl", "08302000645", 20);
+    std::unique_ptr<Employee_Interface> maid_ptr2 = std::make_unique<Maid>("Maciej", "Wnuk", "up@wp.pl", "92309019006", 19.8);
 
     SECTION("checking unique ptr") 
     {

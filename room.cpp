@@ -66,35 +66,35 @@ TwoPersonRoom::TwoPersonRoom(int number, bool high_standard, bool family) : Room
 {
     type = '2';
     maintain_costs_function = std::make_pair(1, 15);
-    Room::set_parameters(0.75, 0.9, 0.9, 1.15);
+    Room::set_parameters(0.9, 1.2, 0.9, 1.15);
 }
 
 ThreePersonRoom::ThreePersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
 {
     type = '3';
     maintain_costs_function = std::make_pair(2, 15);
-    Room::set_parameters(0.8, 0.95, 0.95, 1.2);
+    Room::set_parameters(1, 1.2, 0.95, 1.2);
 }
 
 FourPersonRoom::FourPersonRoom(int number, bool high_standard, bool family) : Room(number, high_standard, family)
 {
     type = '4';
     maintain_costs_function = std::make_pair(3, 15);
-    Room::set_parameters(0.85, 1, 1, 1.2);
+    Room::set_parameters(1.3, 1.5, 1, 1.2);
 }
 
 Studio::Studio(int number) : Room(number, false, false)
 {
     type = 's';
     maintain_costs_function = std::make_pair(4, 20);
-    Room::set_parameters(0.8, 0.95, 0, 0);
+    Room::set_parameters(1.5, 1.8, 0, 0);
 }
 
 Apartment::Apartment(int number) : Room(number, true, true)
 {
     type = 'a';
     maintain_costs_function = std::make_pair(5, 25);
-    Room::set_parameters(0, 0, 1.4, 1.5);
+    Room::set_parameters(2, 2, 1.4, 1.5);
 }
 
 bool Room::is_reserved_at_day(Date date)

@@ -16,12 +16,12 @@ Employee::Employee(std::string first_name1, std::string last_name1, std::string 
     if (PESEL1.size() == 11)
         PESEL = PESEL1;
     else
-        throw std::range_error("PESEL musi miec 11 cyfr");
+        throw std::range_error("PESEL do not have 11 digits");
 
     if (hourly_rate1 > 0)
         hourly_rate = hourly_rate1;
     else
-        throw std::range_error("Godzinowa stwka musi byc wieksza od zera");
+        throw std::range_error("Hourly rate has to be positive");
 }
 
 void Employee::set_worked_hours(double new_hours){
@@ -74,7 +74,7 @@ double Employee::working_hours()
 
 double Employee::salary()
 {
-    return get_hourly_rate(type)*get_working_hours(type);
+    return get_hourly_rate(type)*working_hours();
 }
 
 void Employee::set_hourly_rate() {
