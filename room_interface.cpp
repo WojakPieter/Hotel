@@ -33,4 +33,5 @@ public:
                         double price_multiplier_low, double area_multiplier_low)=0;
     virtual bool is_reserved_at_day(Date)=0;
     virtual bool is_reserved_in_period(std::pair<Date,Date>)=0;
+    virtual ~Room_Interface() {;}
 };

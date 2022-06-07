@@ -39,6 +39,7 @@ public:
                         double price_multiplier_low, double area_multiplier_low);
     virtual bool is_reserved_at_day(Date);
     virtual bool is_reserved_in_period(std::pair<Date,Date>);
+    virtual ~Room() {;}
 
     //
 
