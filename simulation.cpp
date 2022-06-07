@@ -51,6 +51,7 @@ void Simulation::start()
             exit(-1);
         }
         std::default_random_engine generator;
+
         generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
         std::uniform_int_distribution<int> distribution(0,activity.size()-1);
         int chosen_activity_index = distribution(generator);
@@ -63,7 +64,7 @@ void Simulation::start()
             spent_money += bills + cash;
             i = 1;
             print_monthly_action(hotel.get_number_of_employees(), cash, bills);
-            std::this_thread::sleep_for(2000ms);
+            //std::this_thread::sleep_for(2000ms);
         }
         if (p == "CHANGE")
         {
@@ -92,7 +93,7 @@ void Simulation::start()
             print_wrong_activity(p);
 
 
-        std::this_thread::sleep_for(2000ms);
+        //std::this_thread::sleep_for(2000ms);
         p = "";
     }
     end(spent_money, gained_money, nr_of_guests);
@@ -132,7 +133,6 @@ void Simulation::drawing_the_choosing_entertainment()
     std::uniform_int_distribution<int> distribution(0,entertainment.size()-1);
     int chosen_entertainment_index = distribution(generator);
     std::string name = entertainment[chosen_entertainment_index];
-    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
     //std::vector<Guest> guests = hotel.get_guests();
     std::uniform_int_distribution<int> distribution2(0,current_guests.size()-1);
     int chosen_guest_index = distribution2(generator);
@@ -140,7 +140,6 @@ void Simulation::drawing_the_choosing_entertainment()
 
     std::string dish_type;
     int hour;
-    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count()-3);
 
     if (name == "order_dish") {
         std::vector<Dish> menu = hotel.get_menu();
@@ -170,22 +169,22 @@ int Simulation::drawing_the_booking_room(int nr_of_guests)
     int chosen_type_index = distribution(generator);
     char type = types_of_room[chosen_type_index];
 
-    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+
     std::vector<bool> true_or_false = {true, false};
     std::uniform_int_distribution<int> distribution2(0,true_or_false.size()-1);
     int chosen_index = distribution2(generator);
     bool high_standard = true_or_false[chosen_index];
 
-    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+
     std::uniform_int_distribution<int> distribution3(0,true_or_false.size()-1);
     int chosen_index3 = distribution3(generator);
     bool family = true_or_false[chosen_index3];
 
-    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+
     std::uniform_int_distribution<int> distribution4(0,60);
     int days_to_book = distribution4(generator);
 
-    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+
     std::uniform_int_distribution<int> distribution5(5,14);
     int length_of_stay = distribution5(generator);
 
@@ -196,7 +195,7 @@ int Simulation::drawing_the_booking_room(int nr_of_guests)
     period.first = first_date;
     period.second = last_date;
 
-    generator.seed(std::chrono::steady_clock::now().time_since_epoch().count());
+
     std::uniform_int_distribution<int> distribution6(0,guests_to_add.size()-1);
     int chosen_guest_index = distribution6(generator);
     Guest guest = guests_to_add[chosen_guest_index];
